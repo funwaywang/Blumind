@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="System" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="ControlDarkDark" />
+    <color name="Light" value="Window" />
+    <color name="Sharp" value="ActiveCaption" />
+    <color name="MediumDark" value="Control" />
+    <color name="MediumLight" value="ControlLight" />
+    <color name="Workspace" value="AppWorkspace" />
+  </colors>
+  <description>Operation System Theme</description>
+</theme>

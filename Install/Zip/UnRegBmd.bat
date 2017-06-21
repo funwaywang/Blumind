@@ -1,0 +1,1 @@
+Blumind.exe -unregbmd

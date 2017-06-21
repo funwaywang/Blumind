@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Light a way" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="#011F02" />
+    <color name="Light" value="#F2F8CB" />
+    <color name="Sharp" value="#78BF30" />
+    <color name="MediumDark" value="#21730A" />
+    <color name="MediumLight" value="#BBD1A5" />
+    <color name="Workspace" value="#012603" />
+  </colors>
+  <description />
+</theme>

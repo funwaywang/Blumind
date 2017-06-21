@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Firebrick" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="#121C27" />
+    <color name="Light" value="#FFFAE1" />
+    <color name="Sharp" value="#B40010" />
+    <color name="MediumDark" value="#72839D" />
+    <color name="MediumLight" value="#DACAA5" />
+    <color name="Workspace" value="#1D2D40" />
+  </colors>
+  <description />
+</theme>

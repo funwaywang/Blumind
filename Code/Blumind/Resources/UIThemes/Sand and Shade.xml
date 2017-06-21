@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Sand and Shade" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="#1C1F12" />
+    <color name="Light" value="#F5EED7" />
+    <color name="Sharp" value="#176573" />
+    <color name="MediumDark" value="#8E9E63" />
+    <color name="MediumLight" value="#E6DBB0" />
+    <color name="Workspace" value="#1C1F12" />
+  </colors>
+  <description />
+</theme>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Classic Blue" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="Black" />
+    <color name="Light" value="#D0E4F2" />
+    <color name="Sharp" value="#4A6491" />
+    <color name="MediumDark" value="#30395C" />
+    <color name="MediumLight" value="#85A5CC" />
+    <color name="Workspace" value="#30395C" />
+  </colors>
+  <description />
+</theme>

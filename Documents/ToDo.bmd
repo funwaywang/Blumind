@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<map name="ToDo" document_type="BLUMIND" editor_version="1.3.10.0">
+  <!--Create by Blumind, you can download it free from http://www.blumind.org/download-->
+  <info />
+  <layout>LOGIC_RIGHT</layout>
+  <attributes>
+    <item name="editor_show_sidebar">True</item>
+  </attributes>
+  <style>
+    <back_color>White</back_color>
+    <fore_color>Black</fore_color>
+    <line_color>LightSlateGray</line_color>
+    <border_color>SlateGray</border_color>
+    <node_back_color>LightGray</node_back_color>
+    <node_fore_color>Black</node_fore_color>
+    <select_color>RoyalBlue</select_color>
+    <hover_color>MediumSlateBlue</hover_color>
+    <link_line_color>Green</link_line_color>
+  </style>
+  <nodes>
+    <node text="TO DO">
+      <widgets>
+        <widget type="NOTES" align="Right" hyperlink="">
+          <description>Ouch!</description>
+        </widget>
+      </widgets>
+      <nodes>
+        <node text="FindBugs">
+          <style>
+            <back_color>#FFFFC0</back_color>
+            <shape>1</shape>
+            <round_radius>7</round_radius>
+            <font font_family="Microsoft Sans Serif" size="9.75" style="Bold" />
+          </style>
+          <nodes>
+            <node id="ecd14152-0ee1-443a-aa8f-7456e9f82ead" text="Document">
+              <style>
+                <back_color>Red</back_color>
+              </style>
+              <nodes>
+                <node text="Review by Don. Oita">
+                  <style>
+                    <back_color>Orange</back_color>
+                  </style>
+                  <nodes>
+                    <node text="Review by Armistead, Paul Kent">
+                      <style>
+                        <back_color>SpringGreen</back_color>
+                      </style>
+                    </node>
+                  </nodes>
+                </node>
+                <node text="Presentation">
+                  <style>
+                    <back_color>Orange</back_color>
+                  </style>
+                  <nodes>
+                    <node text="Review by FB team">
+                      <style>
+                        <back_color>Orange</back_color>
+                      </style>
+                      <widgets>
+                        <widget type="PICTURE" align="Left" hyperlink="" />
+                      </widgets>
+                      <nodes>
+                        <node text="Record R&amp;D TV">
+                          <style>
+                            <back_color>SpringGreen</back_color>
+                          </style>
+                        </node>
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node id="e4f8218b-4ed7-4686-af54-d9a507ecc6e7" text="Data">
+              <style>
+                <back_color>RoyalBlue</back_color>
+                <fore_color>White</fore_color>
+              </style>
+              <nodes>
+                <node text="Visualizations">
+                  <style>
+                    <back_color>RoyalBlue</back_color>
+                    <fore_color>White</fore_color>
+                  </style>
+                  <links>
+                    <link target="ecd14152-0ee1-443a-aa8f-7456e9f82ead" cp1_length="27" cp1_angle="204" cp2_length="32" cp2_angle="65" width="3" line_style="2" start_cap="0" end_cap="20" text="" hyperlink="" />
+                    <link target="fa0c4351-c3ee-4a15-aa29-7e6fe680a3fa" cp1_length="139" cp1_angle="24" cp2_length="365" cp2_angle="8" width="3" line_style="2" start_cap="0" end_cap="20" text="" hyperlink="" />
+                  </links>
+                  <widgets>
+                    <widget type="PROGRESSBAR" max="100" min="0" value="100" show_text="False" color="Green" back_color="White" fore_color="Black" align="Bottom" hyperlink="" />
+                  </widgets>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node text="Vertical Slices">
+          <style>
+            <back_color>#FFFFC0</back_color>
+            <shape>1</shape>
+            <round_radius>7</round_radius>
+            <font font_family="Microsoft Sans Serif" size="9.75" style="Bold" />
+          </style>
+          <nodes>
+            <node text="Parse Jim Adams output">
+              <style>
+                <back_color>RoyalBlue</back_color>
+                <fore_color>White</fore_color>
+              </style>
+              <links>
+                <link target="e4f8218b-4ed7-4686-af54-d9a507ecc6e7" cp1_length="241" cp1_angle="164" cp2_length="73" cp2_angle="182" width="3" line_style="2" start_cap="0" end_cap="20" text="" hyperlink="" />
+              </links>
+              <widgets>
+                <widget type="PROGRESSBAR" max="100" min="0" value="100" show_text="False" color="Green" back_color="White" fore_color="Black" align="Bottom" hyperlink="" />
+              </widgets>
+              <nodes>
+                <node text="Add graph-based metrics">
+                  <widgets>
+                    <widget type="PROGRESSBAR" max="100" min="0" value="50" show_text="False" color="Green" back_color="White" fore_color="Black" align="Bottom" hyperlink="" />
+                  </widgets>
+                  <nodes>
+                    <node text="in-degree" />
+                    <node text="distance from root (BFS)" />
+                  </nodes>
+                </node>
+                <node text="Prune nls files" />
+              </nodes>
+            </node>
+            <node id="fa0c4351-c3ee-4a15-aa29-7e6fe680a3fa" text="Blog" />
+            <node text="Read data from CVS" folded="True">
+              <nodes>
+                <node text="Add churn-based metrics">
+                  <nodes>
+                    <node text="#developers" />
+                    <node text="#defects" />
+                    <node text="#test/#code changes" />
+                    <node text="#changes" />
+                  </nodes>
+                </node>
+                <node text="Port from PHP to Python" />
+              </nodes>
+            </node>
+            <node text="Web service?" folded="True">
+              <nodes>
+                <node text="Java?" folded="True">
+                  <nodes>
+                    <node text="RESTlet" folded="True" />
+                    <node text="Runs on civm (DJTE)" folded="True" />
+                  </nodes>
+                </node>
+                <node text="Python?">
+                  <nodes>
+                    <node text="Install 2.x 32bit version on d22110">
+                      <nodes>
+                        <node text="Django" folded="True" />
+                        <node text="Pyjamas" folded="True" />
+                      </nodes>
+                    </node>
+                    <node text="Install NoseXUnit for testing" />
+                    <node text="Setup project in SASFoundry?" />
+                  </nodes>
+                </node>
+                <node text="Ruby?" folded="True">
+                  <nodes>
+                    <node text="Integration with SONAR" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Define output" folded="True">
+              <nodes>
+                <node text="Network Diagram for minimum spanning tree" />
+                <node text="Vertical slice data for VAE" />
+                <node text="Table view with summarization" />
+                <node text="Charts?" />
+                <node text="Image Map?" />
+                <node text="Flex?" />
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node text="KaiZenDo">
+          <style>
+            <back_color>#FFFFC0</back_color>
+            <shape>1</shape>
+            <round_radius>7</round_radius>
+            <font font_family="Microsoft Sans Serif" size="9.75" style="Bold" />
+          </style>
+          <nodes>
+            <node text="Subgroups in Saspedia">
+              <style>
+                <back_color>Red</back_color>
+              </style>
+              <nodes>
+                <node text="Quality Data Mart">
+                  <nodes>
+                    <node text="Adrian Dunston" />
+                  </nodes>
+                </node>
+                <node text="Unit Testing" />
+                <node text="Unit Test Adoption (Culture Change)" />
+                <node text="CI Servers">
+                  <nodes>
+                    <node text="Tony Castrogiovani" />
+                    <node text="Steva McNulty" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Meeting Minutes">
+              <style>
+                <back_color>RoyalBlue</back_color>
+                <fore_color>White</fore_color>
+              </style>
+              <widgets>
+                <widget type="PROGRESSBAR" max="100" min="0" value="100" show_text="False" color="Green" back_color="White" fore_color="Black" align="Bottom" hyperlink="" />
+              </widgets>
+            </node>
+            <node text="Respond to djb on Hub">
+              <style>
+                <back_color>RoyalBlue</back_color>
+                <fore_color>White</fore_color>
+              </style>
+              <nodes>
+                <node text="Next meeting">
+                  <nodes>
+                    <node text="Post to hub" />
+                    <node text="Add to saspedia" />
+                    <node text="Create .ics (how?)" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node text="Distance" folded="True">
+          <style>
+            <back_color>#FFFFC0</back_color>
+            <shape>1</shape>
+            <round_radius>7</round_radius>
+            <font font_family="Microsoft Sans Serif" size="9.75" style="Bold" />
+          </style>
+          <nodes>
+            <node text="Blog" folded="True" />
+          </nodes>
+        </node>
+        <node text="VAE">
+          <style>
+            <back_color>#FFFFC0</back_color>
+            <shape>1</shape>
+            <round_radius>7</round_radius>
+            <font font_family="Microsoft Sans Serif" size="9.75" style="Bold" />
+          </style>
+          <nodes>
+            <node text="Create new stories (One Note)">
+              <style>
+                <back_color>Red</back_color>
+              </style>
+            </node>
+            <node text="Magellan Experience" folded="True">
+              <nodes>
+                <node text="Presentation vs. Exploration" folded="True">
+                  <nodes>
+                    <node text="See OneNote " folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Blocked Defect Script" />
+          </nodes>
+        </node>
+        <node id="5ee074ff-585c-4e63-bb6a-6c76c04d52de" text="Omniscope" folded="True">
+          <style>
+            <back_color>#FFFFC0</back_color>
+            <shape>1</shape>
+            <round_radius>7</round_radius>
+            <font font_family="Microsoft Sans Serif" size="9.75" style="Bold" />
+          </style>
+          <widgets>
+            <widget type="NOTES" align="Right" hyperlink="">
+              <description>old DefectViewer, a web-based interface (Dashboard?) 
+to SAS data sources - for example the DEFECT system. 
+It combines filtering and sorting with data visualization 
+and can be customized to use different baselines (queries).</description>
+            </widget>
+          </widgets>
+          <nodes>
+            <node id="Freemind_Link_877937501" text="TagCloud">
+              <style>
+                <fore_color>#00B439</fore_color>
+                <padding>0</padding>
+                <font font_family="Microsoft Sans Serif" size="16" style="Regular" />
+              </style>
+              <nodes>
+                <node id="Freemind_Link_1861655431" text="do display keywords with their associated frequency">
+                  <style>
+                    <fore_color>#990000</fore_color>
+                    <padding>0</padding>
+                    <font font_family="Microsoft Sans Serif" size="14" style="Regular" />
+                  </style>
+                </node>
+              </nodes>
+            </node>
+            <node id="Freemind_Link_1819342592" text="Quadrants (scatter or bubble)">
+              <style>
+                <fore_color>#00B439</fore_color>
+                <padding>0</padding>
+                <font font_family="Microsoft Sans Serif" size="16" style="Regular" />
+              </style>
+              <nodes>
+                <node id="Freemind_Link_1118580016" text="example: priority vs age">
+                  <style>
+                    <fore_color>#990000</fore_color>
+                    <padding>0</padding>
+                    <font font_family="Microsoft Sans Serif" size="14" style="Regular" />
+                  </style>
+                </node>
+              </nodes>
+            </node>
+            <node id="Freemind_Link_375026036" text="Views">
+              <style>
+                <fore_color>#00B439</fore_color>
+                <padding>0</padding>
+                <font font_family="Microsoft Sans Serif" size="16" style="Regular" />
+              </style>
+              <nodes>
+                <node id="Freemind_Link_1577724491" text="Manager">
+                  <style>
+                    <fore_color>#990000</fore_color>
+                    <padding>0</padding>
+                    <font font_family="Microsoft Sans Serif" size="14" style="Regular" />
+                  </style>
+                  <nodes>
+                    <node text="Defects (Rally)">
+                      <nodes>
+                        <node text="Blocked">
+                          <nodes>
+                            <node text="against a completed defect" />
+                            <node text="agains no defect (What is blocking it?)" />
+                            <node text="against an old defect (with no planned date)" />
+                            <node text="against a late defect (after planned date)" />
+                          </nodes>
+                        </node>
+                        <node text="High attention, alert" />
+                        <node text="No owner, owned by self" />
+                        <node text="Defect count trending up" />
+                      </nodes>
+                    </node>
+                    <node text="Customers">
+                      <nodes>
+                        <node text="Mentions on social media" />
+                        <node text="negative customer feedback/experience" />
+                      </nodes>
+                    </node>
+                    <node text="Infrastructure">
+                      <nodes>
+                        <node text="open server status (running?)" />
+                      </nodes>
+                    </node>
+                    <node text="Developers">
+                      <nodes>
+                        <node text="No code pushed in X days" />
+                        <node text="No planned tasks, defects" />
+                        <node text="No code pushed for unit tests (relative to production code pushes)" />
+                        <node text="Code pushed with violations" />
+                      </nodes>
+                    </node>
+                    <node text="Builds">
+                      <nodes>
+                        <node text="Vertical slice" />
+                        <node text="Old versions showing up in new build" />
+                        <node text="New dependencies (direct or indirect)" />
+                        <node text="New violations in dependencies" />
+                        <node text="Alerts/High in dependencies" />
+                        <node text="No unit tests" />
+                        <node text="(consolidate using vertical slices)" />
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+                <node id="Freemind_Link_1401102998" text="Developer">
+                  <style>
+                    <fore_color>#990000</fore_color>
+                    <padding>0</padding>
+                    <font font_family="Microsoft Sans Serif" size="14" style="Regular" />
+                  </style>
+                </node>
+                <node id="Freemind_Link_22103333" text="Director">
+                  <style>
+                    <fore_color>#990000</fore_color>
+                    <padding>0</padding>
+                    <font font_family="Microsoft Sans Serif" size="14" style="Regular" />
+                  </style>
+                </node>
+              </nodes>
+            </node>
+            <node id="Freemind_Link_1510392342" text="Profile">
+              <style>
+                <fore_color>#00B439</fore_color>
+                <padding>0</padding>
+                <font font_family="Microsoft Sans Serif" size="16" style="Regular" />
+              </style>
+              <nodes>
+                <node id="Freemind_Link_1655808940" text="query saved in cookie">
+                  <style>
+                    <fore_color>#990000</fore_color>
+                    <padding>0</padding>
+                    <font font_family="Microsoft Sans Serif" size="14" style="Regular" />
+                  </style>
+                </node>
+                <node id="Freemind_Link_1376854400" text="passed in URL (bookmark)">
+                  <style>
+                    <fore_color>#990000</fore_color>
+                    <padding>0</padding>
+                    <font font_family="Microsoft Sans Serif" size="14" style="Regular" />
+                  </style>
+                </node>
+              </nodes>
+            </node>
+            <node id="Freemind_Link_1087634270" text="Queries">
+              <style>
+                <fore_color>#00B439</fore_color>
+                <padding>0</padding>
+                <font font_family="Microsoft Sans Serif" size="16" style="Regular" />
+              </style>
+              <nodes>
+                <node id="Freemind_Link_353674218" text="multiple entry points (hsql pages)">
+                  <style>
+                    <fore_color>#990000</fore_color>
+                    <padding>0</padding>
+                    <font font_family="Microsoft Sans Serif" size="14" style="Regular" />
+                  </style>
+                </node>
+              </nodes>
+            </node>
+            <node id="Freemind_Link_330073712" text="Metrics">
+              <style>
+                <fore_color>#00B439</fore_color>
+                <padding>0</padding>
+                <font font_family="Microsoft Sans Serif" size="16" style="Regular" />
+              </style>
+              <nodes>
+                <node id="Freemind_Link_46042772" text="connectivity (#links)">
+                  <style>
+                    <fore_color>#990000</fore_color>
+                    <padding>0</padding>
+                    <font font_family="Microsoft Sans Serif" size="14" style="Regular" />
+                  </style>
+                </node>
+                <node id="Freemind_Link_1762089075" text="traffic (#recent changes)">
+                  <style>
+                    <fore_color>#990000</fore_color>
+                    <padding>0</padding>
+                    <font font_family="Microsoft Sans Serif" size="14" style="Regular" />
+                  </style>
+                  <nodes>
+                    <node id="Freemind_Link_679618121" text="expensive - needs to parse text">
+                      <style>
+                        <fore_color>#111111</fore_color>
+                        <padding>0</padding>
+                      </style>
+                    </node>
+                    <node id="Freemind_Link_939614479" text="might be easier to get from browse HTML page">
+                      <style>
+                        <fore_color>#111111</fore_color>
+                        <padding>0</padding>
+                      </style>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node id="Freemind_Link_1090473457" text="Data source">
+              <style>
+                <fore_color>#00B439</fore_color>
+                <padding>0</padding>
+                <font font_family="Microsoft Sans Serif" size="16" style="Regular" />
+              </style>
+              <nodes>
+                <node id="Freemind_Link_763788532" text="hsql against DEFECTS tables">
+                  <style>
+                    <fore_color>#990000</fore_color>
+                    <padding>0</padding>
+                    <font font_family="Microsoft Sans Serif" size="14" style="Regular" />
+                  </style>
+                </node>
+                <node id="Freemind_Link_1540106139" text="parsing HTML of 'browse' defect page (for focus view)">
+                  <style>
+                    <fore_color>#990000</fore_color>
+                    <padding>0</padding>
+                    <font font_family="Microsoft Sans Serif" size="14" style="Regular" />
+                  </style>
+                </node>
+              </nodes>
+            </node>
+            <node text="Implementation:">
+              <nodes>
+                <node text="SONAR extensions?" />
+                <node text="Custom?">
+                  <nodes>
+                    <node text="Pyjamas?" />
+                    <node text="Flex?" />
+                    <node text="Add badges to call attention to events" />
+                    <node text="Badges on tabbed view (tabs) for each problem domain." />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+      </nodes>
+    </node>
+  </nodes>
+</map>

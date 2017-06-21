@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="DeviantArt" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="Black" />
+    <color name="Light" value="White" />
+    <color name="Sharp" value="#0084A2" />
+    <color name="MediumDark" value="#506256" />
+    <color name="MediumLight" value="#D4DFD0" />
+    <color name="Workspace" value="#32433D" />
+  </colors>
+  <description />
+</theme>

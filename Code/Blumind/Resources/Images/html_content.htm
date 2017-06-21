@@ -1,0 +1,48 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- 
+ Copyright © 2008 by Gert van 't Slot
+ License: Microsoft Public License (Ms-PL)
+ Full license text at: http://www.codeplex.com/WinformHtmlTextbox/license
+-->
+<html>
+	<head>
+		<title></title>
+		<style id="styleFixed" type="text/css">
+		    body {
+                margin: 2px;
+                font-family: Corbel, Arial, Helvetica, sans-serif;
+                font-size: small;
+            }
+		    .clsTextBox 
+		    {
+		        width:100%;
+		        height:100%;
+		    }
+		</style>
+		<style id="styleCustom" type="text/css">
+            #theTextBox 
+            {
+            }
+		</style>
+		<script type="text/ecmascript">
+		    function IsBold()        { return document.queryCommandValue("Bold"); }
+		    function IsItalic()      { return document.queryCommandValue("Italic"); }
+		    function IsBulletList()  { return document.queryCommandValue("InsertUnOrderedList"); }
+		    function IsOrderedList() { return document.queryCommandValue("InsertOrderedList"); }
+		    function GetFont()       { return document.queryCommandValue("FontName"); }
+		    function GetFontSize()   { return document.queryCommandValue("FontSize"); }
+		    function InitFocus()     { theTextbox.focus(); }
+		    
+		    
+		    function SetFont(name, size) {
+		        theTextbox.style.fontFamily = name;
+		        theTextbox.style.fontSize = size;
+		    }
+		    
+		</script>
+	</head>
+	<body id="theBody">
+	    <div id="theTextbox" class="clsTextBox">
+	    </div>
+	</body>
+</html>

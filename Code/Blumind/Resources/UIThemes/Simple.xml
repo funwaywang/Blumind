@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Simple" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="DimGray" />
+    <color name="Light" value="WhiteSmoke" />
+    <color name="Sharp" value="YellowGreen" />
+    <color name="MediumDark" value="Silver" />
+    <color name="MediumLight" value="Gainsboro" />
+    <color name="Workspace" value="DarkSlateGray" />
+  </colors>
+  <description />
+</theme>

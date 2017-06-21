@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<document type="BLUMIND" editor_version="3.1.5079.19139" document_version="3.0.0.0">
+  <!--Create by Blumind, you can download it free from http://www.blumind.org-->
+  <information>
+    <author>cgc</author>
+    <company>
+    </company>
+    <version>3.0</version>
+    <description>
+    </description>
+  </information>
+  <attributes>
+    <item name="editor_show_sidebar">True</item>
+  </attributes>
+  <charts active_chart="0">
+    <chart name="新页面 1" type="MindMap">
+      <remark>
+      </remark>
+      <layout>LOGIC_RIGHT</layout>
+      <style>
+        <back_color>White</back_color>
+        <fore_color>Black</fore_color>
+        <line_color>LightSlateGray</line_color>
+        <border_color>SlateGray</border_color>
+        <node_back_color>LightGray</node_back_color>
+        <node_fore_color>Black</node_fore_color>
+        <select_color>RoyalBlue</select_color>
+        <hover_color>MediumSlateBlue</hover_color>
+        <link_line_color>Green</link_line_color>
+        <widget_margin>1</widget_margin>
+        <picture_thumb_size>100, 100</picture_thumb_size>
+        <layer_space>30</layer_space>
+      </style>
+      <nodes>
+        <node id="1" text="Blumind" x="274" y="382" width="78" height="42" text_b="12, 12, 54, 18">
+          <style>
+            <back_color>#00C000</back_color>
+            <fore_color>Black</fore_color>
+            <border_color>Black</border_color>
+            <shape>2</shape>
+            <round_radius>3</round_radius>
+            <padding>12</padding>
+          </style>
+          <nodes>
+            <node id="14" text="功能" x="382" y="232" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="415, 237, 13, 13">
+              <style>
+                <round_radius>3</round_radius>
+              </style>
+              <nodes>
+                <node id="15" text="一个小巧的思维导图(心智图/Mind Map)的&#xD;&#xA;编辑及查看工具，带英文、简体、繁体中文界面" x="445" y="224" width="268" height="38" text_b="2, 2, 264, 34" />
+              </nodes>
+              <lines>
+                <line target="15" begin_side="Right" end_side="Left" begin_rect="382, 232, 46, 22" end_rect="441, 220, 276, 46" />
+              </lines>
+            </node>
+            <node id="16" text="特点" x="382" y="352" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="415, 357, 13, 13">
+              <style>
+                <round_radius>3</round_radius>
+              </style>
+              <nodes>
+                <node id="17" text="操作简便1" x="445" y="304" width="65" height="22" text_b="2, 2, 61, 18" fold_btn_b="510, 309, 13, 13">
+                  <nodes>
+                    <node id="18" text="直接粘贴带换行符和tab缩进的文本" x="540" y="272" width="201" height="22" text_b="2, 2, 197, 18" />
+                    <node id="19" text="Enter键、Tab键、ctrl+↑等↓" x="540" y="304" width="163" height="22" text_b="2, 2, 159, 18" />
+                    <node id="1" text="可以自定义和管理为样式风格" x="540" y="336" width="169" height="22" text_b="2, 2, 165, 18">
+                      <links>
+                        <link x="0" y="0" width="3" height="376" target="21" cp1_length="118" cp1_angle="358" cp2_length="203" cp2_angle="353" color="#C0C0FF" line_style="Solid" start_cap="None" end_cap="Arrow" text="" hyperlink="" />
+                      </links>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="18" begin_side="Right" end_side="Left" begin_rect="445, 304, 78, 22" end_rect="536, 268, 209, 30" />
+                    <line target="19" begin_side="Right" end_side="Left" begin_rect="445, 304, 78, 22" end_rect="536, 300, 171, 30" />
+                    <line target="1" begin_side="Right" end_side="Left" begin_rect="445, 304, 78, 22" end_rect="536, 332, 177, 30" />
+                  </lines>
+                </node>
+                <node id="20" text="界面清爽灵活" x="445" y="368" width="83" height="22" text_b="2, 2, 79, 18" fold_btn_b="528, 373, 13, 13">
+                  <nodes>
+                    <node id="21" text="项层间距、背景边框、字体可调" x="558" y="368" width="181" height="22" text_b="2, 2, 177, 18">
+                      <style>
+                        <round_radius>3</round_radius>
+                      </style>
+                      <links>
+                        <link x="0" y="0" width="3" height="509" target="25" cp1_length="151" cp1_angle="5" cp2_length="169" cp2_angle="355" color="#C0C0FF" line_style="Solid" start_cap="Arrow" end_cap="None" text="" hyperlink="" />
+                      </links>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="21" begin_side="Right" end_side="Left" begin_rect="445, 368, 96, 22" end_rect="554, 364, 189, 30" />
+                  </lines>
+                </node>
+                <node id="22" text="运行效率高" x="445" y="400" width="70" height="22" text_b="2, 2, 66, 18" fold_btn_b="515, 405, 13, 13">
+                  <nodes>
+                    <node id="23" text="绿色+小巧，体积800K" x="545" y="400" width="134" height="22" text_b="2, 2, 130, 18">
+                      <style>
+                        <back_color>#80FF80</back_color>
+                        <round_radius>3</round_radius>
+                      </style>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="23" begin_side="Right" end_side="Left" begin_rect="445, 400, 83, 22" end_rect="541, 396, 142, 30" />
+                  </lines>
+                </node>
+                <node id="29" text="免费" x="445" y="432" width="51" height="22" text_b="20, 2, 29, 18" fold_btn_b="496, 437, 13, 13">
+                  <style>
+                    <back_color>Yellow</back_color>
+                    <round_radius>5</round_radius>
+                  </style>
+                  <widgets>
+                    <widget type="PICTURE" x="3" y="3" width="16" height="16" align="Left" hyperlink="" display_index="0" padding="0" image_url="035.png" size_type="Thumb" original_size="16, 16" embed_in="False">
+                      <text>035</text>
+                      <thumb><![CDATA[iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF2SURBVDhPrZKxSsNQFIZ/ujkUN0dXIaOTz6BPoRAfQBCpgkLQQRQRdKigk13SgnYRKihFBQctaUGxWgkKFiIt1KGCDsLx/skxoAZB6IGfHs75vpsbUvS8Gi4sPw/Hd+GZXwkT9Q53iiXXvQv7bq8/aHvj8tZ2RcQPw54z7sgo/r1ucrAfDobktZkV+aglhjsyZFWL6noXVj2XDrqPKyLv5T9Dhiwd1YHqNpzm6ZhItxBmaxJxnzQjS0d14DILr9uYEulshqnkR+M+aUaWjurA+YY5/XnuX6GjOnCyZg54mgivyc/GPincha9iejqqA0fL8F4uRmIgPwM5W9f/gAl7zr4eQJaO6kBpCU7dHRC5HY7Aivn8P4oz7siQpaM6UFyAVVpMBa1jc8jVYHyI34kSy2ZHhiwd1aMqzsMur6akddgnUk3/egXOuCNDVrXvVcjA3p9FUNuBtEtGqkRhzxl3ZBRPLjcDy1zXcafh8dqM9g53ivWqgE9dpt8UaAbpmgAAAABJRU5ErkJggg==]]></thumb>
+                    </widget>
+                  </widgets>
+                  <nodes>
+                    <node id="30" text="自由使用" x="526" y="432" width="58" height="22" text_b="2, 2, 54, 18" fold_btn_b="584, 437, 13, 13">
+                      <style>
+                        <round_radius>3</round_radius>
+                      </style>
+                      <nodes>
+                        <node id="31" text="心意：可以捐助" x="614" y="432" width="113" height="22" text_b="20, 2, 91, 18">
+                          <style>
+                            <back_color>White</back_color>
+                            <round_radius>3</round_radius>
+                          </style>
+                          <widgets>
+                            <widget type="PICTURE" x="3" y="3" width="16" height="16" align="Left" hyperlink="" display_index="0" padding="0" image_url="034.png" size_type="Thumb" original_size="16, 16" embed_in="False">
+                              <text>034</text>
+                              <thumb><![CDATA[iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF2SURBVDhPrVK7agJRFLyfkn8QEcFCEQsrG4sgiIKutV8gi4IWYmHhq7CwtRGsBAttRCRiIJAiIAkxRaoIAQkxYZ3ccU98gJgEMjDs7DzYy+6qfwMMw0QqBdIyjIHYO9D7ztkV24aVSJibeh2YTrfcdLuwkklIrKjp7XLd5UZipdbxODCZAPM5sFxur1ang3UsZpLUhxm73MhcqbdoFBiNgMViT33/WS5veSrjRuZKvV5eAsMhMJvtOR7bHkl9mGmPG5kr9RIODz5aLaDXA/r989QddrmRuVLPoZC5ymaBWg3gkZtNoN0G+OJIanrMdIddbmRu4zEYHLxXq0CxaH+qU9QZO+zKbI8Hv997HwgApRKQzwPp9DHp6YwddmV2jDufz3yKROyj5nJAJmOTWnvM2JH6adx6PINVoQBUKvZpSK3pMZPaedy43Vjxqfw7NanpSfwzrl2ui5nTCTQaW1LTk/h3uHI4vFOHAyS12H+DHpqk3J6AUl8ny7ziEZRufQAAAABJRU5ErkJggg==]]></thumb>
+                            </widget>
+                          </widgets>
+                        </node>
+                      </nodes>
+                      <lines>
+                        <line target="31" begin_side="Right" end_side="Left" begin_rect="526, 432, 71, 22" end_rect="610, 428, 121, 30" />
+                      </lines>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="30" begin_side="Right" end_side="Left" begin_rect="445, 432, 64, 22" end_rect="522, 428, 66, 30" />
+                  </lines>
+                </node>
+              </nodes>
+              <lines>
+                <line target="17" begin_side="Right" end_side="Left" begin_rect="382, 352, 46, 22" end_rect="441, 300, 73, 30" />
+                <line target="20" begin_side="Right" end_side="Left" begin_rect="382, 352, 46, 22" end_rect="441, 364, 91, 30" />
+                <line target="22" begin_side="Right" end_side="Left" begin_rect="382, 352, 46, 22" end_rect="441, 396, 78, 30" />
+                <line target="29" begin_side="Right" end_side="Left" begin_rect="382, 352, 46, 22" end_rect="441, 428, 59, 30" />
+              </lines>
+            </node>
+            <node id="24" text="版本" x="382" y="480" width="33" height="22" text_b="2, 2, 29, 18" fold_btn_b="415, 485, 13, 13">
+              <style>
+                <round_radius>3</round_radius>
+              </style>
+              <nodes>
+                <node id="8" text="Blumind2" x="445" y="464" width="65" height="22" text_b="2, 2, 61, 18">
+                  <style>
+                    <round_radius>3</round_radius>
+                  </style>
+                </node>
+                <node id="12" text="Blumind3" x="445" y="496" width="65" height="22" text_b="2, 2, 61, 18" fold_btn_b="510, 501, 13, 13">
+                  <nodes>
+                    <node id="25" text="改进：层间线型和界面" x="540" y="496" width="150" height="22" text_b="20, 2, 128, 18">
+                      <style>
+                        <back_color>#C0FFFF</back_color>
+                      </style>
+                      <widgets>
+                        <widget type="PICTURE" x="3" y="3" width="16" height="16" align="Left" hyperlink="" display_index="0" padding="0" image_url="031.png" size_type="Thumb" original_size="16, 16" embed_in="False">
+                          <text>031</text>
+                          <thumb><![CDATA[iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFOSURBVDhPlZC9SgNRFISnFAQrO5/BwjeIvoKND2BjlTIIARdFCwUtUlhEEBGRREVFLFRCUDBIUAOLCUoI2IhgjD+FoCCMO8vRzZoQ14GPPTtnht170Um1LCjs9X+qrsNpXMUpNJsdXddrIFnz0Wx2NJVX4DyUxshP10ezPFv/LXfZ+/rHSQh5tg7rIg3nMg02c382Qr7thJD3O6cuiot21vcc+bIUDWW9jro4TcEppMDX8ihZn46Esuqo6x8jv4DY8Tz4XBom7+IdUUZZdfzyt47mEMvNgk/FIfLWu4M2aKeMslYL62AGbBQGyOpgW7RTxuJh7U0htj/pXWilvyPKKGu1QLsTcG4yPaTb98Njrten2VNGWasF2k6C9cMustTtP/W+lURetNtZLdDmuPf752BlFdS8kQh+U7M87ZTRbKtAmQScbALU06wWtWaAL5Fst/S4I+fcAAAAAElFTkSuQmCC]]></thumb>
+                        </widget>
+                      </widgets>
+                    </node>
+                  </nodes>
+                  <lines>
+                    <line target="25" begin_side="Right" end_side="Left" begin_rect="445, 496, 78, 22" end_rect="536, 492, 158, 30" />
+                  </lines>
+                </node>
+              </nodes>
+              <lines>
+                <line target="8" begin_side="Right" end_side="Left" begin_rect="382, 480, 46, 22" end_rect="441, 460, 73, 30" />
+                <line target="12" begin_side="Right" end_side="Left" begin_rect="382, 480, 46, 22" end_rect="441, 492, 73, 30" />
+              </lines>
+            </node>
+            <node id="26" text="运行环境" x="382" y="544" width="76" height="22" text_b="20, 2, 54, 18" fold_btn_b="458, 549, 13, 13">
+              <style>
+                <round_radius>3</round_radius>
+              </style>
+              <widgets>
+                <widget type="PICTURE" x="3" y="3" width="16" height="16" align="Left" hyperlink="" display_index="0" padding="0" image_url="068.png" size_type="Thumb" original_size="16, 16" embed_in="False">
+                  <text>068</text>
+                  <thumb><![CDATA[iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGUSURBVDhPnZHBSwJhEMX3z+oSeOjQJegWRQQFdalDYbIHJRYSA9stghUqpdBiwQ4LsdJFRFuChBbE8KInhRBEkA7dX75vv8MHGmUDwzDzfrM7b1crFouG67oolUool8vwfR/1eh1BEIjKnnPq5MhrajiOg9Fo9OckL1fDyOfzGA6H2DxxMb9/hyXDw/q5j52rQFT2nFMnR16uhpHNZtHv9zG3e4OD03tx5kx2bNtGt9tFJOqI86ad/VMKO5ZlodPpYDHuivNmtpNKpdBqtbB8/ATVztnzF8Z7E8k5dXLkNcMw0Gg0cHhdg2on6rSxd/uOo8cPpCuforLnnDo58lo8HhcfqdlsQrWzZb9iQX+YSM6pkyOv6bpuJBIJJJNJqHa2L9+wZtUmknPq5MjLnxmGamclXcGqWRUfb+PiRVT2nFMnR16uhqHaabfb6PV6GAwG4pexsuecOjnycjUM1Y5pmshkMsjlcigUCqKy55w6OfJydXqMgcg4xdtY2Uvp91CXaeFfD4nFYlWe7XmeOJ+9lGRo2jf+MmWm6Q+PDQAAAABJRU5ErkJggg==]]></thumb>
+                </widget>
+              </widgets>
+              <nodes>
+                <node id="27" text="WinXP/2003+运行库.net 2.0" x="488" y="528" width="171" height="22" text_b="2, 2, 167, 18" />
+                <node id="28" text="Vista、Win7、Win8" x="488" y="560" width="123" height="22" text_b="2, 2, 119, 18">
+                  <style>
+                    <round_radius>3</round_radius>
+                  </style>
+                </node>
+              </nodes>
+              <lines>
+                <line target="27" begin_side="Right" end_side="Left" begin_rect="382, 544, 89, 22" end_rect="484, 524, 179, 30" />
+                <line target="28" begin_side="Right" end_side="Left" begin_rect="382, 544, 89, 22" end_rect="484, 556, 131, 30" />
+              </lines>
+            </node>
+          </nodes>
+          <lines>
+            <line target="14" begin_side="Right" end_side="Left" begin_rect="274, 382, 78, 42" end_rect="378, 228, 41, 30" />
+            <line target="16" begin_side="Right" end_side="Left" begin_rect="274, 382, 78, 42" end_rect="378, 348, 41, 30" />
+            <line target="24" begin_side="Right" end_side="Left" begin_rect="274, 382, 78, 42" end_rect="378, 476, 41, 30" />
+            <line target="26" begin_side="Right" end_side="Left" begin_rect="274, 382, 78, 42" end_rect="378, 540, 84, 30" />
+          </lines>
+        </node>
+      </nodes>
+    </chart>
+    <chart name="新页面 2" type="MindMap">
+      <remark>
+      </remark>
+      <layout>MIND_MAP</layout>
+      <style>
+        <back_color>#EFECCA</back_color>
+        <fore_color>#002F2F</fore_color>
+        <line_color>#A7A37E</line_color>
+        <border_color>#A7A37E</border_color>
+        <node_back_color>#E6E2AF</node_back_color>
+        <node_fore_color>#002F2F</node_fore_color>
+        <select_color>#046380</select_color>
+        <hover_color>#046380</hover_color>
+        <link_line_color>#046380</link_line_color>
+        <widget_margin>1</widget_margin>
+        <picture_thumb_size>100, 100</picture_thumb_size>
+      </style>
+      <nodes>
+        <node id="1" text="中心主题" x="523" y="377" width="78" height="42" text_b="12, 12, 54, 18">
+          <style>
+            <back_color>#046380</back_color>
+            <fore_color>Black</fore_color>
+            <border_color>#002F2F</border_color>
+            <padding>12</padding>
+          </style>
+        </node>
+      </nodes>
+    </chart>
+    <chart name="新页面 3" type="MindMap">
+      <remark>
+      </remark>
+      <layout>MIND_MAP</layout>
+      <style>
+        <back_color>#EFECCA</back_color>
+        <fore_color>#002F2F</fore_color>
+        <line_color>#A7A37E</line_color>
+        <border_color>#A7A37E</border_color>
+        <node_back_color>#E6E2AF</node_back_color>
+        <node_fore_color>#002F2F</node_fore_color>
+        <select_color>#046380</select_color>
+        <hover_color>#046380</hover_color>
+        <link_line_color>#046380</link_line_color>
+        <widget_margin>1</widget_margin>
+        <picture_thumb_size>100, 100</picture_thumb_size>
+      </style>
+      <nodes>
+        <node id="2" text="中心主题" x="523" y="377" width="78" height="42" text_b="12, 12, 54, 18">
+          <style>
+            <back_color>#046380</back_color>
+            <fore_color>Black</fore_color>
+            <border_color>#002F2F</border_color>
+            <padding>12</padding>
+          </style>
+        </node>
+      </nodes>
+    </chart>
+  </charts>
+</document>

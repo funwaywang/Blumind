@@ -1,0 +1,335 @@
+﻿Version 3.2.902.24361
+Bugs:
+	1. A fatal bug in the program
+
+Version 3.2.729.19076
+Improvements:
+	1. French Translation Update
+
+Version 3.2.514.18934
+Improvements:
+	1. Remark view & edit
+
+Version 3.1.6000.41874
+New Features:
+	1. Singleton, try open files by running instance
+
+Version 3.1.5082.22430
+Improvements:
+	1. "Add topic" will add topic to below of current topic, not the end of brothers
+
+Version 3.0.2.0 beta
+/* There are some news features */
+
+Version 3.0.0.0 beta
+/* There are some news features */
+
+Version 2.0.7.0
+Improvements:
+	1. Turkish translation
+
+Version 2.0.6.0
+New Features:
+	1. "Paste as Image" Menu (paste image from clipboard)
+
+Version 2.0.5.0
+New Features:
+	1. Import/Export CSV file
+	2. new "Import" menu
+
+Version 2.0.4.0
+Bugs:
+	1. Select the chart by mouse click blank area.
+New Features:
+	1. Copy note 
+	2. "Paste as Note" by right menu on topic
+	3. Change layout type by menu on bottom page bar
+
+Version 2.0.3.0
+Improvements:
+	1. Danish translation update
+
+Version 2.0.2.0
+Bugs:
+	1. Full Screen with Multi-Monitors, the form always show in the first screen. 
+	   now it will show with the main window.
+
+Version 2.0.1.0
+Bugs:
+	1. Format Painter bug
+	2. Toolbox button's bug (Copy, Cut, Paste, Delete)
+	3. Some translations
+	4. Links store
+	5. anyway, I'm sorry
+
+Version 2.0.0.3
+Bugs:
+	1. Zoom menu bug
+Improvements:
+	1. Some translations update
+
+Version 2.0.0.1
+Bugs:
+	1. Rename tab bug
+	2. Save button
+	3. Shortcut keys
+
+Version 2.0.0.0
+New Features:
+	1. Multi-Chart in one document
+Improvements:
+	1. Swedish translation update
+
+Version 1.5.0.2
+Bugs:
+	1. Text not wrap when printing.
+Improvements:
+	1. Swedish translation update
+
+Version 1.5.0.1
+Bugs:
+	1. Scrollbar issue
+	2. Chinese input method issue
+Improvements:
+	1. new face
+	2. Korean translation
+	3. Swedish translation
+
+Version 1.3.21.1
+Bugs:
+	1. "&" can not be displayed
+Improvements:
+	1. Czech translation
+
+Version 1.3.20.2
+Bugs:
+	1. "Select All" shortcuts bug
+
+Version 1.3.20.1
+Improvements:
+	1. some translations
+
+Version 1.3.20.0
+Improvements:
+	1. Hindi and Marathi translations, thanks Rahul
+New Features:
+	1. Custom keyboard shortcuts (Menu\Help\Accelerator Keys Table, and modify them by right click)
+	2. Timer (Timer button in toolbar)
+
+Version 1.3.19.1
+Improvements:
+	1. Polski translation add
+	2. Japanese translation update
+
+Version 1.3.19.0
+Improvements:
+	1. "Save Recent Files" option, can turn on/off save/list recent files.
+	2. Clear recent files list feature
+
+Version 1.3.18.1
+Improvements:
+	1. Japanese translation
+Bugs:
+	1. Portable version settings will be stored in the same directory with the program.
+
+Version 1.3.17.0
+Improvements:
+	1. Español, Catalán, Nederlands, Deutsch, Српски, Česky translations
+	2. Some new properties of map: Author/Company/Version/Line Width/Border Width
+	3. Quick help
+Bugs:
+	1. Keyboard navigation error on some layout
+
+Version 1.3.16.0
+Improvements:
+	1. Français langauge support
+	2. Македонски langauge support
+New Features:
+	1. Chart overview/navigation
+
+Version 1.3.15.0
+Improvements:
+	1. Russian langauge support
+	2. New padding editor
+	3. New language selector
+
+Version 1.3.14.0
+Improvements:
+	1. Italian langauge support
+Bugs:
+	1. Input method problem (east asian languages)
+
+Version 1.3.12.0
+Bugs:
+	1. Popup menu error when there is no any document is open.
+
+Version 1.3.11.0
+New Features:
+	1. Export as FreeMind document format. (Sorry, maybe not too perfect).
+Bugs:
+	1. The edit box don't move with Scroll bars
+
+Version 1.3.10.0
+New Features:
+	1. Hyperlinks support, the Topic(and more other objects) has a new property "Hyperlink", It's can be a Url or filename.
+Improvements:
+	1. Switch to "Scroll mode" while press down "Shift" key.
+	2. New ToolTip view for Notes
+	3. Use "Enter" key to start a new line while type Notes. (the old style is "Ctrl+Enter")
+
+Version 1.3.9.0
+Bugs:
+	1. Find/Replace dialog box, "Find what" box lost focus when dialog reopen.
+	2. Exchange collapse/expand hot key, "shift + -" for collapse, "shift + +" for expand.
+	3. Some words of translations
+
+Version 1.3.8.0
+Bugs:
+	1. Save tabs bug
+	2. Open document bug
+	3. Some icon formats can't save
+	4. Print margins calculate error
+Improvements:
+	1. UI looks
+
+Version 1.3.7.0
+Improvements:
+	1. UI looks
+Bugs:
+	1. Manage icon library error.
+
+Version 1.3.6.0
+Improvements:
+	1. Change the official web site to "blumind.org", it's a multi-language support site, and provide services specifically for Blumind.
+
+Version 1.3.5.0
+Bugs:
+	1. Export image size bug
+
+Version 1.3.4.0
+Improvements:
+	1. Double-click notes to quick edit
+
+Version 1.3.3.0
+Bugs:
+	1. Windows7/Vista UAC compatibility issues
+Improvements:
+	1. UI looks
+
+Version 1.3.1.0
+----------------------------------------------------------
+New Features:
+	1. Mouse mode (Select/Scroll)
+	2. Error log
+Improvements:
+	1. Line color property
+
+Version 1.3.0.0
+----------------------------------------------------------
+New Features:
+	1. Widgets supports
+Improvements:
+	1. Icons Library
+
+Version 1.2.18.0
+----------------------------------------------------------
+Bugs:
+	1. Cancel close button is invalid
+Improvements:
+	1. Traditional Chinese language translation
+
+Version 1.2.17.0
+----------------------------------------------------------
+Bugs:
+	1. DocTypeReg.exe register document type wrong
+	   /* If use the zip package, please run DocTypeReg.exe once */
+Improvements:
+	1. Format Painter, Double-click apply to multiple topics.
+	2. Traditional Chinese language translation
+
+Version 1.2.16.0
+----------------------------------------------------------
+Improvements:
+	1. Right-to-left language render support
+
+Version 1.2.15.0
+----------------------------------------------------------
+New Features:
+	1. Shortcut key(CTRL+TAB, CTRL+SHIFT+TAB) to select next/previous tab
+	2. Remember sidebar hide/show for each mindmap
+Improvements:
+	1. Traditional Chinese language translation
+
+Version 1.2.14.0
+----------------------------------------------------------
+New Features:
+	1. Shortcut key(CTRL+UP, CTRL+DOWN) to move topic (change order)
+Bugs:
+	1. 64bit operation system can not print
+
+Version 1.2.12.26059
+----------------------------------------------------------
+Bugs:
+	1. Find&Replace route bug
+
+Version 1.2.11.28741
+----------------------------------------------------------
+Bugs:
+	1. Sort dialog, multi-line topic display incomplete
+Improvements:
+	1. Open file dialog filter support .mm 
+
+Version 1.2.0.20357
+----------------------------------------------------------
+New Features:
+	1. Check Update
+	2. Save Tabs		
+Bugs:
+	1. Right mouse button down on selected topics, selection be clear.
+
+
+Version 1.2.0.26864
+----------------------------------------------------------
+New Features:
+	1. Open FreeMind document (.mm)
+	2. Export text file (.txt)
+
+Version 1.2.0.0
+----------------------------------------------------------
+New Features:
+	1. Hide/Show sidebar shortcut key
+	2. Shortcuts Map
+Bugs:
+	1. Can't save after edit
+	2. Drag view.
+
+Version 1.1.0.0
+----------------------------------------------------------
+New Features:
+	1. Link support
+
+Version 1.0.6.0
+----------------------------------------------------------
+New Features:
+	1. SVG export
+	2. Save Tabs		
+Improvements:
+	1. Document print
+	2. More color themes
+
+Version 1.0.5.0
+----------------------------------------------------------
+New Features:
+	1. Multi-Layout, (Mind map chart, Organizational chart, Tree chart, Logic chart)
+	2. Remark icon		
+Improvements:
+	1. Better property grid
+
+Version 1.0.4.0
+----------------------------------------------------------
+New Features:
+	1. Find/Replace
+	2. Windows color themes
+
+Version 1.0.0.0
+----------------------------------------------------------

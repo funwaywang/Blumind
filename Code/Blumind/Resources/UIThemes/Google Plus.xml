@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Google Plus" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="Black" />
+    <color name="Light" value="White" />
+    <color name="Sharp" value="#DD4B39" />
+    <color name="MediumDark" value="#242424" />
+    <color name="MediumLight" value="WhiteSmoke" />
+    <color name="Workspace" value="#2D2D2D" />
+  </colors>
+  <description />
+</theme>

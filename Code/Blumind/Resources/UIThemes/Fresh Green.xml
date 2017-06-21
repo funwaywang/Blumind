@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Fresh Green" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="Black" />
+    <color name="Light" value="#FAF8F1" />
+    <color name="Sharp" value="#7E324F" />
+    <color name="MediumDark" value="#018F3A" />
+    <color name="MediumLight" value="#4DBA3D" />
+    <color name="Workspace" value="#0F3111" />
+  </colors>
+  <description />
+</theme>

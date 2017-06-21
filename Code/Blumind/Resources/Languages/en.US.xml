@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dictionary>
+	<information id="en-US" name="English" nature_name="English" stable="true" >
+    <author name="" email=""/>
+  </information>
+  <compatibility>
+    <culture id="en"/>
+    <culture id="english"/>
+    <culture id="en-uk"/>
+  </compatibility>
+	<words>
+		<item name="Menu">MENU</item>
+    
+		<item name="Show Line Arrow">Show Line Arrow Cap</item>
+		<item name="Key_Add">+</item>
+		<item name="Key_Subtract">-</item>
+		<item name="Key_Multiply">*</item>
+		<item name="Key_Left">←</item>
+		<item name="Key_Up">↑</item>
+		<item name="Key_Right">→</item>
+		<item name="Key_Down">↓</item>
+		<item name="Key_Space">Space</item>
+		<item name="Key_Enter">Enter</item>
+		<item name="Key_Escape">Esc</item>
+
+		<item name="PNG">Portable Network Graphics</item>
+		<item name="JPEG">Joint Photographic Experts Group</item>
+		<item name="GIF">Graphics Interchange Format</item>
+		<item name="BMP">Windows Bitmap</item>
+		<item name="TIFF">Tagged Image File Format</item>
+		<item name="SVG">Scalable Vector Graphics</item>
+
+		<item name="Format Painter Description">Copy the format of a topic, and apply it to another one.
+Double-click this button to apply the format to multiple topics</item>
+		<item name="Confirm Save">Document has changed, do you want to save changes?</item>
+		<item name="There is a new version available">There is a new version "{0}" available</item>
+    
+	</words>
+</dictionary>

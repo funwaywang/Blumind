@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Bluish Violet" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="#17122E" />
+    <color name="Light" value="#F9F2D9" />
+    <color name="Sharp" value="#278248" />
+    <color name="MediumDark" value="#224459" />
+    <color name="MediumLight" value="#CED3A9" />
+    <color name="Workspace" value="#141029" />
+  </colors>
+  <description />
+</theme>

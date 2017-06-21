@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Grass" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="#030303" />
+    <color name="Light" value="White" />
+    <color name="Sharp" value="#3A8341" />
+    <color name="MediumDark" value="#14601D" />
+    <color name="MediumLight" value="#E0E0E0" />
+    <color name="Workspace" value="#282828" />
+  </colors>
+  <description />
+</theme>

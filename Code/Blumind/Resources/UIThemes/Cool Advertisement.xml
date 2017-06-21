@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Cool Advertisement" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="#0F0F0F" />
+    <color name="Light" value="#DFF299" />
+    <color name="Sharp" value="#BF1111" />
+    <color name="MediumDark" value="#214001" />
+    <color name="MediumLight" value="#3F731A" />
+    <color name="Workspace" value="#161616" />
+  </colors>
+  <description />
+</theme>

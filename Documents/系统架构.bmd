@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<map name="系统主要功能" document_type="MST" editor_version="1.0.3731.18686">
+  <!--Create by Mustang, you can download it free from http://mustang.hyfree.net-->
+  <info />
+  <style>
+    <back_color>#F7F6E9</back_color>
+    <fore_color>Black</fore_color>
+    <line_color>#382513</line_color>
+    <border_color>#284907</border_color>
+    <node_back_color>#D8CAA8</node_back_color>
+    <node_fore_color>#363942</node_fore_color>
+    <select_color>#363942</select_color>
+    <hover_color>#382513</hover_color>
+  </style>
+  <nodes>
+    <node text="主要功能">
+      <style>
+        <back_color>#5C832F</back_color>
+        <fore_color>White</fore_color>
+        <font font_family="Microsoft YaHei" size="12" style="Bold, Italic" />
+      </style>
+      <nodes>
+        <node text="产能预测">
+          <nodes>
+            <node text="产能预测需求维护" />
+            <node text="产能预测分解" />
+            <node text="产能预测计划控制" />
+            <node text="产能预测单控制台" />
+            <node text="预测单甘特图" />
+            <node text="预测模治具产能需求表" />
+            <node text="预测机台产能表" />
+            <node text="预测模治具甘特图" />
+          </nodes>
+        </node>
+        <node text="生产计划及排程">
+          <nodes>
+            <node text="生产计划分解" />
+            <node text="生产计划控制台" />
+            <node text="生产单控制台" />
+            <node text="模治具甘特图" />
+          </nodes>
+        </node>
+        <node text="自定义桌面">
+          <nodes>
+            <node text="目录管理" />
+            <node text="程序管理" />
+          </nodes>
+        </node>
+        <node text="文档管理">
+          <nodes>
+            <node text="文档目录管理" />
+            <node text="文档权限维护" />
+            <node text="权限查询(文档别)" />
+            <node text="权限查询(目录别)" />
+            <node text="权限查询(用户别)" />
+          </nodes>
+        </node>
+        <node text="物料需求及成本分析">
+          <nodes>
+            <node text="计划成本分析表(工单别)" />
+            <node text="实际成本分析表(工单别)" />
+            <node text="物料需求汇总表(物料别)" />
+            <node text="物料需求明细表(工单别)" />
+          </nodes>
+        </node>
+        <node text="系统维护">
+          <nodes>
+            <node text="产品基础数据">
+              <nodes>
+                <node text="产品基础数据维护" />
+                <node text="工作中心基础数据维护" />
+                <node text="模治具基础数据维护" />
+                <node text="员工基础数据维护" />
+                <node text="工艺基础数据维护" />
+                <node text="工艺路线基础数据维护" />
+                <node text="产品工艺路线基础数据维护" />
+                <node text="工艺基础数据变更维护" />
+              </nodes>
+            </node>
+            <node text="生产计划及排程基础数据">
+              <nodes>
+                <node text="班次基础数据维护" />
+                <node text="工作中心日历维护" />
+                <node text="工作中心日历调整" />
+                <node text="排程方案维护" />
+              </nodes>
+            </node>
+            <node text="系统设置">
+              <nodes>
+                <node text="系统注册" />
+                <node text="部门档案基础数据维护" />
+                <node text="常用编码维护(品质分类, 品质项目, 异常分类, 异常项目)" />
+                <node text="客户及供应商基础数据维护" />
+              </nodes>
+            </node>
+            <node text="用户账号及权限">
+              <nodes>
+                <node text="用户基础数据维护" />
+                <node text="用户组维护" />
+                <node text="权限分配" />
+                <node text="权限查询(用户别, 用户组别, 程序别)" />
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node text="客户需求管理">
+          <nodes>
+            <node text="客户Forecast维护" />
+            <node text="客户订单维护" />
+            <node text="客户订单达成比率表" />
+            <node text="客户需求变更跟踪比较表" />
+            <node text="客户需求波动比例表" />
+          </nodes>
+        </node>
+        <node text="制造执行管理">
+          <nodes>
+            <node text="工作任务明细表" />
+            <node text="生产回报作业(合并一种报工方式)" />
+            <node text="生产日报表" />
+            <node text="生产品质明细表" />
+            <node text="生产异常明细表" />
+            <node text="生产品质汇总表" />
+            <node text="生产异常汇总表" />
+            <node text="生产计划达成表(日, 周, 月)" />
+          </nodes>
+        </node>
+        <node text="预警及消息管理">
+          <nodes>
+            <node text="未按时开工计划明细表" />
+            <node text="未按时完工计划明细表" />
+            <node text="应开工未开工计划明细表" />
+            <node text="应开工未完工计划明细表" />
+            <node text="预计计划延时表" />
+            <node text="预计计划提前表" />
+            <node text="计划预计缺料表" />
+            <node text="预警消息维护管理" />
+          </nodes>
+        </node>
+      </nodes>
+    </node>
+  </nodes>
+</map>

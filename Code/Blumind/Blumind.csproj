@@ -1,0 +1,1235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE33FCC4-93B5-426B-8F71-5C2B2AEE143E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Blumind</RootNamespace>
+    <AssemblyName>Blumind</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <Win32Resource>.\Resources\NativeResources.res</Win32Resource>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>hyfree.public.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>true</DelaySign>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PdfSharp">
+      <HintPath>..\Library\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Canvas\GdiPlus\GdiFont.cs" />
+    <Compile Include="Canvas\GdiPlus\GdiGraphics.cs" />
+    <Compile Include="Canvas\GdiPlus\GdiBrush.cs" />
+    <Compile Include="Canvas\GdiPlus\GdiGraphicsPath.cs" />
+    <Compile Include="Canvas\GdiPlus\GdiGraphicsState.cs" />
+    <Compile Include="Canvas\GdiPlus\GdiPen.cs" />
+    <Compile Include="Canvas\IBrush.cs" />
+    <Compile Include="Canvas\IFont.cs" />
+    <Compile Include="Canvas\IGraphics.cs" />
+    <Compile Include="Canvas\IGraphicsExtensions.cs" />
+    <Compile Include="Canvas\IGraphicsPath.cs" />
+    <Compile Include="Canvas\IGraphicsState.cs" />
+    <Compile Include="Canvas\IPen.cs" />
+    <Compile Include="Canvas\Pdf\PdfBrush.cs" />
+    <Compile Include="Canvas\Pdf\PdfFont.cs" />
+    <Compile Include="Canvas\Pdf\PdfGraphics.cs" />
+    <Compile Include="Canvas\Pdf\PdfGraphicsPath.cs" />
+    <Compile Include="Canvas\Pdf\PdfGraphicsState.cs" />
+    <Compile Include="Canvas\Pdf\PdfPen.cs" />
+    <Compile Include="Canvas\Svg\SvgBrush.cs" />
+    <Compile Include="Canvas\Svg\SvgDocument.cs" />
+    <Compile Include="Canvas\Svg\SvgFont.cs" />
+    <Compile Include="Canvas\Svg\SvgGraphics.cs" />
+    <Compile Include="Canvas\Svg\SvgGraphicsState.cs" />
+    <Compile Include="Canvas\Svg\SvgGraphicsPath.cs" />
+    <Compile Include="Canvas\Svg\SvgPen.cs" />
+    <Compile Include="Canvas\Svg\TextLine.cs" />
+    <Compile Include="Canvas\_Parts\LineAnchor.cs" />
+    <Compile Include="ChartControls\FillTypes\FillType.cs" />
+    <Compile Include="ChartControls\FillTypes\Modern.cs" />
+    <Compile Include="ChartControls\FillTypes\Solid.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\DragDropCommand.cs" />
+    <Compile Include="ChartControls\Shapes\Prismatic.cs" />
+    <Compile Include="Controls\ChartPageViews\BaseChartPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ChartPageViews\FreeDiagramChartPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ChartPageViews\FreeDiagramChartPage.Designer.cs">
+      <DependentUpon>FreeDiagramChartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ChartPageViews\MindMapChartPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ChartPageViews\MultiChartsTabRenderer.cs" />
+    <Compile Include="Controls\ChartPageViews\NeedShowPropertyEventArgs.cs" />
+    <Compile Include="Controls\ChartPageViews\TabBarNavButton.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\AddTopicCommand.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\AddWidgetCommand.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\ChangeTextCommand.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\ChartObjectPropertyChangedCommand.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\Command.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\CopyCommand.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\CustomSortCommand.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\CutCommand.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\DeleteCommand.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\EditWidgetCommand.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\ICommandHost.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\InvertLinkCommand.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\MoveCommand.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\PasteCommand.cs" />
+    <Compile Include="ChartControls\MindMap\Commands\StraighteningCommand.cs" />
+    <Compile Include="ChartControls\MindMap\DocumentTreeNode.cs" />
+    <Compile Include="ChartControls\MindMap\Layouts\Layouter.cs" />
+    <Compile Include="ChartControls\MindMap\Layouts\LayoutManage.cs" />
+    <Compile Include="ChartControls\MindMap\Layouts\LogicLayout.cs" />
+    <Compile Include="ChartControls\MindMap\Layouts\MindMapLayoutArgs.cs" />
+    <Compile Include="ChartControls\MindMap\Layouts\MindMapLayouter.cs" />
+    <Compile Include="ChartControls\MindMap\Layouts\OrganizationLayout.cs" />
+    <Compile Include="ChartControls\MindMap\Layouts\TreeLayout.cs" />
+    <Compile Include="ChartControls\MindMap\Lines\BezierLine.cs" />
+    <Compile Include="ChartControls\MindMap\Lines\BrokenLine.cs" />
+    <Compile Include="ChartControls\MindMap\Lines\HandPaintLine.cs" />
+    <Compile Include="ChartControls\MindMap\Lines\ILine.cs" />
+    <Compile Include="ChartControls\MindMap\Lines\StraightLine.cs" />
+    <Compile Include="ChartControls\MindMap\MindMapView\ChartToolTip.cs" />
+    <Compile Include="ChartControls\MindMap\MindMapView\ChartTooltipLayer.cs" />
+    <Compile Include="ChartControls\MindMap\MindMapView\LinksLayer.cs" />
+    <Compile Include="ChartControls\MindMap\MindMapView\MindMapView.Command.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\MindMap\MindMapView\MindMapView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\MindMap\MindMapView\MindMapView.Edit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\MindMap\MindMapView\MindMapView.Keyboard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\MindMap\MindMapView\MindMapView.Mouse.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\MindMap\MindMapView\MindMapView.Paint.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\MindMap\MindMapView\MindMapView.Selection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\MindMap\MindMapView\MindMapView.UI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\MindMap\MindMapView\MindMapViewDragBox.cs" />
+    <Compile Include="ChartControls\MindMap\MoveVector.cs" />
+    <Compile Include="ChartControls\MindMap\ObjectTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\MindMap\ObjectTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\MindMap\Renders\GeneralRender.cs" />
+    <Compile Include="ChartControls\MindMap\Renders\HorizontalVector.cs" />
+    <Compile Include="ChartControls\MindMap\Renders\IMindMapRender.cs" />
+    <Compile Include="ChartControls\MindMap\Renders\RenderArgs.cs" />
+    <Compile Include="ChartControls\MindMap\Renders\RenderMode.cs" />
+    <Compile Include="ChartControls\MindMap\SelectedTopicCollection.cs" />
+    <Compile Include="ChartControls\MindMap\SelectHistory.cs" />
+    <Compile Include="ChartControls\Shapes\BaseLineShape.cs" />
+    <Compile Include="ChartControls\Shapes\EllipseShape.cs" />
+    <Compile Include="ChartControls\Shapes\NoneShape.cs" />
+    <Compile Include="ChartControls\Shapes\RectangleShape.cs" />
+    <Compile Include="ChartControls\Shapes\RoundRectangleShape.cs" />
+    <Compile Include="ChartControls\Shapes\Shape.cs" />
+    <Compile Include="ChartControls\MindMap\TopicEditControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\MindMap\TopicTreeNode.cs" />
+    <Compile Include="Configuration\AssociationHelper.cs" />
+    <Compile Include="Configuration\Models\CommonOptions.cs" />
+    <Compile Include="Configuration\OptionNames.cs" />
+    <Compile Include="Configuration\Models\SaveTabsType.cs" />
+    <Compile Include="Configuration\Models\ProgramEnvironment.cs" />
+    <Compile Include="Configuration\RecentFiles\RecentFileInfo.cs" />
+    <Compile Include="Configuration\RecentFiles\RecentFilesManage.cs" />
+    <Compile Include="Controls\Aero\AeroGlassCompositionChangedEventArgs.cs" />
+    <Compile Include="Controls\Aero\DesktopWindowManagerNativeMethods.cs" />
+    <Compile Include="Controls\Aero\NativeRect.cs" />
+    <Compile Include="Controls\Buttons\BrowseButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\ButtonEventArgs.cs" />
+    <Compile Include="Controls\Buttons\ButtonInfo.cs" />
+    <Compile Include="Controls\Buttons\ButtonListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\FlatButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\ImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CaptionBars\CaptionButtonInfo.cs" />
+    <Compile Include="ChartControls\ChartControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlExtensions.cs" />
+    <Compile Include="Controls\DropDownList\BoolDropdownBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Fonts\FontButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Fonts\FontsDropDownList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ChartTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HtmlEditors\HtmlCodeEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HtmlEditors\HtmlCommandIdentifiers.cs" />
+    <Compile Include="Controls\HtmlEditors\HtmlEditBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HtmlEditors\HtmlEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HtmlEditors\HtmlEditorViewType.cs" />
+    <Compile Include="Controls\HtmlEditors\HtmlEditToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\IDropFilesHandler.cs" />
+    <Compile Include="Controls\Misc\IconBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ModifyControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Paint\BezierControlPoint.cs" />
+    <Compile Include="Controls\Paint\BezierHelper.cs" />
+    <Compile Include="Controls\Paint\BezierLayoutInfo.cs" />
+    <Compile Include="Controls\Paint\ColorExtension.cs" />
+    <Compile Include="Controls\SelectChartBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Tip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolStrips\ToolStripExtensions.cs" />
+    <Compile Include="Core\DotNet3\ExtensionAttribute.cs" />
+    <Compile Include="Core\DotNet3\Func.cs" />
+    <Compile Include="Core\DotNet3\Linq.cs" />
+    <Compile Include="Core\DotNet3\ListExtensions.cs" />
+    <Compile Include="Core\Win32Apis\OSHelper.cs" />
+    <Compile Include="Design\FillTypeEditor.cs" />
+    <Compile Include="Design\HorizontalAlignmentEditor.cs" />
+    <Compile Include="Design\JpegQualityEditor.cs" />
+    <Compile Include="Design\PictureEditUI.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RemarkEditors\RemarkEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ThumbViews\FileThumbItem.cs" />
+    <Compile Include="Controls\ThumbViews\RecentFilesView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ThumbViews\ThumbView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ThumbViews\ThumbItem.cs" />
+    <Compile Include="Controls\ThumbViews\ThumbViewItemEventArgs.cs" />
+    <Compile Include="Controls\ThumbViews\ThumbViewPaintEventArgs.cs" />
+    <Compile Include="Controls\Misc\ButtonTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Misc\CellListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\ChartLayer.cs" />
+    <Compile Include="ChartControls\ChartMouseState.cs" />
+    <Compile Include="ChartControls\ChartOverviewBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\ExMouseEventArgs.cs" />
+    <Compile Include="ChartControls\SelectionLayer.cs" />
+    <Compile Include="Controls\Forms\BaseDocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\DropDownList\EnumDropdownBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Editors\ColorEditBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Editors\TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Editors\TextBoxExDropDownButton.cs" />
+    <Compile Include="Controls\Aero\GlassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\IIconProvider.cs" />
+    <Compile Include="Controls\Misc\ImageLibraryListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Misc\ImageListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DropDownList\ListBox2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DropDownList\ListItem.cs" />
+    <Compile Include="Controls\ChartPageViews\MultiChartsView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Misc\ExceptionControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Paint\RectangleExtensions.cs" />
+    <Compile Include="Controls\Paint\UIStatusImage.cs" />
+    <Compile Include="Controls\TabBars\Renderers\ColorTabBarRenderer.cs" />
+    <Compile Include="Controls\TabBars\Renderers\NormalTabBarRenderer.cs" />
+    <Compile Include="Controls\TabBars\Renderers\TabBarRenderer.cs" />
+    <Compile Include="Controls\TabBars\Renderers\TabItemPaintEventArgs.cs" />
+    <Compile Include="Controls\TabBars\Renderers\TaskBarRenderer.cs" />
+    <Compile Include="Controls\TabBars\SpecialTabItem.cs" />
+    <Compile Include="Controls\TabBars\StartMenuButton.cs" />
+    <Compile Include="Controls\TabBars\TabBar.Buttons.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabBars\TabBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabBars\TabBarButton.cs" />
+    <Compile Include="Controls\TabBars\TabItem.cs" />
+    <Compile Include="Controls\TabBars\TabItemDisplayIndexComparer.cs" />
+    <Compile Include="Controls\TabBars\TabItemEventHandler.cs" />
+    <Compile Include="Controls\TabBars\TabsAlignment.cs" />
+    <Compile Include="Controls\TabBars\TaskBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabBars\MyTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Paint\IconExtractor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\Misc\ImageBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Misc\BorderPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ThumbViews\ThumbViewItemCancelEventArgs.cs" />
+    <Compile Include="Controls\UIThemes\UIColorTheme.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\UIThemes\DefaultToolStripColors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\UIThemes\DefaultToolStripRenderer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\UIThemes\IThemableUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\UIThemes\UIColorThemeManage.cs" />
+    <Compile Include="Controls\UIThemes\UITheme.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\UIThemes\UIThemesDropDownList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\UIThemes\UIThemesListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\AccelaratorKeys\HotKeyMap.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\AccelaratorKeys\KeyMap.cs" />
+    <Compile Include="Core\AccelaratorKeys\ShortcutKeyAction.cs" />
+    <Compile Include="Core\AccelaratorKeys\ShortcutKeyGroup.cs" />
+    <Compile Include="Core\AccelaratorKeys\ShortcutKeysEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\AccelaratorKeys\ShortcutKeysEditor.Designer.cs">
+      <DependentUpon>ShortcutKeysEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\AccelaratorKeys\ShortcutKeysTable.cs" />
+    <Compile Include="Core\Clipboard\ClipboardHelper.cs" />
+    <Compile Include="Core\Clipboard\ClipboardHtmlOutput.cs" />
+    <Compile Include="Core\CollectionExtensions.cs" />
+    <Compile Include="Design\RemarkDesignEditor.cs" />
+    <Compile Include="Dialogs\AboutDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AboutDialogBox.Designer.cs">
+      <DependentUpon>AboutDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DonationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DonationDialog.Designer.cs">
+      <DependentUpon>DonationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\FileLocationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FileLocationDialog.Designer.cs" />
+    <Compile Include="Dialogs\NoteWidgetDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\PictureViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SelectChartDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Globalization\AuthorInfo.cs" />
+    <Compile Include="Globalization\Lang.cs" />
+    <Compile Include="Globalization\Language.cs" />
+    <Compile Include="Globalization\LanguageIDAttribute.cs" />
+    <Compile Include="Globalization\LanguageManage.cs" />
+    <Compile Include="Globalization\LocalCategoryAttribute.cs" />
+    <Compile Include="Globalization\LocalDisplayName.cs" />
+    <Compile Include="Model\CodeObjectSite.cs" />
+    <Compile Include="Model\Documents\ChartType.cs" />
+    <Compile Include="Model\Documents\DocumentPrint.cs" />
+    <Compile Include="Core\Exports\ImageExportEngine.cs" />
+    <Compile Include="Core\Exports\PdfEngine.cs" />
+    <Compile Include="Core\ModifyObjects\IModifyObject.cs" />
+    <Compile Include="Core\RegistryKeyExtensions.cs" />
+    <Compile Include="Core\TraverseVector.cs" />
+    <Compile Include="Core\Delegates.cs" />
+    <Compile Include="Core\DocumentTypeGroup.cs" />
+    <Compile Include="Core\Exports\CsvEngine.cs" />
+    <Compile Include="Core\Exports\FreeMindEngine.cs" />
+    <Compile Include="Core\Imports\CsvEngine.cs" />
+    <Compile Include="Core\Imports\DocumentImportEngine.cs" />
+    <Compile Include="Core\Imports\FreeMindEngine.cs" />
+    <Compile Include="Dialogs\ExceptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ExceptionDialog.Designer.cs" />
+    <Compile Include="Dialogs\ExportDocumentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentForm.Designer.cs">
+      <DependentUpon>DocumentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ChartObject.cs" />
+    <Compile Include="Model\Documents\Document.cs" />
+    <Compile Include="Model\Documents\Document.IO.cs" />
+    <Compile Include="Core\Delegates\ChartObjectChangeEventArgs.cs" />
+    <Compile Include="Core\Delegates\ChartObjectEventArgs.cs" />
+    <Compile Include="Model\Documents\FlowDiagram\Objects\FreeDiagramObject.cs" />
+    <Compile Include="Model\Documents\FlowDiagram\Objects\FreeDiagramLine.cs" />
+    <Compile Include="Model\Documents\FlowDiagram\Objects\FreeDiagramShape.cs" />
+    <Compile Include="Model\IChartControl.cs" />
+    <Compile Include="Model\IExtendActionProvider.cs" />
+    <Compile Include="Model\IRemark.cs" />
+    <Compile Include="Model\ISerializable.cs" />
+    <Compile Include="Model\PageOrientation.cs" />
+    <Compile Include="Core\Delegates\ChartObjectPropertyEventArgs.cs" />
+    <Compile Include="Model\Styles\ChartStyle.cs" />
+    <Compile Include="Core\Delegates\ChartPropertyEventArgs.cs" />
+    <Compile Include="Model\Widgets\NoteWidget.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TimeSegment.cs" />
+    <Compile Include="Core\XListEventArgs.cs" />
+    <Compile Include="ChartControls\FreeDiagrams\FlowDiagramView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DropDownList\ListBoxControlItem.cs" />
+    <Compile Include="ChartControls\ChartSelection.cs" />
+    <Compile Include="Controls\Paint\BezierPoint.cs" />
+    <Compile Include="Core\Exports\TxtEngine.cs" />
+    <Compile Include="Core\AccelaratorKeys\ShortcutKey.cs" />
+    <Compile Include="Controls\Misc\PaddingBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\EnumEditor.cs" />
+    <Compile Include="Design\LanguagesEditor.cs" />
+    <Compile Include="Design\ListEditor.cs">
+    </Compile>
+    <Compile Include="Design\PaddingEditor.cs" />
+    <Compile Include="Design\PictureEditor.cs" />
+    <Compile Include="Design\HyperlinkEditor.cs">
+    </Compile>
+    <Compile Include="Dialogs\AddIconDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CheckUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CheckUpdate.Designer.cs">
+      <DependentUpon>CheckUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\InternetImageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\InternetImageDialog.Designer.cs">
+      <DependentUpon>InternetImageDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ModifyShortcutsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ModifyShortcutsDialog.Designer.cs">
+      <DependentUpon>ModifyShortcutsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Formaters\FontFormater.cs" />
+    <Compile Include="Configuration\Formaters\IObjectFormater.cs" />
+    <Compile Include="Configuration\Formaters\ObjectFormaters.cs" />
+    <Compile Include="Configuration\Models\MemoryOptions.cs" />
+    <Compile Include="Configuration\Models\FileSystemOptions.cs" />
+    <Compile Include="Configuration\Options.cs" />
+    <Compile Include="Configuration\Models\ProgramRunMode.cs" />
+    <Compile Include="Configuration\Dialog\GeneralPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Configuration\Dialog\GeneralPage.Designer.cs">
+      <DependentUpon>GeneralPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Dialog\SettingPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialogs\TimerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\TimerDialog.Designer.cs">
+      <DependentUpon>TimerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\IColorToolTip.cs" />
+    <Compile Include="Model\IHyperlink.cs" />
+    <Compile Include="Model\MyIconLibrary.cs" />
+    <Compile Include="Model\PictureLibrary.cs" />
+    <Compile Include="Dialogs\SaveTabsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SaveTabsDialog.Designer.cs">
+      <DependentUpon>SaveTabsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Dialog\SettingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ShortcutKeysMapDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ShortcutKeysMapDialog.Designer.cs">
+      <DependentUpon>ShortcutKeysMapDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Documents\FlowDiagram\FlowDiagram.cs" />
+    <Compile Include="Model\Documents\ChartPage.cs" />
+    <Compile Include="Model\ITextObject.cs" />
+    <Compile Include="Model\MindMaps\FreeMindFile.cs" />
+    <Compile Include="Model\MindMaps\MindMapLayoutType.cs" />
+    <Compile Include="Controls\DropDownList\ListBoxControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Misc\SortBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Misc\FoldingBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\MindMaps\FindDirection.cs" />
+    <Compile Include="Model\MindMaps\FindOptions.cs" />
+    <Compile Include="Model\MindMaps\MindMap.Design.cs" />
+    <Compile Include="Model\MindMaps\MindMapFinder.cs" />
+    <Compile Include="Model\MindMaps\Link.cs" />
+    <Compile Include="Model\MindMaps\LinkEventHandler.cs" />
+    <Compile Include="Model\MindMaps\Topic.Design.cs" />
+    <Compile Include="Model\MindMaps\Topic.Layout.cs" />
+    <Compile Include="Model\MindMaps\TopicLine.cs" />
+    <Compile Include="Core\DocumentType.cs" />
+    <Compile Include="Core\Exports\SvgEngine.cs" />
+    <Compile Include="Model\Picture.cs" />
+    <Compile Include="Core\Delegates\PropertyChangedEventArgs.cs" />
+    <Compile Include="Model\Styles\TopicShape.cs" />
+    <Compile Include="Controls\Misc\MultiSelectTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Paint\PaintHelper.Convert.cs" />
+    <Compile Include="Design\BaseTypeConverter.cs" />
+    <Compile Include="Design\BoolConverter.cs" />
+    <Compile Include="Design\LineAnchorEditor.cs">
+    </Compile>
+    <Compile Include="Design\LineStyleEditor.cs">
+    </Compile>
+    <Compile Include="Design\LineWidthEditor.cs" />
+    <Compile Include="Design\TopicShapeEditor.cs">
+    </Compile>
+    <Compile Include="Model\Styles\WindowsColorSchemes.cs" />
+    <Compile Include="Design\MindMapLayoutTypeEditor.cs" />
+    <Compile Include="Controls\Misc\MyTreeView.cs" />
+    <Compile Include="Dialogs\PropertyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\BaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\HyperLink.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BaseControls\ControlFullScreenShell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\BaseControls\BaseControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChartControls\Chart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\ChartBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChartControls\ChartLabel.cs" />
+    <Compile Include="ChartControls\ChartPaintEventArgs.cs" />
+    <Compile Include="Controls\Forms\DocumentManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\DropDownControls\DropDownDirection.cs" />
+    <Compile Include="Controls\DropDownControls\DropDownFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\DropDownControls\DropDownHelper.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FullScreenInfo.cs" />
+    <Compile Include="Controls\HotKeys.cs" />
+    <Compile Include="Controls\DragManager.cs" />
+    <Compile Include="Controls\Misc\MdiWorkSpace.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CaptionBars\CaptionBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Misc\MySplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Prints\PrintPreviewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ZoomType.cs" />
+    <Compile Include="Controls\Buttons\PushButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\StandardDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolStrips\ToolStripPro.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Misc\ToolTipControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolStrips\ToolStripNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\UIPaintEventHandler.cs" />
+    <Compile Include="Model\Documents\Serializers\TextSerializer.cs" />
+    <Compile Include="Model\MindMaps\TopicCancelEventHandler.cs" />
+    <Compile Include="Model\MindMaps\MindMapIO.cs" />
+    <Compile Include="Model\MindMaps\MapClipboardData.cs" />
+    <Compile Include="Model\MindMaps\TopicEventHandler.cs" />
+    <Compile Include="Model\Documents\Serializers\XmlSerializer.cs" />
+    <Compile Include="Core\Exports\BitmapEngine.cs" />
+    <Compile Include="Core\Exports\JpegEngine.cs" />
+    <Compile Include="Core\Exports\TiffEngine.cs" />
+    <Compile Include="Core\Exports\GifEngine.cs" />
+    <Compile Include="Core\Exports\ChartsExportEngine.cs" />
+    <Compile Include="Core\Exports\PngEngine.cs" />
+    <Compile Include="Core\Helper.cs" />
+    <Compile Include="Core\XList.cs" />
+    <Compile Include="Controls\Misc\PropertyControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScrollableControls\NavigationButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScrollableControls\ScrollableControlBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ScrollableControls\ScrollInformation.cs" />
+    <Compile Include="Model\MindMaps\MindMap.cs" />
+    <Compile Include="Model\MindMaps\Topic.cs" />
+    <Compile Include="Controls\Paint\ColorByte.cs" />
+    <Compile Include="Controls\Paint\PaintHelper.cs" />
+    <Compile Include="Controls\Paint\Vector4.cs" />
+    <Compile Include="Controls\BaseControls\UIControlStatus.cs" />
+    <Compile Include="Core\ProductInfo.cs" />
+    <Compile Include="Core\ST.cs" />
+    <Compile Include="Model\Styles\MindMapStyle.cs" />
+    <Compile Include="Model\Styles\Style.cs" />
+    <Compile Include="Model\Styles\FormatPainter.cs" />
+    <Compile Include="Model\Styles\ChartTheme.cs" />
+    <Compile Include="Model\Styles\ChartThemeFolder.cs" />
+    <Compile Include="Model\Styles\ChartThemeManage.cs" />
+    <Compile Include="Model\Styles\TopicStyle.cs" />
+    <Compile Include="Model\Styles\StyleConverter.cs" />
+    <Compile Include="Model\Styles\StyleEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\Styles\StyleEditor.cs" />
+    <Compile Include="Core\Win32Apis\Enums.cs" />
+    <Compile Include="Core\Win32Apis\Gdi32.cs" />
+    <Compile Include="Core\Win32Apis\Kernel32.cs" />
+    <Compile Include="Core\Win32Apis\Shell32.cs" />
+    <Compile Include="Core\Win32Apis\Structs.cs" />
+    <Compile Include="Core\Win32Apis\User32.cs" />
+    <Compile Include="Core\Win32Apis\Windef.cs" />
+    <Compile Include="Core\Win32Apis\WinMessages.cs" />
+    <Compile Include="Controls\WinHelper.cs" />
+    <Compile Include="Dialogs\Components\ThemeFolderNode.cs" />
+    <Compile Include="Dialogs\Components\ThemeNode.cs" />
+    <Compile Include="Dialogs\FindDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\FindDialog.Designer.cs">
+      <DependentUpon>FindDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\InputDialog.Designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SortTopicDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SortTopicDialog.Designer.cs">
+      <DependentUpon>SortTopicDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\PrintPreviewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\PrintPreviewDialog.Designer.cs">
+      <DependentUpon>PrintPreviewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Thanks.cs" />
+    <Compile Include="Model\Widgets\IWidgetContainer.cs" />
+    <Compile Include="Model\Widgets\IWidgetEditDialog.cs" />
+    <Compile Include="Model\Widgets\PictureWidget.cs" />
+    <Compile Include="Model\Widgets\Widget.cs" />
+    <Compile Include="Model\Widgets\ProgressBarWidget.cs" />
+    <Compile Include="Model\Widgets\WidgetAlignment.cs" />
+    <Compile Include="Model\Widgets\WidgetEventHandler.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test\D.cs" />
+    <EmbeddedResource Include="Controls\ChartPageViews\MindMapChartPage.resx">
+      <DependentUpon>MindMapChartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\AccelaratorKeys\ShortcutKeysEditor.resx">
+      <DependentUpon>ShortcutKeysEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AboutDialogBox.resx">
+      <DependentUpon>AboutDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DonationDialog.resx">
+      <DependentUpon>DonationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\InputDialog.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ModifyShortcutsDialog.resx">
+      <DependentUpon>ModifyShortcutsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentForm.resx">
+      <DependentUpon>DocumentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\TimerDialog.resx">
+      <DependentUpon>TimerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\Dialog\GeneralPage.resx">
+      <DependentUpon>GeneralPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartPage.resx">
+      <DependentUpon>StartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Resources\NativeResources.res" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Core\RS.cs" />
+    <Compile Include="Dialogs\ThemesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ThemesDialog.Designer.cs">
+      <DependentUpon>ThemesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\RecommendedResources.cs" />
+    <Compile Include="StartPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design\PropertyBox\NormalPropertyBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\PropertyBox\PropertyBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\PropertyViewAttribute.cs" />
+    <Compile Include="Test\BigMap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\donation.png" />
+    <Content Include="Resources\Icons\check_update.ico" />
+    <Content Include="Resources\Icons\document.ico" />
+    <Content Include="Resources\Icons\exclamation.ico" />
+    <Content Include="Resources\Icons\globe_network.ico" />
+    <Content Include="Resources\Icons\hourglass_ico.ico" />
+    <Content Include="Resources\Icons\icon_lib.ico" />
+    <None Include="Resources\Icons\image.ico" />
+    <Content Include="Resources\Icons\keyboard.ico" />
+    <Content Include="Resources\Icons\layout_type.ico" />
+    <Content Include="Resources\Icons\logo.ico" />
+    <Content Include="Resources\Icons\preferences_icon.ico" />
+    <None Include="Resources\Images\document_128.png" />
+    <None Include="Resources\Images\document_16.png" />
+    <None Include="Resources\Images\document_64.png" />
+    <None Include="Resources\Images\logo_trans.png" />
+    <None Include="Resources\Images\new_24.png" />
+    <None Include="Resources\Images\open_24.png" />
+    <None Include="Resources\Images\preferences_24.png" />
+    <None Include="Resources\Images\bold.png" />
+    <None Include="Resources\Images\indent.png" />
+    <None Include="Resources\Images\italic.png" />
+    <None Include="Resources\Images\list_bullets.png" />
+    <None Include="Resources\Images\list_numbered.png" />
+    <None Include="Resources\Images\html_content.htm" />
+    <None Include="Resources\Images\outdent.png" />
+    <None Include="Resources\Images\fore_color.png" />
+    <None Include="Resources\Images\back_color.png" />
+    <None Include="Resources\Images\font_size.png" />
+    <None Include="Resources\Images\edit_code.png" />
+    <None Include="Resources\Images\external.png" />
+    <None Include="Resources\Images\note.png" />
+    <None Include="Resources\Images\note_small.png" />
+    <None Include="Resources\Images\rotate_left.png" />
+    <None Include="Resources\Images\rotate_right.png" />
+    <None Include="Resources\Icons\property.ico" />
+    <None Include="Resources\Images\calculator.png" />
+    <None Include="Resources\Images\paste_as_remark.png" />
+    <None Include="Resources\Images\paste_as_image.png" />
+    <None Include="Resources\Images\strike.png" />
+    <None Include="Resources\Images\edit_alignment.png" />
+    <None Include="Resources\Images\edit_alignment_center.png" />
+    <None Include="Resources\Images\edit_alignment_justify.png" />
+    <None Include="Resources\Images\edit_alignment_right.png" />
+    <None Include="Resources\Images\edit_font_size_down.png" />
+    <None Include="Resources\Images\edit_font_size_up.png" />
+    <None Include="Resources\Images\logo128.png" />
+    <None Include="Resources\Images\logo64.png" />
+    <None Include="Resources\Images\add_topic_front.png" />
+    <Content Include="Resources\Images\taskbar_close_button.png" />
+    <None Include="Resources\Images\underline.png" />
+    <None Include="Resources\Images\tick_small.png" />
+    <None Include="Resources\Images\_blank.png" />
+    <None Include="Resources\Images\tick.png" />
+    <Content Include="Resources\Languages\_Template.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\resource.h" />
+    <None Include="Resources\tip_pin_button.png" />
+    <None Include="Resources\tip_pin_pressed_button.png" />
+    <None Include="Resources\tip_close_button.png" />
+    <Content Include="Resources\UIThemes\Blackish Green.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Blue Gray.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Bluish Violet.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Blumind.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Brilliant Yellow.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Brown Purple.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Classic Blue.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Cool Advertisement.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Deep Blue.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Deep Gray.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\DeviantArt.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Firebrick.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Fresh Green.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Google Plus.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Grass.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Khaki.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Light a way.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Old Eastbourne.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Sand and Shade.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Silver.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Simple.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Standard.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\System.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\UIThemes\Thin Green.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\windows_themes.xml" />
+    <None Include="hyfree.public.snk" />
+    <None Include="Resources\Images\add_topic.png" />
+    <None Include="Resources\Images\add_sub_topic.png" />
+    <None Include="Resources\Images\association.png" />
+    <None Include="Resources\Images\appearance.png" />
+    <None Include="Resources\Images\balloon_small.png" />
+    <None Include="Resources\Images\add_link.png" />
+    <EmbeddedResource Include="Resources\cur_scroll.cur" />
+    <None Include="Resources\cross_large.png" />
+    <Content Include="Resources\hand.cur" />
+    <None Include="Resources\Images\arrow_move.png" />
+    <Content Include="Resources\Images\bar.png" />
+    <None Include="Resources\Images\chart.png" />
+    <None Include="Resources\Images\check_update.png" />
+    <None Include="Resources\Images\chain_small.png" />
+    <Content Include="Resources\Images\chevron.png" />
+    <None Include="Resources\Images\close.png" />
+    <Content Include="Resources\Images\close_button.png" />
+    <None Include="Resources\Images\document.png" />
+    <None Include="Resources\Images\color.png" />
+    <Content Include="Resources\Images\copy.png" />
+    <EmbeddedResource Include="Dialogs\InternetImageDialog.resx">
+      <DependentUpon>InternetImageDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PropertyDialog.resx">
+      <DependentUpon>PropertyDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CheckUpdate.resx">
+      <DependentUpon>CheckUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\FindDialog.resx">
+      <DependentUpon>FindDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\PrintPreviewDialog.resx">
+      <DependentUpon>PrintPreviewDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SaveTabsDialog.resx">
+      <DependentUpon>SaveTabsDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ShortcutKeysMapDialog.resx">
+      <DependentUpon>ShortcutKeysMapDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SortTopicDialog.resx">
+      <DependentUpon>SortTopicDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\cur_style_brush.cur" />
+    <EmbeddedResource Include="Dialogs\ThemesDialog.resx">
+      <DependentUpon>ThemesDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Resources\Images\cursor.png" />
+    <None Include="Resources\Images\cur_style_brush.cur" />
+    <Content Include="Resources\Images\cut.png" />
+    <None Include="Resources\Images\edit.png" />
+    <None Include="Resources\Images\delete.png" />
+    <None Include="Resources\Images\full_screen.png" />
+    <None Include="Resources\Images\first.png" />
+    <None Include="Resources\Images\format_painter.png" />
+    <None Include="Resources\Images\folder.png" />
+    <None Include="Resources\Images\full_screen_exit.png" />
+    <None Include="Resources\Images\export_image.png" />
+    <None Include="Resources\Images\down.png" />
+    <None Include="Resources\Images\find.png" />
+    <None Include="Resources\Images\folding_expand.png" />
+    <None Include="Resources\Images\folding_collapse.png" />
+    <None Include="Resources\Images\export.png" />
+    <None Include="Resources\Images\font.png" />
+    <None Include="Resources\Images\folder_sys.png" />
+    <Content Include="Resources\Images\freemind_butterfly.png" />
+    <None Include="Resources\Images\hand.png" />
+    <None Include="Resources\Images\hand_cur.cur" />
+    <Content Include="Resources\Images\help.png" />
+    <None Include="Resources\Images\last.png" />
+    <None Include="Resources\Images\menu.png" />
+    <None Include="Resources\Languages\en.US.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Languages\zh.CHS.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Languages\zh.CHT.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Images\languages.png" />
+    <None Include="Resources\Images\logo_large.png" />
+    <None Include="Resources\Images\mask.png" />
+    <None Include="Resources\Images\information.png" />
+    <None Include="Resources\Images\layout_logic_left.png" />
+    <None Include="Resources\Images\layout_logic_right.png" />
+    <None Include="Resources\Images\layout_mind_map.png" />
+    <None Include="Resources\Images\layout_org_down.png" />
+    <None Include="Resources\Images\layout_org_up.png" />
+    <None Include="Resources\Images\layout_tree_left.png" />
+    <None Include="Resources\Images\layout_tree_right.png" />
+    <None Include="Resources\Images\image.png" />
+    <None Include="Resources\Images\internet.png" />
+    <None Include="Resources\Images\image_resize.png" />
+    <None Include="Resources\Images\hyperlink.png" />
+    <None Include="Resources\Images\hourglass.png" />
+    <None Include="Resources\Images\import.png" />
+    <Content Include="Resources\Images\keyboard.png" />
+    <None Include="Resources\Images\logo_background.png" />
+    <Content Include="Resources\Images\mail.png" />
+    <None Include="Resources\Images\splitter_v.png" />
+    <None Include="Resources\Images\splitter_h.png" />
+    <None Include="Resources\Images\preview.png" />
+    <None Include="Resources\Images\refresh.png" />
+    <None Include="Resources\Images\theme_manage.png" />
+    <None Include="Resources\Images\web.png" />
+    <None Include="Resources\Images\stop.png" />
+    <None Include="Resources\Images\up.png" />
+    <None Include="Resources\Images\replace.png" />
+    <None Include="Resources\Images\sort.png" />
+    <None Include="Resources\Images\reset.png" />
+    <None Include="Resources\Images\split_btn_h.png" />
+    <None Include="Resources\Images\split_btn_v.png" />
+    <None Include="Resources\Images\print_pages.png" />
+    <None Include="Resources\Images\print_two_pages.png" />
+    <None Include="Resources\Images\print_single_page.png" />
+    <None Include="Resources\Images\previous.png" />
+    <None Include="Resources\Images\next.png" />
+    <None Include="Resources\Images\page_settings.png" />
+    <None Include="Resources\Images\objects.png" />
+    <None Include="Resources\Images\no.png" />
+    <None Include="Resources\Images\sidebar.png" />
+    <None Include="Resources\Images\question_large.png" />
+    <None Include="Resources\Images\progress_bar.png" />
+    <None Include="Resources\Images\plus.png" />
+    <None Include="Resources\Images\notes.png" />
+    <Content Include="Resources\Images\navigation_button.png" />
+    <None Include="Resources\Images\nav_small_first.png" />
+    <None Include="Resources\Images\nav_small_last.png" />
+    <None Include="Resources\Images\nav_small_next.png" />
+    <None Include="Resources\Images\nav_small_prev.png" />
+    <Content Include="Resources\Images\new.png" />
+    <Content Include="Resources\Images\open.png" />
+    <Content Include="Resources\Images\paste.png" />
+    <Content Include="Resources\Images\preferences.png" />
+    <Content Include="Resources\Images\print.png" />
+    <None Include="Resources\Images\property.png" />
+    <Content Include="Resources\Images\redo.png" />
+    <Content Include="Resources\Images\save.png" />
+    <None Include="Resources\themes.xml" />
+    <None Include="Resources\Images\svg.png" />
+    <Content Include="Resources\Images\tool_button.png" />
+    <Content Include="Resources\Images\tabs.png" />
+    <Content Include="Resources\Images\topic.png" />
+    <Content Include="Resources\Images\undo.png" />
+    <Content Include="Resources\Languages\hi.IN.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Languages\it.IT.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Languages\ru.RU.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Languages\fr.FR.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Languages\mk.MK.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Languages\es.ES.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Languages\sr.CS.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Languages\ca.ES.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Languages\de.DE.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Languages\nl.NL.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Languages\cs.CZ.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Languages\ja.JP.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resources\Languages\ko.KR.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Languages\mr-IN.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Languages\pl.PL.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Languages\sv.SE.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Languages\da.DK.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Languages\tr.TR.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\tab_button.png" />
+    <None Include="Resources\taskbar_close_button.png" />
+    <Content Include="Resources\thanks.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\Images\yes.png" />
+    <None Include="Resources\Images\zoom.png" />
+    <None Include="Resources\Images\zoom_out.png" />
+    <None Include="Resources\Images\zoom_in.png" />
+    <None Include="Resources\Images\theme.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Silver" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="Black" />
+    <color name="Light" value="White" />
+    <color name="Sharp" value="#75EA00" />
+    <color name="MediumDark" value="#DCE5E4" />
+    <color name="MediumLight" value="#F0F1F5" />
+    <color name="Workspace" value="#414141" />
+  </colors>
+  <description />
+</theme>

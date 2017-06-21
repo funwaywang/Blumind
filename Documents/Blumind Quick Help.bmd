@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<map name="Blumind Quick Help" document_type="Blumind" editor_version="1.3.18.0">
+  <!--Create by Blumind, you can download it free from http://www.blumind.org/download-->
+  <info>
+    <author>Corinne Lombardo, Inca</author>
+    <company>blumind.org</company>
+    <version>1.0</version>
+  </info>
+  <layout>MIND_MAP</layout>
+  <attributes>
+    <item name="editor_show_sidebar">True</item>
+  </attributes>
+  <style>
+    <back_color>White</back_color>
+    <fore_color>Black</fore_color>
+    <line_color>LightSlateGray</line_color>
+    <border_color>SlateGray</border_color>
+    <node_back_color>LightGray</node_back_color>
+    <node_fore_color>Black</node_fore_color>
+    <select_color>RoyalBlue</select_color>
+    <hover_color>MediumSlateBlue</hover_color>
+    <link_line_color>Green</link_line_color>
+  </style>
+  <nodes>
+    <node text="Blumind&#xD;&#xA;Quick Help">
+      <style>
+        <back_color>Silver</back_color>
+        <fore_color>Black</fore_color>
+        <border_color>Black</border_color>
+        <padding>12</padding>
+      </style>
+      <widgets>
+        <widget type="PICTURE" align="Left" hyperlink=""><![CDATA[iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQpSURBVEhLvZV/SNx1GMefrxunHiO4GusPmZB0EYlDcZyto2BzWEHauUumA5mbmzPEhmN1rc1dx9RB9E8tL2V/GHU7cK0xUYat2YFr3PxjvygiM6HMuU08E725G+F9+rxu3uVldkHQFx54eJ73+/18vp/P53k+Iv/X94Vb1nUflSptrm63vIvvd8uG027JPvW2WM43SrrbLWkYPjFyYGK8hxwXPlpJ646Ju+WN7mbZpElrMPyzb8nhwKvGB98+bfhGHjPO/JJh9GH4xMiB+SsPraQiOrAD0NKqt0Sev2Uyeac2bhy873L9GvZ65+76/QsYPjFyYMAu5aKFZiLGr7FqAoFAYLXP57MPDAx4Im731EJnp4oeP66izc0q6nI9NHwdIwcGLBy4aMR2QGv+WUDvX7xAV1eXPRgMngiHw3NKf5HGRjXudKrvN29W14uKYoZPjBwfWDhwEwW05tI/qOK3xkRe6O3t9cTFJyYmVH9//3xPTk7IZzaPdKal3cDwiZEDEy8CF43YFunDThTgJpzRh/WzydQxe+DAVDQaVRB7enpCNpvtmAaWeEUKPxJZg+ETIwcGLBy4aKCFZqIA1+2iw/hwLC/vckTv7/2GhtjKi4uLW8xmc/5KrUIODFg4cNFAC80Ejzs99JThv11VNf5g/351d+dOFcjPD+Xm5pak6kMwYOHARQMtNBNcGueaxeiZrq8PP9ArGa+pUX0Wy8j7ZjNb8Y8fGLBw4KKBFpoJIt15NdO4MFxZuRCpr1fj+/apcybTjdN6v1MVAAMWDlw00EIzqUAw07j4w7ZtC/N1depOU5PqS0+/+W8LgIUDFw20kgrwO4OPGn0TlZX37tXWqpBupsH160dOrl2bcovAgIUDFw20kraIA7lgNT4f3rLldnjXLjV78KAaLiubdjgcKQ8ZDFg4cNFAK+mQuVLnyqT9UlbW1enqajW3d6+amZmZb21tbamoqFjxmpIDAxYOXDTQSrqmsbH8phw5u2rVqe/s9pnR0VE1OTnJCAi1tbUdczqdJV/r5groA8XwiZEDAxYOXDTQSmq02DzX7f2Z7s7CwkLP0NDQXLwIqxurrp6+YrX+dCkj4yaGT4xcXBwOXDSWjQoei/iw01fLXl5efkIPr1iR2d27VcTjUb93dKgFny9m+MTIgQELB+5Kwy4xrjWAkWsvKCjwXLbZwnccDvXb9u1/a+TAgF0UX3Fcxx8cQwNpkNWvi5S2G0av32L58SurdfqKzRYJbt0axfCJkQMDdnFhcI1lD078yXTXyHNFT8jj1mzJqX1JSk82SGvni/LJx9nyZfsj8o03Ta5j+MTIgdnzsrwCZ0OOrENj2ZPJvi0W2eE/Iod8h6Xl03ek5r062dT0muSVPitPPpMj2ZmZkoXhEyMHBiwc/1E5xFO57NFPNW/+S/4PZTz7B/erf04AAAAASUVORK5CYII=]]></widget>
+      </widgets>
+      <nodes>
+        <node text="Create a map" folded="True">
+          <nodes>
+            <node text="Choose a layout" folded="True">
+              <nodes>
+                <node text="(Sidebar, Objects) NewDocument" folded="True">
+                  <nodes>
+                    <node text="(Property, Layout) Layout Type" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Add a topic" folded="True">
+              <nodes>
+                <node text="Enter" folded="True" />
+              </nodes>
+            </node>
+            <node text="Add a sub topic" folded="True">
+              <nodes>
+                <node text="Click the Parent Topic" folded="True">
+                  <nodes>
+                    <node text="Tab" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Edit the topic" folded="True">
+              <nodes>
+                <node text="Click the Topic" folded="True">
+                  <nodes>
+                    <node text="Space" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node text="Customize the topics" folded="True">
+          <nodes>
+            <node text="Change the color" folded="True">
+              <style>
+                <back_color>YellowGreen</back_color>
+              </style>
+              <nodes>
+                <node text="Click the Topic" folded="True">
+                  <nodes>
+                    <node text="(Sidebar, Property) Color" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Change the font" folded="True">
+              <style>
+                <font font_family="Microsoft Sans Serif" size="18" style="Bold, Italic, Underline" />
+              </style>
+              <nodes>
+                <node text="Click the Topic" folded="True">
+                  <nodes>
+                    <node text="(Sidebar, Property, Appareance) Font" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Add an icon" folded="True">
+              <widgets>
+                <widget type="PICTURE" align="Left" hyperlink=""><![CDATA[iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF1SURBVDhPrVO/S8NAFH50cyhujq5CRif/Bv0rFOIfIIhUQSHoIIoIOlTQyS6XgnYRIihFBQcNaUGxWgkKFiIN1CGCDsLzvks9qB4BoYGPPN734+5xd0T9/pqCrNAlJxQUyD8rpLUDLnO9R0H2w8FgFAeT/BELZg4VUKMHDhpjyF2J7KejEX5vFZm/6kaAgwbanpDbfbIapXyUPK8xf1YzAQ208OiQ2i45rfMJ5qSssDNNujb1oIVHB1wXKUiaM8ydbQXfHde1qQctPDrgckuu+LrwL8CjA842ZMDLlNo6jg21CeDUeJKHRwecrFLwdjWmzBC4c8QXm907IHuo0ftZAFp4dIC3Qk5DDDHfj6ZCXx7/rw89cNBAC48OqCyR5S3novapDLkZ1iFhR14jCW2WHDTQwtNzFyqLZFfXc9w+HmCu5f+MgB44aKA13sZygezDeYrqe8SxJ7frp0CNHjhoMt+DKJAlZ3XELAWYGejWDrh+P176Bl2m3xRFINWbAAAAAElFTkSuQmCC]]></widget>
+              </widgets>
+              <nodes>
+                <node text="Right Click on the Topic" folded="True">
+                  <nodes>
+                    <node text="Add/Icon" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Add a note" folded="True">
+              <widgets>
+                <widget type="NOTES" align="Right" hyperlink="">
+                  <description>this is a test</description>
+                </widget>
+              </widgets>
+              <nodes>
+                <node text="Right Click on the Topic" folded="True">
+                  <nodes>
+                    <node text="Add/Notes" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Add a progress bar" folded="True">
+              <widgets>
+                <widget type="PROGRESSBAR" max="100" min="0" value="50" show_text="False" color="Green" back_color="White" fore_color="Black" align="Bottom" hyperlink="" />
+              </widgets>
+              <nodes>
+                <node text="Right Click on the Topic" folded="True">
+                  <nodes>
+                    <node text="Add/Progresss Bar" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Add a hyperlink" hyperlink="http://www.blumind.org/fr/" folded="True">
+              <nodes>
+                <node text="Click the Topic" folded="True">
+                  <nodes>
+                    <node text="(Sidebar, Property) Data\Hyperlink" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Add link between two topics" folded="True">
+              <nodes>
+                <node text="Click the First Topic" folded="True">
+                  <links>
+                    <link target="dc8d4604-1955-4e41-8b6c-4083aa67613f" cp1_length="105" cp1_angle="151" cp2_length="71" cp2_angle="0" width="3" line_style="2" start_cap="0" end_cap="20" text="" hyperlink="" />
+                  </links>
+                  <nodes>
+                    <node text="Add Link" folded="True">
+                      <nodes>
+                        <node id="dc8d4604-1955-4e41-8b6c-4083aa67613f" text="Click the Second Topic" folded="True" />
+                      </nodes>
+                    </node>
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Delete object (e.g. Icon, Note ...)" folded="True">
+              <nodes>
+                <node text="Select Object" folded="True">
+                  <nodes>
+                    <node text="Press &quot;Delete&quot; Key" folded="True" />
+                  </nodes>
+                </node>
+                <node text="Right click on object" folded="True">
+                  <nodes>
+                    <node text="Delete" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Change layout" folded="True">
+              <nodes>
+                <node text="Click blank area in chart to select chart" folded="True">
+                  <nodes>
+                    <node text="(Property, Layout) Layout Type" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node text="Organize your map" folded="True">
+          <nodes>
+            <node text="Move a topic" folded="True">
+              <nodes>
+                <node text="Select Topic" folded="True">
+                  <nodes>
+                    <node text="Ctrl+Up/Down" folded="True" />
+                  </nodes>
+                </node>
+                <node text="Right Click on the Topic" folded="True">
+                  <nodes>
+                    <node text="Move Up" folded="True" />
+                    <node text="Move Down" folded="True" />
+                  </nodes>
+                </node>
+                <node text="Right click on the Parent Topic" folded="True">
+                  <nodes>
+                    <node text="Custom Sort" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Delete a topic" folded="True">
+              <nodes>
+                <node text="Right Click ont the topic" folded="True">
+                  <nodes>
+                    <node text="Delete" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node text="View your map" folded="True">
+          <nodes>
+            <node text="Hide/show subtopics" folded="True">
+              <nodes>
+                <node text="- (Collapse)" folded="True" />
+                <node text="+ (Expand)" folded="True" />
+              </nodes>
+            </node>
+            <node text="Change the view" folded="True">
+              <nodes>
+                <node text="Full Screen (F11)" folded="True" />
+                <node text="Scroll Mode" folded="True" />
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node text="Save your map" folded="True">
+          <widgets>
+            <widget type="PICTURE" align="Left" hyperlink="" />
+          </widgets>
+          <nodes>
+            <node text="Menu/Save" folded="True" />
+            <node text="Menu/Export" folded="True">
+              <nodes>
+                <node text="PNG, JPEG, BMP, GIF, TIFF" folded="True" />
+                <node text="SVG, Freemind" folded="True" />
+                <node text="Text" folded="True" />
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node text="Print your map" folded="True">
+          <nodes>
+            <node text="Menu/Print Preview" folded="True">
+              <nodes>
+                <node text="Print Setup" folded="True" />
+              </nodes>
+            </node>
+            <node text="Menu/Print" folded="True" />
+          </nodes>
+        </node>
+        <node text="More..." folded="True">
+          <nodes>
+            <node text="Save time" folded="True">
+              <nodes>
+                <node text="Help/Accelerator Keys Table" folded="True" />
+              </nodes>
+            </node>
+            <node text="Set a theme" folded="True">
+              <nodes>
+                <node text="Themes/Themes Manage/Preview/Apply Theme" folded="True" />
+              </nodes>
+            </node>
+            <node text="Dowload icons from the Internet" folded="True">
+              <widgets>
+                <widget type="PICTURE" align="Left" hyperlink="" />
+              </widgets>
+              <nodes>
+                <node text="Add/Icon/From Internet" folded="True" />
+              </nodes>
+            </node>
+            <node text="Create your themes" folded="True">
+              <nodes>
+                <node text="Themes" folded="True">
+                  <nodes>
+                    <node text="Themes Manage/New" folded="True" />
+                    <node text="Save Current Theme" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Clear/Reset Property" folded="True">
+              <nodes>
+                <node text="(Property)Right click property" folded="True">
+                  <nodes>
+                    <node text="&quot;Reset&quot;" folded="True" />
+                  </nodes>
+                </node>
+              </nodes>
+            </node>
+            <node text="Multi-Line text in Topic" folded="True">
+              <nodes>
+                <node text="Press &quot;Ctrl+Enter&quot; to start a new line" folded="True" />
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+      </nodes>
+    </node>
+  </nodes>
+</map>

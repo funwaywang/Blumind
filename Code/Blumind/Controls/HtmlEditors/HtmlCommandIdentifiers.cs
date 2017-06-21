@@ -1,0 +1,80 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Blumind.Controls
+{
+    class HtmlCommandIdentifiers
+    {
+        public const string _2DPosition = "2D-Position";
+        public const string BackColor = "backColor";
+        public const string Bold = "bold";
+        public const string ClearAuthenticationCache = "clearAuthenticationCache";
+        public const string ContentReadOnly = "contentReadOnly";
+        public const string Copy = "copy";
+        public const string CreateBookmark = "createBookmark";
+        public const string CreateLink = "createLink";
+        public const string Cut = "cut";
+        public const string DecreaseFontSize = "decreaseFontSize";
+        public const string Delete = "delete";
+        public const string EnableInlineTableEditing = "enableInlineTableEditing";
+        public const string EnableObjectResizing = "enableObjectResizing";
+        public const string FontName = "fontName";
+        public const string FontSize = "fontSize";
+        public const string ForeColor = "foreColor";
+        public const string FormatBlock = "formatBlock";
+        public const string Heading = "heading";
+        public const string HiliteColor = "hiliteColor";
+        public const string IncreaseFontSize = "increaseFontSize";
+        public const string Indent = "indent";
+        public const string InsertBrOnReturn = "insertBrOnReturn";
+        public const string InsertButton = "insertButton";
+        public const string InsertFieldset = "insertFieldset";
+        public const string InsertHorizontalRule = "insertHorizontalRule";
+        public const string InsertHTML = "insertHTML";
+        public const string InsertIFrame = "insertIFrame";
+        public const string InsertImage = "insertImage";
+        public const string InsertInputButton = "insertInputButton";
+        public const string InsertInputCheckbox = "insertInputCheckbox";
+        public const string InsertInputFileUpload = "insertInputFileUpload";
+        public const string InsertInputHidden = "insertInputHidden";
+        public const string InsertInputImage = "insertInputImage";
+        public const string InsertInputPassword = "insertInputPassword";
+        public const string InsertInputRadio = "insertInputRadio";
+        public const string InsertInputReset = "insertInputReset";
+        public const string InsertInputSubmit = "insertInputSubmit";
+        public const string InsertInputText = "insertInputText";
+        public const string InsertMarquee = "insertMarquee";
+        public const string InsertOrderedList = "insertOrderedList";
+        public const string InsertParagraph = "insertParagraph";
+        public const string InsertSelectDropdown = "insertSelectDropdown";
+        public const string InsertSelectListbox = "insertSelectListbox";
+        public const string InsertTextArea = "insertTextArea";
+        public const string InsertUnorderedList = "insertUnorderedList";
+        public const string Italic = "italic";
+        public const string JustifyCenter = "justifyCenter";
+        public const string JustifyFull = "justifyFull";
+        public const string JustifyLeft = "justifyLeft";
+        public const string JustifyRight = "justifyRight";
+        public const string LiveResize = "liveResize";
+        public const string MultipleSelection = "multipleSelection";
+        public const string Outdent = "outdent";
+        public const string OverWrite = "overWrite";
+        public const string Paste = "paste";
+        public const string Print = "print";
+        public const string Redo = "redo";
+        public const string Refresh = "refresh";
+        public const string RemoveFormat = "removeFormat";
+        public const string SaveAs = "saveAs";
+        public const string SelectAll = "selectAll";
+        public const string StrikeThrough = "strikeThrough";
+        public const string StyleWithCSS = "styleWithCSS";
+        public const string Subscript = "subscript";
+        public const string Superscript = "superscript";
+        public const string Underline = "underline";
+        public const string Undo = "undo";
+        public const string Unlink = "unlink";
+        public const string Unselect = "unselect";
+        public const string UseCSS = "useCSS";
+    }
+}

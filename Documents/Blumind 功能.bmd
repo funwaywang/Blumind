@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<map name="Blumind 功能" document_type="Blumind" editor_version="1.3.12.0">
+  <!--Create by Blumind, you can download it free from http://www.blumind.org/download-->
+  <info />
+  <layout>MIND_MAP</layout>
+  <attributes>
+    <item name="editor_show_sidebar">True</item>
+  </attributes>
+  <style>
+    <back_color>#369C93</back_color>
+    <fore_color>#232928</fore_color>
+    <line_color>#232928</line_color>
+    <border_color>#232928</border_color>
+    <node_back_color>#6ACFAE</node_back_color>
+    <node_fore_color>#232928</node_fore_color>
+    <select_color>#EEEFB9</select_color>
+    <hover_color>#EEEFB9</hover_color>
+    <link_line_color>DarkSlateGray</link_line_color>
+  </style>
+  <nodes>
+    <node text="功能清单">
+      <style>
+        <back_color>#B03831</back_color>
+        <fore_color>#232928</fore_color>
+        <border_color>#232928</border_color>
+        <padding>12</padding>
+      </style>
+      <widgets>
+        <widget type="PICTURE" align="Top" hyperlink=""><![CDATA[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]]></widget>
+      </widgets>
+      <nodes>
+        <node text="新式Tip">
+          <nodes>
+            <node id="a60db695-8787-4323-8b62-bed7ab1a82ea" text="图标化的图片, 平时显示为一个图标, &#xD;&#xA;当鼠标移到上面时, 弹出大图,类似Tooltip">
+              <widgets>
+                <widget type="PICTURE" align="Left" hyperlink=""><![CDATA[iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHrSURBVDhPY2CgNkiffk4rZfqpptSZZ86BzP6f5vL/T6rLub8pLk3/0p208NqXMutMasqs889r1j/6nzbzzH+Q4p9xNv//zSj7/6c+9v/PZMfnP2NtUrEakjTleGrO/Ev/u/Z++A/U+z9p6gmwAR+CDP7/X9UBxr8nFfz/nOz4/32APqoh0RMPaSX0H3nesv3V/8nHfoJxTP8hsAFPXZT+/5+YD8c/aqL+P3FVff7MSQXhnZD2XU0w20EuAGGgGNiA22Yi///n+aDg1/66/2+bCTfBveJdv+lcybKb/xs2PYVj34ZNYAMuaXH8/x9qjIK/emv+v6TFDg5kMHCtWP2/dMVtFAwSA8mdUWL4jwvDDbAtWPwf5AUYDu3Y/d+2YOF+opOIWdbcc9F9B8FR59+09b9p5lywZpeVLvtdVrn8x4pXuiC8YJgyvcmzZv1/34bN/w1TZ4I12yy02d/xruM/Nhx7OPa/zSIbRCAapE/XMs2Y/Qym2XCqIVhz5f1KDJx2Ju2/2Syz5wbTDVBTpXH6dAeQzSqdKmDNKadSMHDwzuD/BtMM/it3KWNPjeL14g6S9ZLPjGca/3df6/4/dHcoGIPYIDGpZqnnknWS2DXDQlyoUkhLsFywSbBU8ByQ/g/GEHYTSI7omCFWIQBcSmnSNsTZIgAAAABJRU5ErkJggg==]]></widget>
+              </widgets>
+            </node>
+            <node text="弹出后, 可以由用户&quot;钉&quot;住, 不隐藏">
+              <widgets>
+                <widget type="NOTES" back_color="Pink" align="Right" hyperlink="">
+                  <description>
+以前的悬浮框，背景黄色跟软件整体感觉不是很协调，而且备注过多的情况下，悬浮框横向拉长，导致悬浮框下面尾巴弄的很难看。
+
+虽然现在改进了。但是备注自动截断感觉很不好，如果字过多的情况下，需要全部显示的就没有办法了。必须双击备注，而且就算双击备注。
+
+进去之后，因为文字过多。还是需要把对话框拉长。这样很繁琐。
+
+
+我希望改进的是，不要备注截断，或者双击进入备注的时候。可以根据一行字的长度来判断对话框的长度。
+
+而且双击进去的时候，不要是全选状态。
+
+
+这是本人的一些，意见。谢谢。期待您的回信。您忠诚的使用者。</description>
+                </widget>
+              </widgets>
+              <nodes>
+                <node text="备注太长会截断?">
+                  <widgets>
+                    <widget type="PICTURE" align="Left" hyperlink=""><![CDATA[iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFISURBVDhPlZK9SsNgFIbfURCc3LwGB+8gegsuXoCLU8cgFAyKDgo6dHCoICIirYqKOKiEomCRohZCW5RScBHBWn8GQUF4zRtEG/M1pIGHnJzznJMvhwAxVyMPijinY62+CadVSVEo7nrIzQZINgIUdzWgugbnsTxBfnkBipVLPMRb9d/+eRZCOeOAqyyc6yzYzsPFGPm+F0K5/556UVr++dYPl3xdSYZcfzfqxXkGTjEDvlXHyeZsIuSqR73BZxWWYJ0ugi/lUfI+FYscueoJ7eRkAZY7Dz6XRsg7fwcGVJMj17jQozmwVRwi68NGVJNjbD6YgXU47S+0NhiLHLmRIftTcG5zfaQ38MuT20/RnpMjNzJgNw02j3vIcm9w1/NOGgVhqkUGbE/6x78Ea+ug4i3775iKlVNNjuLIgJwNJ2+Dunf6503ON5Fst/S6N3JkAAAAAElFTkSuQmCC]]></widget>
+                  </widgets>
+                </node>
+              </nodes>
+            </node>
+          </nodes>
+        </node>
+        <node text="超链接功能">
+          <widgets>
+            <widget type="PICTURE" align="Left" hyperlink=""><![CDATA[iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVDhPvVFBCoNADPQpfUo+oyIKCuJFD7sgXvTgQVR8TZ+W7khTVtnVHkqFMGMyk4RsEPzjW9eVtm1jQcOfX8+FaVmW3QyEcZ5nbeK+yTRNZIIF7anIX24xjiOZYEGIT9zfYBgG6vueBWG2udScG7RtS13XsSBENpea06yUIq01C0Jkc6k5zU3TUF3XLAiRzaXmNJdlSVVV7UexUNs5aLxXL4ric9E8zwn/BjUMb+43Q5Rl2eFJ0jTdDcgLv3zzJEk4juPDFFfO2wTmKIo4DEONAD83vNwARWN4SAPwW8OvBC90MbW01kY1EwAAAABJRU5ErkJggg==]]></widget>
+          </widgets>
+          <nodes>
+            <node text="连到网站" hyperlink="http://www.blumind.org">
+              <widgets>
+                <widget type="NOTES" align="Right" hyperlink="C:\Users\Inca\Desktop\2cbc15f989f2d1faa50f529a.jpg">
+                  <description>Hello
+world!!</description>
+                </widget>
+                <widget type="PICTURE" align="Left" hyperlink=""><![CDATA[iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAInSURBVDhPrZPfS1NhGMf3H8gEL/RqF13YbnTJ3DjYMGEmnrmdwXEDPekunOik7EKOztDWwWokxCLEzeFmNKLDIlJb1qZQ9gOymC69DLsoWILkTRfhzbeeN3ZkIF554MN5fn4fnpf31elO+xNXRaOYFRXhpfAjHt9HZ64TZFOMcifOEzKCP/wrDPeKG9GlAnI5YCG7zfzBzUES26OaY0X4ZZ41O5YcmHn6v7lE8tUXdL/pxtjuGLxrXlBtmUib2mYcKAz8bn3SipvJT1DVwzIBEqIcDZC/yuAX+T3q0URsKZvyD4zee4vp6X1EowdIp/9oIhH1I1wZFxNQfiqQ1iVQjybA+2N5y7wFhOdOGKHQLiKRIhKJAwbFqTn4LcgIbAXQON+Y1wRcrgwu386ibqaOTaK/88YkZHmHQf7wznAZFNME2tufYWLiO2rv1rIdaRrtTL7bvYKLvvvMpljfRh+DfE3AblfzQ0MFGG4Z2GmXIN9uT2tYAgFW07HcAcOU4WiF5uZHite7hgsjI7AmrOzy1IRqcM4xCY5bYNhsKQjCC4hXHjCR6uvVR4fY1PTQyHGpos/3AVXXqmCOm3H2koSGhhiDmmnNnp53oJqK8YpiZbCy/FZyXNLf0vIYZ66eh35UD49nFU7ncwbZvb3vIUnroBq9rD/+NprNc36rda7I84vo6nqN/v7PDLIpRjmqOfE91NfPGk2mWcVkiuVLK5BNMcqd9uPV/QUBFI18oIunAQAAAABJRU5ErkJggg==]]></widget>
+              </widgets>
+            </node>
+            <node text="连到文件或程序">
+              <widgets>
+                <widget type="PICTURE" align="Left" hyperlink=""><![CDATA[iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEhSURBVDhPY2CAgjMz0/6jY5gcQfrU9JT/ny5u+v//6Rk4BvFB4gQ1H5+S+P/9ubX//zw8joFB4iB5XPjolMT9DEcmxv3/eecAWRikl+FAb9T/r9e2k4VBehl2d4T+/3BuHVb8eM+M/yB5fJhhe0vg/9fHl2Dge9v6/4Pkvl7bgROfnFPwn2FTg+9/XPjTpU3/n+6fiROD9DEcmpYJjgVs+MH2vv/48Lpqj/8Mq8pd/t/e0EIWBullWFpk///aimqyMEgvw8I86/+XFhWRhUF6GeZlW/w/PzebLAzSyzA7wxQjE2HLWNjEQHoZZqYa7p+TafZ/fo7l/8UFtv9XlDr9X1Pp9n9Drdf/zcBoAmEQGyQGkgOpAakF6QHpJZjZCCkAANfjkElDsqhsAAAAAElFTkSuQmCC]]></widget>
+              </widgets>
+            </node>
+            <node text="连到当前/另一个Mindmap或其中的一个主题" />
+          </nodes>
+        </node>
+        <node text="Multi Center Topic" />
+        <node text="Move topic by user" hyperlink="C:\Users\Inca\Desktop\Blumind 功能.bmd">
+          <links>
+            <link target="a60db695-8787-4323-8b62-bed7ab1a82ea" cp1_length="264" cp1_angle="250" cp2_length="180" cp2_angle="311" width="3" line_style="2" start_cap="0" end_cap="20" text="This is a link" hyperlink="Hello">
+              <description>Naver Say That</description>
+            </link>
+          </links>
+        </node>
+        <node text="Every topic have a ID" hyperlink="http://www2.tscprinters.com/zh_TW/index.php?option=com_docman&amp;task=cat_view&amp;gid=578&amp;Itemid=81" />
+      </nodes>
+    </node>
+  </nodes>
+</map>

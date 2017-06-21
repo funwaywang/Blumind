@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Thin Green" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="Black" />
+    <color name="Light" value="White" />
+    <color name="Sharp" value="#6B8C23" />
+    <color name="MediumDark" value="#254019" />
+    <color name="MediumLight" value="#AECD8D" />
+    <color name="Workspace" value="#262626" />
+  </colors>
+  <description />
+</theme>

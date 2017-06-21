@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Old Eastbourne" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="#101010" />
+    <color name="Light" value="#F7F9E9" />
+    <color name="Sharp" value="#F2937E" />
+    <color name="MediumDark" value="#0D2037" />
+    <color name="MediumLight" value="#B1D9D3" />
+    <color name="Workspace" value="#0D2037" />
+  </colors>
+  <description />
+</theme>

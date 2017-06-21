@@ -1,0 +1,3 @@
+cd D:\Codes\Blumind\Code\Release\Dotfuscated
+D:
+sn -Ra "D:\Codes\Blumind\Code\Release\Dotfuscated\Blumind.exe" "D:\Codes\Blumind\Code\Snk\hyfree.snk"

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Brilliant Yellow" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="#1D1107" />
+    <color name="Light" value="White" />
+    <color name="Sharp" value="#FFE542" />
+    <color name="MediumDark" value="#B68E6D" />
+    <color name="MediumLight" value="#507D00" />
+    <color name="Workspace" value="#321E0E" />
+  </colors>
+  <description />
+</theme>

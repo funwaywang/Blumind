@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<theme name="Khaki" type="blumind-ui-theme" version="1.0">
+  <colors>
+    <color name="Dark" value="Black" />
+    <color name="Light" value="#E6DCAE" />
+    <color name="Sharp" value="#737D26" />
+    <color name="MediumDark" value="#3F522B" />
+    <color name="MediumLight" value="#A99E46" />
+    <color name="Workspace" value="#302B1D" />
+  </colors>
+  <description />
+</theme>

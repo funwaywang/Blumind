@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Map Dirty="0000000000000001" OId="ALpEt02GVk60QHkPQBbj/Q==" Gen="0000000000000000" xmlns:ap="http://schemas.mindjet.com/MindManager/Application/2003" xmlns:cor="http://schemas.mindjet.com/MindManager/Core/2003" xmlns:pri="http://schemas.mindjet.com/MindManager/Primitive/2003" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.mindjet.com/MindManager/Application/2003 http://schemas.mindjet.com/MindManager/Application/2003 http://schemas.mindjet.com/MindManager/Core/2003 http://schemas.mindjet.com/MindManager/Core/2003 http://schemas.mindjet.com/MindManager/Delta/2003 http://schemas.mindjet.com/MindManager/Delta/2003 http://schemas.mindjet.com/MindManager/Primitive/2003 http://schemas.mindjet.com/MindManager/Primitive/2003">
+<cor:Custom Index="0" Uri="http://schemas.mindjet.com/MindManager/UpdateCompatibility/2004" Dirty="0000000000000000" cst0:UpdatedCategories="true" cst0:UpdatedVisibilityStyle="true" xmlns:cst0="http://schemas.mindjet.com/MindManager/UpdateCompatibility/2004"/>
+<cor:Custom Index="1" Uri="http://schemas.mindjet.com/MindManager/Mm5PPExport/2003" Dirty="0000000000000000" cst0:FormatSettings="&lt;PPTemplate&gt;&lt;/PPTemplate&gt;&lt;FooterText&gt;&lt;/FooterText&gt;&lt;ExportFilename&gt;P:\Design\MM8\Templates\Style Default\Style Default2-white (3).pptx&lt;/ExportFilename&gt;&lt;AddFooterText&gt;true&lt;/AddFooterText&gt;&lt;IncludeHyperlink&gt;false&lt;/IncludeHyperlink&gt;&lt;UseSmoothGraphics&gt;true&lt;/UseSmoothGraphics&gt;&lt;ImageBorder&gt;true&lt;/ImageBorder&gt;&lt;DisplayIconAsBullet&gt;false&lt;/DisplayIconAsBullet&gt;&lt;DisplaySlideNumber&gt;true&lt;/DisplaySlideNumber&gt;&lt;SpeakerNotes&gt;true&lt;/SpeakerNotes&gt;&lt;CalloutBackgroundColor&gt;10485759&lt;/CalloutBackgroundColor&gt;&lt;IsDocumentModified&gt;true&lt;/IsDocumentModified&gt;&lt;ShowCallout&gt;true&lt;/ShowCallout&gt;&lt;RemoveNewlines&gt;true&lt;/RemoveNewlines&gt;&lt;GenerateAutomatically&gt;true&lt;/GenerateAutomatically&gt;&lt;GlobalSlideStyle&gt;3&lt;/GlobalSlideStyle&gt;&lt;GlobalBulletDepth&gt;2&lt;/GlobalBulletDepth&gt;" xmlns:cst0="http://schemas.mindjet.com/MindManager/Mm5PPExport/2003"/>
+<OneTopic>
+<Topic Dirty="0000000000000001" OId="XlaUStzrF0ylA9NSQDxBdw==" Gen="0000000000000000">
+<SubTopics>
+<Topic Dirty="0000000000000001" OId="vDuhCArS2kSjOtZHcfOr2A==" Gen="0000000000000000">
+<TopicViewGroup ViewIndex="0">
+<Collapsed Collapsed="true" Dirty="0000000000000001"/>
+</TopicViewGroup>
+<NotesGroup>
+<NotesXhtmlData Dirty="0000000000000001" PreviewPlainText="Hello, World">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<p>Hello, World</p>
+</html>
+</NotesXhtmlData>
+</NotesGroup>
+<Offset Dirty="0000000000000001" CX="43.536293029785156" CY="43.029159545898438"/>
+</Topic>
+<Topic Dirty="0000000000000001" OId="L7sBCmjF+0+SbDK7A+AczQ==" Gen="0000000000000000">
+<TopicViewGroup ViewIndex="0">
+<Collapsed Collapsed="true" Dirty="0000000000000001"/>
+</TopicViewGroup>
+<Offset Dirty="0000000000000001" CX="49.621692657470703" CY="25.831253051757813"/>
+</Topic>
+<Topic Dirty="0000000000000001" OId="NzIwzGtF4k+/Y/+8jjqmJw==" Gen="0000000000000000">
+<TopicViewGroup ViewIndex="0">
+<Collapsed Collapsed="true" Dirty="0000000000000001"/>
+</TopicViewGroup>
+<Offset Dirty="0000000000000001" CX="-27.372043609619141" CY="-23.645833969116211"/>
+<IconsGroup>
+<Icons Dirty="0000000000000001">
+<Icon xsi:type="StockIcon" IconType="urn:mindjet:SmileyHappy"/>
+</Icons>
+</IconsGroup>
+</Topic>
+</SubTopics>
+<TopicViewGroup ViewIndex="0">
+<Collapsed Collapsed="false" Dirty="0000000000000000"/>
+</TopicViewGroup>
+<IconsGroup>
+<Icons Dirty="0000000000000001">
+<Icon xsi:type="StockIcon" IconType="urn:mindjet:FlagGreen"/>
+</Icons>
+</IconsGroup>
+</Topic>
+</OneTopic>
+<Relationships>
+<Relationship Dirty="0000000000000001" OId="L7Q95aaMW0exH6iXKxkgwg==" Gen="0000000000000000">
+<ConnectionGroup Index="0">
+<Connection Dirty="0000000000000001" CX="-8.3853759765625" CY="-26.466655731201172">
+<ObjectReference OIdRef="XlaUStzrF0ylA9NSQDxBdw=="/>
+</Connection>
+</ConnectionGroup>
+<ConnectionGroup Index="1">
+<Connection Dirty="0000000000000001" CX="-31.469676971435547" CY="-12.139595031738281">
+<ObjectReference OIdRef="vDuhCArS2kSjOtZHcfOr2A=="/>
+</Connection>
+</ConnectionGroup>
+<RelationshipViewGroup ViewIndex="0"/>
+<AutoRoute Dirty="0000000000000001" AutoRouting="false"/>
+</Relationship>
+</Relationships>
+<StyleGroup>
+<RootTopicDefaultsGroup>
+<DefaultColor Dirty="0000000000000001" FillColor="ff96b3df" LineColor="ffc6c6c6"/>
+<DefaultText TextAlignment="urn:mindjet:Center" TextCapitalization="urn:mindjet:SentenceStyle" VerticalTextAlignment="urn:mindjet:Top" Dirty="0000000000000001" PlainText="Central Topic" ReadOnly="false">
+<Font Color="ff333333" Size="12." Name="Verdana" Bold="true" Italic="false" Underline="false" Strikethrough="false"/>
+</DefaultText>
+<DefaultSubTopicShape SubTopicShape="urn:mindjet:RoundedRectangle" Dirty="0000000000000001" LeftMargin="2.5" RightMargin="2.5" TopMargin="2.5" BottomMargin="2.5" VerticalLeftMargin="2.5" VerticalRightMargin="2.5" VerticalTopMargin="2.5" VerticalBottomMargin="2.5" VerticalSubTopicShape="urn:mindjet:Rectangle"/>
+<DefaultLabelFloatingTopicShape LabelFloatingTopicShape="urn:mindjet:None" Dirty="0000000000000000" LeftMargin="0." RightMargin="0." TopMargin="0." BottomMargin="0." VerticalLeftMargin="2.5" VerticalRightMargin="2.5" VerticalTopMargin="2.5" VerticalBottomMargin="2.5" VerticalLabelFloatingTopicShape="urn:mindjet:None"/>
+<DefaultCalloutFloatingTopicShape CalloutFloatingTopicShape="urn:mindjet:None" Dirty="0000000000000000" LeftMargin="0." RightMargin="0." TopMargin="0." BottomMargin="0." VerticalCalloutFloatingTopicShape="urn:mindjet:None" VerticalLeftMargin="2.5" VerticalRightMargin="2.5" VerticalTopMargin="2.5" VerticalBottomMargin="2.5"/>
+<DefaultTopicLayout TopicLayoutHorizontalAlignment="urn:mindjet:Center" TopicLayoutVerticalAlignment="urn:mindjet:Center" TopicTextAndImagePosition="urn:mindjet:TextRightImageLeft" TopicWidthControl="urn:mindjet:AutoWidth" Dirty="0000000000000001" Width="61." MinimumHeight="5." Padding="2."/>
+<DefaultSubTopicsShape SubTopicsAlignment="urn:mindjet:Center" SubTopicsConnectionPoint="urn:mindjet:Center" SubTopicsConnectionStyle="urn:mindjet:Arc" SubTopicsGrowth="urn:mindjet:Horizontal" SubTopicsGrowthDirection="urn:mindjet:LeftAndRight" SubTopicsShape="urn:mindjet:Vertical" SubTopicsShapeWidthFactor="1." SubTopicsVerticalAlignment="urn:mindjet:Middle" SubTopicsVerticalGrowthDirection="urn:mindjet:Down" Dirty="0000000000000001" DistanceFromParent="30." VerticalDistanceFromParent="10." DistanceBetweenSiblings="7." VerticalDistanceBetweenSiblings="1." SubTopicsDepth="1" SubTopicsAlignmentDualVertical="urn:mindjet:Center" SubTopicsTreeConnectionPoint="urn:mindjet:Inside" VerticalSubTopicsConnectionStyle="urn:mindjet:Elbow" VerticalSubTopicsConnectionPoint="urn:mindjet:Outside" VerticalSubTopicsTreeConnectionPoint="urn:mindjet:Inside"/>
+<DefaultSubTopicsVisibility Dirty="0000000000000000" Hidden="false"/>
+</RootTopicDefaultsGroup>
+<RootSubTopicDefaultsGroup Level="0">
+<DefaultColor Dirty="0000000000000001" FillColor="ffe9f1ff" LineColor="ffc6c6c6"/>
+<DefaultText TextAlignment="urn:mindjet:Left" TextCapitalization="urn:mindjet:None" Dirty="0000000000000001" PlainText="Main Topic" ReadOnly="false">
+<Font Color="ff4b4b4b" Size="10." Name="Verdana" Bold="true" Italic="false" Underline="false" Strikethrough="false"/>
+</DefaultText>
+<DefaultSubTopicShape SubTopicShape="urn:mindjet:RoundedRectangle" Dirty="0000000000000001" LeftMargin="2." RightMargin="2." TopMargin="2." BottomMargin="2." VerticalLeftMargin="2." VerticalRightMargin="2." VerticalTopMargin="2." VerticalBottomMargin="2." VerticalSubTopicShape="urn:mindjet:Rectangle"/>
+<DefaultTopicLayout Dirty="0000000000000001" Width="66.800003051757813" Padding="2."/>
+<DefaultSubTopicsShape SubTopicsAlignment="urn:mindjet:Center" SubTopicsConnectionPoint="urn:mindjet:Outside" SubTopicsConnectionStyle="urn:mindjet:RoundedElbow" SubTopicsGrowth="urn:mindjet:Horizontal" SubTopicsGrowthDirection="urn:mindjet:AutomaticHorizontal" SubTopicsShape="urn:mindjet:Vertical" SubTopicsVerticalAlignment="urn:mindjet:Middle" SubTopicsVerticalGrowthDirection="urn:mindjet:AutomaticVertical" Dirty="0000000000000001" DistanceFromParent="2." VerticalDistanceFromParent="10." DistanceBetweenSiblings="1.3999999761581421" VerticalDistanceBetweenSiblings="1." SubTopicsAlignmentDualVertical="urn:mindjet:Bottom" VerticalSubTopicsConnectionStyle="urn:mindjet:Elbow" VerticalSubTopicsConnectionPoint="urn:mindjet:Outside"/>
+<DefaultSubTopicsVisibility Dirty="0000000000000000" Hidden="false"/>
+</RootSubTopicDefaultsGroup>
+<RootSubTopicDefaultsGroup Level="1">
+<DefaultColor Dirty="0000000000000001" FillColor="ffffffff" LineColor="ffc6c6c6"/>
+<DefaultText TextAlignment="urn:mindjet:Left" TextCapitalization="urn:mindjet:None" Dirty="0000000000000001" PlainText="Subtopic" ReadOnly="false">
+<Font Color="ff4b4b4b" Size="9." Name="Verdana" Bold="true" Italic="false" Underline="false" Strikethrough="false"/>
+</DefaultText>
+<DefaultSubTopicShape SubTopicShape="urn:mindjet:None" Dirty="0000000000000001" LeftMargin="0." RightMargin="0." TopMargin="0." BottomMargin="0." VerticalLeftMargin="1." VerticalRightMargin="1." VerticalTopMargin="1." VerticalBottomMargin="1." VerticalSubTopicShape="urn:mindjet:Rectangle"/>
+<DefaultTopicLayout Dirty="0000000000000001" Width="60.700000762939453"/>
+<DefaultSubTopicsShape SubTopicsAlignment="urn:mindjet:Center" SubTopicsConnectionPoint="urn:mindjet:Outside" SubTopicsConnectionStyle="urn:mindjet:RoundedElbow" SubTopicsGrowth="urn:mindjet:Horizontal" SubTopicsGrowthDirection="urn:mindjet:AutomaticHorizontal" SubTopicsShape="urn:mindjet:Vertical" Dirty="0000000000000001" DistanceFromParent="2." VerticalDistanceFromParent="10." DistanceBetweenSiblings="1.3999999761581421" VerticalDistanceBetweenSiblings="1." SubTopicsAlignmentDualVertical="urn:mindjet:Bottom" VerticalSubTopicsConnectionStyle="urn:mindjet:Elbow" VerticalSubTopicsConnectionPoint="urn:mindjet:Outside"/>
+<DefaultSubTopicsVisibility Dirty="0000000000000000" Hidden="false"/>
+</RootSubTopicDefaultsGroup>
+<RootSubTopicDefaultsGroup Level="2">
+<DefaultColor Dirty="0000000000000001" FillColor="00000000"/>
+<DefaultText TextAlignment="urn:mindjet:Left" TextCapitalization="urn:mindjet:None" Dirty="0000000000000001" PlainText="Subtopic" ReadOnly="false">
+<Font Color="ff282828" Size="9." Name="Verdana" Bold="false" Italic="false" Underline="false" Strikethrough="false"/>
+</DefaultText>
+<DefaultSubTopicShape SubTopicShape="urn:mindjet:Line" Dirty="0000000000000001" LeftMargin="0.20000000298023224" RightMargin="0.20000000298023224" TopMargin="0.20000000298023224" BottomMargin="0.20000000298023224" VerticalLeftMargin="1." VerticalRightMargin="1." VerticalTopMargin="1." VerticalBottomMargin="1." VerticalSubTopicShape="urn:mindjet:Rectangle"/>
+<DefaultTopicLayout Dirty="0000000000000001" Width="66.800003051757813"/>
+<DefaultSubTopicsShape SubTopicsAlignment="urn:mindjet:Center" SubTopicsConnectionPoint="urn:mindjet:Outside" SubTopicsConnectionStyle="urn:mindjet:RoundedElbow" SubTopicsGrowth="urn:mindjet:Horizontal" SubTopicsGrowthDirection="urn:mindjet:AutomaticHorizontal" SubTopicsShape="urn:mindjet:Vertical" Dirty="0000000000000001" DistanceFromParent="2." VerticalDistanceFromParent="10." DistanceBetweenSiblings="1.3999999761581421" VerticalDistanceBetweenSiblings="1." SubTopicsAlignmentDualVertical="urn:mindjet:Bottom" VerticalSubTopicsConnectionStyle="urn:mindjet:Elbow" VerticalSubTopicsConnectionPoint="urn:mindjet:Outside"/>
+</RootSubTopicDefaultsGroup>
+<CalloutTopicDefaultsGroup>
+<DefaultColor Dirty="0000000000000001" FillColor="ffffe178" LineColor="ffe0c35a"/>
+<DefaultText TextAlignment="urn:mindjet:Left" TextCapitalization="urn:mindjet:None" Dirty="0000000000000001" PlainText="Callout" ReadOnly="false">
+<Font Color="ff4b4b4b" Size="10." Name="Verdana" Bold="true" Italic="false" Underline="false" Strikethrough="false"/>
+</DefaultText>
+<DefaultCalloutFloatingTopicShape CalloutFloatingTopicShape="urn:mindjet:RoundedRectangleBalloon" Dirty="0000000000000001" LeftMargin="2." RightMargin="2." TopMargin="2." BottomMargin="2."/>
+<DefaultTopicLayout Dirty="0000000000000001" Width="61." Padding="2."/>
+<DefaultSubTopicsShape SubTopicsAlignment="urn:mindjet:Center" SubTopicsConnectionPoint="urn:mindjet:Outside" SubTopicsConnectionStyle="urn:mindjet:RoundedElbow" SubTopicsGrowth="urn:mindjet:Horizontal" SubTopicsGrowthDirection="urn:mindjet:AutomaticHorizontal" SubTopicsShape="urn:mindjet:Vertical" SubTopicsVerticalAlignment="urn:mindjet:Middle" SubTopicsVerticalGrowthDirection="urn:mindjet:AutomaticVertical" Dirty="0000000000000001" DistanceFromParent="2." VerticalDistanceFromParent="10." DistanceBetweenSiblings="1.3999999761581421" VerticalDistanceBetweenSiblings="1." SubTopicsAlignmentDualVertical="urn:mindjet:Center"/>
+<DefaultSubTopicsVisibility Dirty="0000000000000000" Hidden="false"/>
+</CalloutTopicDefaultsGroup>
+<CalloutSubTopicDefaultsGroup Level="0">
+<DefaultColor Dirty="0000000000000001" FillColor="00000000" LineColor="ffc6c6c6"/>
+<DefaultText TextAlignment="urn:mindjet:Left" TextCapitalization="urn:mindjet:None" Dirty="0000000000000001" PlainText="Subtopic" ReadOnly="false">
+<Font Color="ff282828" Size="9." Name="Verdana" Bold="false"/>
+</DefaultText>
+<DefaultSubTopicShape SubTopicShape="urn:mindjet:Line" Dirty="0000000000000001" LeftMargin="0.20000000298023224" RightMargin="0.20000000298023224" TopMargin="0.20000000298023224" BottomMargin="0.20000000298023224"/>
+<DefaultSubTopicsShape SubTopicsAlignment="urn:mindjet:Center" SubTopicsConnectionPoint="urn:mindjet:Outside" SubTopicsConnectionStyle="urn:mindjet:RoundedElbow" SubTopicsGrowth="urn:mindjet:Horizontal" SubTopicsGrowthDirection="urn:mindjet:AutomaticHorizontal" SubTopicsShape="urn:mindjet:Vertical" SubTopicsVerticalAlignment="urn:mindjet:Middle" SubTopicsVerticalGrowthDirection="urn:mindjet:AutomaticVertical" Dirty="0000000000000001" DistanceFromParent="2." VerticalDistanceFromParent="10." DistanceBetweenSiblings="1.3999999761581421" VerticalDistanceBetweenSiblings="1." SubTopicsAlignmentDualVertical="urn:mindjet:Center"/>
+<DefaultSubTopicsVisibility Dirty="0000000000000000" Hidden="false"/>
+</CalloutSubTopicDefaultsGroup>
+<LabelTopicDefaultsGroup>
+<DefaultColor Dirty="0000000000000001" FillColor="ffeeeff6" LineColor="ffc6c6c6"/>
+<DefaultText TextAlignment="urn:mindjet:Left" TextCapitalization="urn:mindjet:None" Dirty="0000000000000001" PlainText="Floating Topic" ReadOnly="false">
+<Font Color="ff4b4b4b" Size="10." Name="Verdana" Bold="true" Italic="false" Underline="false" Strikethrough="false"/>
+</DefaultText>
+<DefaultLabelFloatingTopicShape LabelFloatingTopicShape="urn:mindjet:RoundedRectangle" Dirty="0000000000000001" LeftMargin="2." RightMargin="2." TopMargin="2." BottomMargin="2." VerticalLeftMargin="2." VerticalRightMargin="2." VerticalTopMargin="2." VerticalBottomMargin="2." VerticalLabelFloatingTopicShape="urn:mindjet:RoundedRectangle"/>
+<DefaultTopicLayout Dirty="0000000000000001" Padding="2."/>
+<DefaultSubTopicsShape SubTopicsAlignment="urn:mindjet:Center" SubTopicsConnectionPoint="urn:mindjet:Outside" SubTopicsConnectionStyle="urn:mindjet:RoundedElbow" SubTopicsGrowth="urn:mindjet:Horizontal" SubTopicsGrowthDirection="urn:mindjet:AutomaticHorizontal" SubTopicsShape="urn:mindjet:Vertical" SubTopicsVerticalAlignment="urn:mindjet:Middle" SubTopicsVerticalGrowthDirection="urn:mindjet:Down" Dirty="0000000000000001" DistanceFromParent="2." VerticalDistanceFromParent="5." DistanceBetweenSiblings="1.3999999761581421" VerticalDistanceBetweenSiblings="1.3999999761581421" SubTopicsDepth="1" SubTopicsAlignmentDualVertical="urn:mindjet:Center" VerticalSubTopicsConnectionStyle="urn:mindjet:Elbow" VerticalSubTopicsConnectionPoint="urn:mindjet:Outside"/>
+<DefaultSubTopicsVisibility Dirty="0000000000000000" Hidden="false"/>
+</LabelTopicDefaultsGroup>
+<LabelSubTopicDefaultsGroup Level="0">
+<DefaultColor Dirty="0000000000000001" FillColor="00000000" LineColor="ffc6c6c6"/>
+<DefaultText TextAlignment="urn:mindjet:Left" TextCapitalization="urn:mindjet:None" Dirty="0000000000000001" PlainText="Subtopic" ReadOnly="false">
+<Font Color="ff282828" Size="9." Name="Verdana" Bold="false"/>
+</DefaultText>
+<DefaultSubTopicShape SubTopicShape="urn:mindjet:Line" Dirty="0000000000000001" LeftMargin="0.5" RightMargin="0.5" TopMargin="0.5" BottomMargin="0.5" VerticalLeftMargin="1." VerticalRightMargin="1." VerticalTopMargin="1." VerticalBottomMargin="1." VerticalSubTopicShape="urn:mindjet:Rectangle"/>
+<DefaultTopicLayout Dirty="0000000000000001" Width="61."/>
+<DefaultSubTopicsShape SubTopicsAlignment="urn:mindjet:Center" SubTopicsConnectionPoint="urn:mindjet:Outside" SubTopicsConnectionStyle="urn:mindjet:RoundedElbow" SubTopicsGrowth="urn:mindjet:Horizontal" SubTopicsGrowthDirection="urn:mindjet:AutomaticHorizontal" SubTopicsShape="urn:mindjet:Vertical" SubTopicsVerticalAlignment="urn:mindjet:Middle" SubTopicsVerticalGrowthDirection="urn:mindjet:AutomaticVertical" Dirty="0000000000000001" VerticalDistanceFromParent="3." DistanceBetweenSiblings="1.3999999761581421" VerticalDistanceBetweenSiblings="1.3999999761581421" SubTopicsAlignmentDualVertical="urn:mindjet:Bottom" VerticalSubTopicsConnectionStyle="urn:mindjet:Elbow"/>
+<DefaultSubTopicsVisibility Dirty="0000000000000000" Hidden="false"/>
+</LabelSubTopicDefaultsGroup>
+<OrgChartTopicDefaultsGroup>
+<DefaultColor Dirty="0000000000000001" FillColor="ffe9f1ff" LineColor="ffc6c6c6"/>
+<DefaultText TextAlignment="urn:mindjet:Center" TextCapitalization="urn:mindjet:None" VerticalTextAlignment="urn:mindjet:Top" Dirty="0000000000000001" PlainText="Org-Chart Topic" ReadOnly="false">
+<Font Color="ff4b4b4b" Size="10." Name="Verdana" Bold="true" Italic="false" Underline="false" Strikethrough="false"/>
+</DefaultText>
+<DefaultSubTopicShape Dirty="0000000000000001" VerticalLeftMargin="2." VerticalRightMargin="2." VerticalTopMargin="2." VerticalBottomMargin="2." VerticalSubTopicShape="urn:mindjet:RoundedRectangle"/>
+<DefaultLabelFloatingTopicShape Dirty="0000000000000001" VerticalLeftMargin="2." VerticalRightMargin="2." VerticalTopMargin="2." VerticalBottomMargin="2." VerticalLabelFloatingTopicShape="urn:mindjet:RoundedRectangle"/>
+<DefaultCalloutFloatingTopicShape Dirty="0000000000000001" VerticalCalloutFloatingTopicShape="urn:mindjet:RoundedRectangleBalloon" VerticalLeftMargin="2." VerticalRightMargin="2." VerticalTopMargin="2." VerticalBottomMargin="2."/>
+<DefaultTopicLayout TopicLayoutHorizontalAlignment="urn:mindjet:Center" TopicLayoutVerticalAlignment="urn:mindjet:Center" TopicTextAndImagePosition="urn:mindjet:TextRightImageLeft" TopicWidthControl="urn:mindjet:AutoWidth" Dirty="0000000000000001" Width="50." MinimumHeight="5." Padding="2."/>
+<DefaultSubTopicsShape SubTopicsAlignment="urn:mindjet:Center" SubTopicsGrowth="urn:mindjet:Vertical" SubTopicsGrowthDirection="urn:mindjet:AutomaticHorizontal" SubTopicsShape="urn:mindjet:Vertical" SubTopicsShapeWidthFactor="1." SubTopicsVerticalAlignment="urn:mindjet:Middle" SubTopicsVerticalGrowthDirection="urn:mindjet:AutomaticVertical" Dirty="0000000000000001" DistanceFromParent="5." VerticalDistanceFromParent="3." DistanceBetweenSiblings="1." VerticalDistanceBetweenSiblings="1.3999999761581421" SubTopicsDepth="1" SubTopicsAlignmentDualVertical="urn:mindjet:Center" VerticalSubTopicsConnectionStyle="urn:mindjet:Elbow" VerticalSubTopicsConnectionPoint="urn:mindjet:Outside"/>
+<DefaultSubTopicsVisibility Dirty="0000000000000000" Hidden="false"/>
+</OrgChartTopicDefaultsGroup>
+<OrgChartSubTopicDefaultsGroup Level="0">
+<DefaultColor Dirty="0000000000000000" FillColor="ffffffff"/>
+<DefaultText TextAlignment="urn:mindjet:Center" TextCapitalization="urn:mindjet:None" VerticalTextAlignment="urn:mindjet:Top" Dirty="0000000000000001" PlainText="Topic" ReadOnly="false">
+<Font Color="ff4b4b4b" Size="9." Name="Verdana" Bold="true" Italic="false" Underline="false" Strikethrough="false"/>
+</DefaultText>
+<DefaultSubTopicShape Dirty="0000000000000001" VerticalLeftMargin="1." VerticalRightMargin="1." VerticalTopMargin="1." VerticalBottomMargin="1." VerticalSubTopicShape="urn:mindjet:Rectangle"/>
+<DefaultCalloutFloatingTopicShape Dirty="0000000000000000" VerticalCalloutFloatingTopicShape="urn:mindjet:RectangleBalloon" VerticalLeftMargin="2." VerticalRightMargin="2." VerticalTopMargin="2." VerticalBottomMargin="2."/>
+<DefaultTopicLayout TopicLayoutHorizontalAlignment="urn:mindjet:Center" TopicLayoutVerticalAlignment="urn:mindjet:Center" TopicTextAndImagePosition="urn:mindjet:TextRightImageLeft" TopicWidthControl="urn:mindjet:AutoWidth" Dirty="0000000000000001" Width="50." MinimumHeight="5." Padding="1."/>
+<DefaultSubTopicsShape SubTopicsAlignment="urn:mindjet:Bottom" SubTopicsConnectionPoint="urn:mindjet:Outside" SubTopicsConnectionStyle="urn:mindjet:Elbow" SubTopicsGrowth="urn:mindjet:Horizontal" SubTopicsGrowthDirection="urn:mindjet:AutomaticHorizontal" SubTopicsShape="urn:mindjet:Vertical" SubTopicsShapeWidthFactor="1." SubTopicsVerticalAlignment="urn:mindjet:Middle" SubTopicsVerticalGrowthDirection="urn:mindjet:AutomaticVertical" Dirty="0000000000000001" DistanceFromParent="3." VerticalDistanceFromParent="3." DistanceBetweenSiblings="1.3999999761581421" VerticalDistanceBetweenSiblings="1." SubTopicsDepth="1" SubTopicsAlignmentDualVertical="urn:mindjet:Center" VerticalSubTopicsConnectionStyle="urn:mindjet:Elbow" VerticalSubTopicsConnectionPoint="urn:mindjet:Outside"/>
+<DefaultSubTopicsVisibility Dirty="0000000000000000" Hidden="false"/>
+</OrgChartSubTopicDefaultsGroup>
+<OrgChartSubTopicDefaultsGroup Level="1">
+<DefaultColor Dirty="0000000000000001" FillColor="ffffffff"/>
+<DefaultText TextAlignment="urn:mindjet:Center" TextCapitalization="urn:mindjet:None" VerticalTextAlignment="urn:mindjet:Top" Dirty="0000000000000001" PlainText="Topic" ReadOnly="false">
+<Font Color="ff282828" Size="9." Name="Verdana" Bold="false" Italic="false" Underline="false" Strikethrough="false"/>
+</DefaultText>
+<DefaultSubTopicShape SubTopicShape="urn:mindjet:Rectangle" Dirty="0000000000000001" LeftMargin="1." RightMargin="1." TopMargin="1." BottomMargin="1." VerticalLeftMargin="0.5" VerticalRightMargin="0.5" VerticalTopMargin="0.5" VerticalBottomMargin="0.5" VerticalSubTopicShape="urn:mindjet:Rectangle"/>
+<DefaultCalloutFloatingTopicShape Dirty="0000000000000001" VerticalCalloutFloatingTopicShape="urn:mindjet:RectangleBalloon" VerticalLeftMargin="2." VerticalRightMargin="2." VerticalTopMargin="2." VerticalBottomMargin="2."/>
+<DefaultTopicLayout TopicLayoutHorizontalAlignment="urn:mindjet:Center" TopicLayoutVerticalAlignment="urn:mindjet:Center" TopicTextAndImagePosition="urn:mindjet:TextRightImageLeft" TopicWidthControl="urn:mindjet:AutoWidth" Dirty="0000000000000001" Width="50." MinimumHeight="5." Padding="1."/>
+<DefaultSubTopicsShape SubTopicsAlignment="urn:mindjet:Bottom" SubTopicsConnectionPoint="urn:mindjet:Outside" SubTopicsConnectionStyle="urn:mindjet:Elbow" SubTopicsGrowth="urn:mindjet:Horizontal" SubTopicsGrowthDirection="urn:mindjet:AutomaticHorizontal" SubTopicsShape="urn:mindjet:Vertical" SubTopicsShapeWidthFactor="1." SubTopicsVerticalAlignment="urn:mindjet:Middle" SubTopicsVerticalGrowthDirection="urn:mindjet:AutomaticVertical" Dirty="0000000000000001" DistanceFromParent="3." VerticalDistanceFromParent="3." DistanceBetweenSiblings="1.3999999761581421" VerticalDistanceBetweenSiblings="1." SubTopicsDepth="1" SubTopicsAlignmentDualVertical="urn:mindjet:Center" VerticalSubTopicsConnectionStyle="urn:mindjet:Elbow" VerticalSubTopicsConnectionPoint="urn:mindjet:Outside"/>
+</OrgChartSubTopicDefaultsGroup>
+<RelationshipDefaultsGroup>
+<DefaultColor Dirty="0000000000000001" FillColor="00000000" LineColor="ffe0666e"/>
+<DefaultLineStyle LineDashStyle="urn:mindjet:Dash" Dirty="0000000000000001" LineWidth="1.5"/>
+<DefaultConnectionStyle ConnectionShape="urn:mindjet:NoArrow" Index="0" Dirty="0000000000000000"/>
+<DefaultConnectionStyle ConnectionShape="urn:mindjet:Arrow" Index="1" Dirty="0000000000000000"/>
+<DefaultRelationshipLineShape LineShape="urn:mindjet:Bezier" Dirty="0000000000000000"/>
+</RelationshipDefaultsGroup>
+<BoundaryDefaultsGroup>
+<DefaultLineStyle LineDashStyle="urn:mindjet:Solid" Dirty="0000000000000001" LineWidth="1.5"/>
+<DefaultBoundaryShape BoundaryShape="urn:mindjet:CurvedLine" Dirty="0000000000000000" Margin="0."/>
+</BoundaryDefaultsGroup>
+<Structure StructureGrowthDirection="urn:mindjet:Automatic" Dirty="0000000000000001" UseAutoLayout="true" MinimumMainTopicsHeight="40." FadeNotSelectedObjects="true" UseCurveAntialiasing="true" UseTextAntialiasing="true" MainTopicLineWidth="0.60000002384185791" VerticalMainTopicLineWidth="1." SiblingSpacing="0." ParentChildSpacing="0." UseOrganicLines="false" HideCollapseSign="false"/>
+<NotesDefaultFont Color="ff000000" Size="10." Dirty="0000000000000001" Name="Verdana"/>
+</StyleGroup>
+<MapViewGroup ViewIndex="0" RowIndex="0" ColumnIndex="0">
+<ZoomFactor ZoomFactor="1." Dirty="0000000000000001"/>
+</MapViewGroup>
+<DocumentGroup>
+<Language Dirty="0000000000000000" Language="en"/>
+<Creator Dirty="0000000000000000" UserName="" UserEmail=""/>
+<LastModificator Dirty="0000000000000001" UserName="" UserEmail=""/>
+<Author Dirty="0000000000000000" UserName="Mindjet" UserEmail=""/>
+<Manager Dirty="0000000000000000" UserName=""/>
+<Version Dirty="0000000000000001" Major="8"/>
+<Statistics Dirty="0000000000000001" NumberOfTopics="4" NumberOfWords="8" NumberOfHyperlinks="0" NumberOfRelationships="1" NumberOfPictures="0" NumberOfBoundaries="0" NumberOfNotes="1"/>
+<DateTimeStamps Dirty="0000000000000001" Created="2011-06-28T22:29:53" LastModified="2011-06-28T22:34:20"/>
+<Description Comments="The Mindjet MindManager 9 default map template." Dirty="0000000000000000" Subject=""/>
+<Keywords Dirty="0000000000000000" Keywords=""/>
+<CreatorCompany Dirty="0000000000000000" Name=""/>
+<Category Dirty="0000000000000000" Name=""/>
+<ModifiedProtected Dirty="0000000000000000" Password=""/>
+<PreviewImageData ImageType="urn:mindjet:PngImage" Dirty="0000000000000001" CustomImageType="">
+<cor:Uri xsi:nil="false">mmarch://Preview.png</cor:Uri>
+</PreviewImageData>
+<PrintingOptions PageOrientation="urn:mindjet:Automatic" Dirty="0000000000000000" LeftMargin="5." RightMargin="5." TopMargin="5." BottomMargin="5." VerticalNumberOfPages="1" HorizontalNumberOfPages="1" FitToPage="true" PrintPageSeparators="false" PrintPageNumbers="false" PrintBackground="true" PrintBorder="true" PrintHeader="false" PrintFooter="true" BorderColor="ff000000" HeaderTextAlignment="urn:mindjet:Center" HeaderText="" FooterTextAlignment="urn:mindjet:Left" FooterText="&amp;{MAP_NAME} - &amp;{MODIFICATION_DATE} - &amp;{AUTHOR_NAME}">
+<HeaderFont Color="ff000000" Size="8." Name="Arial" Bold="false" Italic="false" Underline="false" Strikethrough="false"/>
+<FooterFont Color="ff000000" Size="8." Name="Arial" Bold="false" Italic="false" Underline="false" Strikethrough="false"/>
+</PrintingOptions>
+<DocumentPath Dirty="0000000000000001" DocumentPath="\\INCA-THINKPAD\D\Codes\Blumind\Documents\~$MindManagerMaps.mmap.~$save"/>
+</DocumentGroup>
+<MarkersSetGroup>
+<IconMarkersSets>
+<IconMarkersSet Dirty="0000000000000000" OId="Xq132RqhKUOnghJTCdRc/g==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Flags"/>
+<IconMarkers>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="3NCv3neRFUKm+Il8zTbz0Q==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Yes"/>
+<OneStockIcon IconType="urn:mindjet:FlagGreen" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="OOIqVoSPjku8kI7Kd6bGyw==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Maybe"/>
+<OneStockIcon IconType="urn:mindjet:FlagYellow" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="KFfRBxxttEyV7uVraAKBbw==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Discuss"/>
+<OneStockIcon IconType="urn:mindjet:FlagOrange" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="byUO+29AG0Gl/LYFT1LEaQ==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Risk"/>
+<OneStockIcon IconType="urn:mindjet:FlagRed" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="7UZzRA26P0KcZlzHT2EtFw==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Move"/>
+<OneStockIcon IconType="urn:mindjet:FlagPurple" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="M7bXTDyOlE2i8eOs/LFEhg==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Defer"/>
+<OneStockIcon IconType="urn:mindjet:FlagBlue" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="qqsJpVguzEig39EZ6xtabA==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="No"/>
+<OneStockIcon IconType="urn:mindjet:FlagBlack" Dirty="0000000000000000"/>
+</IconMarker>
+</IconMarkers>
+</IconMarkersSet>
+<IconMarkersSet Dirty="0000000000000000" OId="1H/cyvgdtE6uJtHIuwrjrA==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Arrows"/>
+<IconMarkers>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="P5AxNEW9kkOaiLyr8Lebxg==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Up"/>
+<OneStockIcon IconType="urn:mindjet:ArrowUp" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="drB0+2u/YUWMNPPPt5rK3w==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Down"/>
+<OneStockIcon IconType="urn:mindjet:ArrowDown" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="KAWojJXRMkC7hRzYpwCBQw==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Left"/>
+<OneStockIcon IconType="urn:mindjet:ArrowLeft" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="KhtV4Iqy6ES6SnACori1pQ==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Right"/>
+<OneStockIcon IconType="urn:mindjet:ArrowRight" Dirty="0000000000000000"/>
+</IconMarker>
+</IconMarkers>
+</IconMarkersSet>
+<IconMarkersSet Dirty="0000000000000000" OId="wLnXAsB/QU+edLfypLXiAg==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Smileys"/>
+<IconMarkers>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="v63DH6s8602AaNj5rF/1iQ==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Happy"/>
+<OneStockIcon IconType="urn:mindjet:SmileyHappy" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="qNBuWG9IsUSCVQ5UN6ro4w==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Neutral"/>
+<OneStockIcon IconType="urn:mindjet:SmileyNeutral" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="qo/GJzWuqUuFQtv8VJNKpg==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Sad"/>
+<OneStockIcon IconType="urn:mindjet:SmileySad" Dirty="0000000000000000"/>
+</IconMarker>
+</IconMarkers>
+</IconMarkersSet>
+</IconMarkersSets>
+<IconMarkers>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="AXJHCYcYw0aaq4DvYoqnTA==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Pro"/>
+<OneStockIcon IconType="urn:mindjet:ThumbsUp" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="nzz4CcbSzU2W3x8A5hiPsQ==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Con"/>
+<OneStockIcon IconType="urn:mindjet:ThumbsDown" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="q67DGqAXmU+YdaXb2vNZew==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Question"/>
+<OneStockIcon IconType="urn:mindjet:QuestionMark" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="PfIDCuWkZEyd2z/RoxwlLA==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Attention"/>
+<OneStockIcon IconType="urn:mindjet:ExclamationMark" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="khBEW5qV2U+5EOQ7pV3wlg==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Decision"/>
+<OneStockIcon IconType="urn:mindjet:JudgeHammer" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="aWgQvUZVekONXgbTElPwdw==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Date"/>
+<OneStockIcon IconType="urn:mindjet:Calendar" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="CWvj6wKmyUaOEGCx7dcfHw==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Cost"/>
+<OneStockIcon IconType="urn:mindjet:Dollar" Dirty="0000000000000000"/>
+</IconMarker>
+<IconMarker xsi:type="StockIconMarker" Dirty="0000000000000000" OId="Z4a0tn/OsE6ld3t1xKu91g==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Alarm"/>
+<OneStockIcon IconType="urn:mindjet:Emergency" Dirty="0000000000000000"/>
+</IconMarker>
+</IconMarkers>
+<FillColorMarkersName Dirty="0000000000000000" Name="Fill Colors"/>
+<TextColorMarkersName Dirty="0000000000000000" Name="Font Colors"/>
+<TaskPercentageMarkersName Dirty="0000000000000000" Name="Progress"/>
+<TaskPercentageMarkers>
+<TaskPercentageMarker Dirty="0000000000000000" OId="zMIAsPZqCkS/+WaR+ZD0qw==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Not done"/>
+<TaskPercentage TaskPercentage="0" Dirty="0000000000000000"/>
+</TaskPercentageMarker>
+<TaskPercentageMarker Dirty="0000000000000000" OId="Hdn5WjSRIUuzGdi/aS+QUw==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Quarter done"/>
+<TaskPercentage TaskPercentage="25" Dirty="0000000000000000"/>
+</TaskPercentageMarker>
+<TaskPercentageMarker Dirty="0000000000000000" OId="E/+gbWPzzUiZIxiM4fZ3MQ==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Half done"/>
+<TaskPercentage TaskPercentage="50" Dirty="0000000000000000"/>
+</TaskPercentageMarker>
+<TaskPercentageMarker Dirty="0000000000000000" OId="kfqOeW4QFkatfyv/APmQqg==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Three quarters done"/>
+<TaskPercentage TaskPercentage="75" Dirty="0000000000000000"/>
+</TaskPercentageMarker>
+<TaskPercentageMarker Dirty="0000000000000000" OId="WjYKSYA2HkaX0W6+vllGxg==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Task done"/>
+<TaskPercentage TaskPercentage="100" Dirty="0000000000000000"/>
+</TaskPercentageMarker>
+</TaskPercentageMarkers>
+<TaskPriorityMarkersName Dirty="0000000000000000" Name="Priority"/>
+<TaskPriorityMarkers>
+<TaskPriorityMarker Dirty="0000000000000000" OId="x07P5zqNT0yYLKcZrBQC2Q==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Priority 1"/>
+<TaskPriority TaskPriority="urn:mindjet:Prio1" Dirty="0000000000000000"/>
+</TaskPriorityMarker>
+<TaskPriorityMarker Dirty="0000000000000000" OId="263vcLLp1kSOeMrw+9nRDg==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Priority 2"/>
+<TaskPriority TaskPriority="urn:mindjet:Prio2" Dirty="0000000000000000"/>
+</TaskPriorityMarker>
+<TaskPriorityMarker Dirty="0000000000000000" OId="hzXjXBOL2U+V20v1NPFE3w==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Priority 3"/>
+<TaskPriority TaskPriority="urn:mindjet:Prio3" Dirty="0000000000000000"/>
+</TaskPriorityMarker>
+<TaskPriorityMarker Dirty="0000000000000000" OId="eZ58ZWT1yEKAnPYedOhDRg==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Priority 4"/>
+<TaskPriority TaskPriority="urn:mindjet:Prio4" Dirty="0000000000000000"/>
+</TaskPriorityMarker>
+<TaskPriorityMarker Dirty="0000000000000000" OId="5V/h4OKVLUCK0aBZ0vRmRg==" Gen="0000000000000000">
+<Name Dirty="0000000000000000" Name="Priority 5"/>
+<TaskPriority TaskPriority="urn:mindjet:Prio5" Dirty="0000000000000000"/>
+</TaskPriorityMarker>
+</TaskPriorityMarkers>
+</MarkersSetGroup>
+</Map>
