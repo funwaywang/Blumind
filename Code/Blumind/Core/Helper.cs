@@ -19,7 +19,7 @@ namespace Blumind
             return (short)value;
         }
 
-        public static void OpenUrl(string url)
+        public static void OpenUrl(string url, string documentLocation = null)
         {
             if (!string.IsNullOrEmpty(url))
             {
@@ -28,7 +28,16 @@ namespace Blumind
                     if (File.Exists(url) && StringComparer.OrdinalIgnoreCase.Equals(Path.GetExtension(url), Document.Extension))
                         Program.MainForm.OpenDocument(url);
                     else
+                    {
+                        if (!string.IsNullOrEmpty(documentLocation))
+                        {
+                            var relativePath = Path.Combine(Path.GetDirectoryName(documentLocation), url);
+
+                            if (!File.Exists(url) && File.Exists(relativePath))
+                                url = relativePath;
+                        }
                         Process.Start(url);
+                    }
                 }
                 catch (System.Exception ex)
                 {

@@ -668,7 +668,7 @@ namespace Blumind.Controls.MapViews
             UpdateView(ChangeTypes.AllVisual);
         }
 
-        public void OpenSelectedUrl()
+        public void OpenSelectedUrl(string documentLocation)
         {
             if (Selection.Count > 0)
             {
@@ -683,7 +683,7 @@ namespace Blumind.Controls.MapViews
 
                 foreach (string url in urls)
                 {
-                    Helper.OpenUrl(url);
+                    Helper.OpenUrl(url, documentLocation);
                 }
             }
         }

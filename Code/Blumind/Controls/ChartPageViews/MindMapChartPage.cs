@@ -605,7 +605,7 @@ namespace Blumind.ChartPageView
 
         void MenuOpenHyperlink_Click(object sender, EventArgs e)
         {
-            mindMapView1.OpenSelectedUrl();
+            mindMapView1.OpenSelectedUrl((ParentForm as DocumentForm)?.Document.FileName);
         }
 
         void MenuAddTopic_Click(object sender, EventArgs e)
