@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Collections.Generic;
 using Blumind.Core;
 using Blumind.Core.Documents;
 using Blumind.Model;
@@ -61,8 +61,8 @@ namespace Blumind.Controls.MapViews
             if (DragObjects.IsNullOrEmpty() || Target == null || DragDropMethod == DragTopicsMethod.None)
                 return false;
 
-            Parents = new Dictionary<ChartObject, object>();
-            Indices = new Dictionary<ChartObject, int>();
+            Parents = new System.Collections.Generic.Dictionary<ChartObject, object>();
+            Indices = new System.Collections.Generic.Dictionary<ChartObject, int>();
                         
             switch (DragDropMethod)
             {

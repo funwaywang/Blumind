@@ -2,6 +2,8 @@
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
+using System.Security.Principal;
 using System.Text;
 using System.Windows.Forms;
 using Blumind.Canvas;
@@ -28,6 +30,11 @@ namespace Blumind
         [STAThread]
         static void Main(params string[] args)
         {
+            if (System.Diagnostics.Process.GetProcessesByName(System.IO.Path.GetFileNameWithoutExtension(System.Reflection.Assembly.GetEntryAssembly().Location)).Count() > 1)
+            {
+                Console.WriteLine("ya existe la aplicación en ejecución");
+                return;
+            }
             if (PreProcessApplicationArgs(args))
                 return;
 
@@ -53,31 +60,30 @@ namespace Blumind
             RecentFilesManage.Default.Initialize();
 
             Current_OpitonsChanged(null, EventArgs.Empty);
+            if (!IsUserAdministrator())
+            {
+                ProcessStartInfo proc = new ProcessStartInfo();
+                proc.UseShellExecute = true;
+                proc.WorkingDirectory = Environment.CurrentDirectory;
+                proc.FileName = Assembly.GetEntryAssembly().CodeBase;
 
+                foreach (string arg in args)
+                {
+                    proc.Arguments += String.Format("\"{0}\" ", arg);
+                }
+
+                proc.Verb = "runas";
+                
+                try
+                {
+                    Process.Start(proc);
+                }
+                catch
+                {
+                    Console.WriteLine("This application requires elevated credentials in order to operate correctly!");
+                }
+            }
 #if DEBUG
-//            NotesWidget nw = new NotesWidget()
-//            {
-//                Remark = @"
-//<P><STRONG>发布时间：<SPAN>2014年4月29日</SPAN> </STRONG></P>
-//<DIV>
-//<P>美国总统奥巴马8天4国的亚太之行，在今天画上句点。美国与日本、韩国、马来西亚以及<WBR>&shy;
-//菲律宾等亚太盟国的关系是否更加紧密，亚太局势是否取得平衡？奥巴马极力推动的跨太平<WBR>&shy;洋伙伴协议TPP是否有所进展？
-//而虽然不在奥巴马的访问行程之内，但正如中国外交部发<WBR>&shy;言人秦刚所说:&quot 你来，或者不来，我就在这里&quot，中国就像&quot房间里的大象&quot，
-//            是美国与盟国即使不直接说<WBR>&shy;明白，却也无法视而不见的议题。奥巴马此行取得哪些成果？我们邀请到两位嘉宾来为我们<WBR>&shy;
-//            解读。一位是香港亚洲周刊资深特派员纪硕鸣先生，另外一位是中国复旦大学美国研究中心<WBR>&shy;沈丁立教授。</P></DIV>"
-//            };
-//            var dlg = new RemarkDialog();
-//            dlg.ShowInTaskbar = true;
-//            dlg.Widget = nw;
-//            dlg.ShowDialog();
-
-//            dlg.Widget = new NotesWidget()
-//            {
-//                Remark = "abc"
-//            };
-
-//            dlg.ShowDialog();
-
             MainForm = new MainForm(args);
             Application.Run(MainForm);
 #else
@@ -132,6 +138,25 @@ namespace Blumind
             LanguageManage.ChangeLanguage(CommonOptions.Localization.LanguageID);
 
             //D.Message(string.Format("Test: Options => {0}", Lang._("Options")));
+        }
+        static bool IsUserAdministrator()
+        {
+            bool isAdmin;
+            try
+            {
+                WindowsIdentity user = WindowsIdentity.GetCurrent();
+                WindowsPrincipal principal = new WindowsPrincipal(user);
+                isAdmin = principal.IsInRole(WindowsBuiltInRole.Administrator);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                isAdmin = false;
+            }
+            catch (Exception ex)
+            {
+                isAdmin = false;
+            }
+            return isAdmin;
         }
     }
 }
