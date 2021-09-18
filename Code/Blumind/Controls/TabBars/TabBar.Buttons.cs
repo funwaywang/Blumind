@@ -30,7 +30,7 @@ namespace Blumind.Controls
             DropDownButton.Icon = Properties.Resources.chevron;
             DropDownButton.Visible = ShowDropDownButton;
             DropDownButton.Click +=new EventHandler(DropDownButton_Click);
-            //DropDownButton.Paint += new UIPaintEventHandler(DropDownButton_Paint);
+            //DropDownButton.Paint += DropDownButton_Paint;
             RightButtons.Add(DropDownButton);
 
             //

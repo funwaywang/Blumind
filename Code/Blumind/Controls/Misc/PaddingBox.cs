@@ -22,7 +22,7 @@ namespace Blumind.Controls
         {
             InitializeComponent();
             OnValueChanged();
-            LanguageManage.CurrentChanged += new EventHandler(LanguageManage_CurrentChanged);
+            LanguageManage.CurrentChanged += LanguageManage_CurrentChanged;
             LanguageManage_CurrentChanged(this, EventArgs.Empty);
         }
 
@@ -129,31 +129,31 @@ namespace Blumind.Controls
             NudAll.Minimum = int.MinValue;
             NudAll.Maximum = int.MaxValue;
             NudAll.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            NudAll.ValueChanged += new EventHandler(NumberUpDown_ValueChanged);
+            NudAll.ValueChanged += NumberUpDown_ValueChanged;
 
             //
             NudLeft.Minimum = int.MinValue;
             NudLeft.Maximum = int.MaxValue;
             NudLeft.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            NudLeft.ValueChanged += new EventHandler(NumberUpDown_ValueChanged);
+            NudLeft.ValueChanged += NumberUpDown_ValueChanged;
 
             //
             NudTop.Minimum = int.MinValue;
             NudTop.Maximum = int.MaxValue;
             NudTop.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            NudTop.ValueChanged += new EventHandler(NumberUpDown_ValueChanged);
+            NudTop.ValueChanged += NumberUpDown_ValueChanged;
 
             //
             NudRight.Minimum = int.MinValue;
             NudRight.Maximum = int.MaxValue;
             NudRight.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            NudRight.ValueChanged += new EventHandler(NumberUpDown_ValueChanged);
+            NudRight.ValueChanged += NumberUpDown_ValueChanged;
 
             //
             NudBottom.Minimum = int.MinValue;
             NudBottom.Maximum = int.MaxValue;
             NudBottom.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            NudBottom.ValueChanged += new EventHandler(NumberUpDown_ValueChanged);
+            NudBottom.ValueChanged += NumberUpDown_ValueChanged;
 
             //
             this.Controls.Add(layoutPanel);

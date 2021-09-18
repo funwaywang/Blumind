@@ -19,7 +19,7 @@ namespace Blumind.Controls
         {
             DropDownStyle = ComboBoxStyle.DropDownList;
 
-            LanguageManage.CurrentChanged += new EventHandler(LanguageManage_CurrentChanged);
+            LanguageManage.CurrentChanged += LanguageManage_CurrentChanged;
         }
 
         void LanguageManage_CurrentChanged(object sender, EventArgs e)

@@ -25,7 +25,7 @@ namespace Blumind.Controls
 
             UITheme.Default.Listeners.Add(this);
 
-            LanguageManage.CurrentChanged += new EventHandler(LanguageManage_CurrentChanged);
+            LanguageManage.CurrentChanged += LanguageManage_CurrentChanged;
         }
 
         [DefaultValue(true)]
@@ -100,16 +100,16 @@ namespace Blumind.Controls
             //
             MenuReset.Text = LanguageManage.GetText("Reset");
             MenuReset.Image = Properties.Resources.reset;
-            MenuReset.Click += new EventHandler(MenuReset_Click);
+            MenuReset.Click += MenuReset_Click;
 
             //
             MenuDescription.Text = LanguageManage.GetText("Show Description");
-            MenuDescription.Click += new EventHandler(MenuDescription_Click);
+            MenuDescription.Click += MenuDescription_Click;
 
             //
             MenuProperty.Items.AddRange(new ToolStripItem[] { 
                 MenuReset, new ToolStripSeparator(), MenuDescription});
-            MenuProperty.Opening += new System.ComponentModel.CancelEventHandler(MenuProperty_Opening);
+            MenuProperty.Opening += MenuProperty_Opening;
 
             //
             Controls.Add(propertyGrid1);
@@ -125,12 +125,12 @@ namespace Blumind.Controls
             //    {
             //        if (HideBorder)
             //        {
-            //            ctrl.Paint += new PaintEventHandler(PropertyGridView_Paint);
+            //            ctrl.Paint += PropertyGridView_Paint;
             //            ctrl.BackColor = System.Drawing.Color.Blue;
             //        }
             //        else
             //        {
-            //            ctrl.Paint -= new PaintEventHandler(PropertyGridView_Paint);
+            //            ctrl.Paint -= PropertyGridView_Paint;
             //        }
             //    }
             //}

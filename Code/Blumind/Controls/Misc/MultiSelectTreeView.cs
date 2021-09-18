@@ -36,7 +36,7 @@ namespace Blumind.Controls
                     _SelectedNodes = value;
                     SelectedNodes.ItemAdded += new XListEventHandler<TreeNode>(SelectedNodes_ItemAdded);
                     SelectedNodes.ItemRemoved += new XListEventHandler<TreeNode>(SelectedNodes_ItemRemoved);
-                    SelectedNodes.BeforeClear += new EventHandler(SelectedNodes_BeforeClear);
+                    SelectedNodes.BeforeClear += SelectedNodes_BeforeClear;
                 }
             }
         }

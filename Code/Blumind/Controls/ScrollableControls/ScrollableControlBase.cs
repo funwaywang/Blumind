@@ -184,9 +184,9 @@ namespace Blumind.Controls
         {
             NavButton = new NavigationButton();
             NavButton.NavigationBoxSize = NavigationBoxSize;
-            NavButton.BeforePop += new EventHandler(NavButton_BeforePop);
-            NavButton.PaintMap += new PaintEventHandler(NavButton_PaintMap);
-            NavButton.Navigated += new EventHandler(NavButton_Navigated);
+            NavButton.BeforePop += NavButton_BeforePop;
+            NavButton.PaintMap += NavButton_PaintMap;
+            NavButton.Navigated += NavButton_Navigated;
             Controls.Add(NavButton);
         }
 
@@ -194,13 +194,13 @@ namespace Blumind.Controls
         {
             HScroll = new HScrollBar();
             HScroll.Visible = false;
-            HScroll.ValueChanged += new EventHandler(HScroll_ValueChanged);
-            HScroll.EnabledChanged += new EventHandler(HScroll_EnabledChanged);
+            HScroll.ValueChanged += HScroll_ValueChanged;
+            HScroll.EnabledChanged += HScroll_EnabledChanged;
 
             VScroll = new VScrollBar();
             VScroll.Visible = false;
-            VScroll.ValueChanged += new EventHandler(VScroll_ValueChanged);
-            VScroll.EnabledChanged += new EventHandler(VScroll_EnabledChanged);
+            VScroll.ValueChanged += VScroll_ValueChanged;
+            VScroll.EnabledChanged += VScroll_EnabledChanged;
 
             _HorizontalScroll = new ScrollInformation();
             _VerticalScroll = new ScrollInformation();

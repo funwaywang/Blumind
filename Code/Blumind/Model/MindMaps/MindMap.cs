@@ -53,7 +53,7 @@ namespace Blumind.Model.MindMaps
         Topic _Root;
         string _Filename;
         //MindMapStyle _Style;
-        MindMapLayoutType _LayoutType = MindMapLayoutType.MindMap;
+        MindMapLayoutType _LayoutType = MindMapLayoutType.LogicRight;
         //string _Description;
         string _Author;
         string _Company;
@@ -249,12 +249,12 @@ namespace Blumind.Model.MindMaps
         {
             if (old != null)
             {
-                old.ValueChanged -= new EventHandler(Style_ValueChanged);
+                old.ValueChanged -= Style_ValueChanged;
             }
 
             if (Style != null)
             {
-                Style.ValueChanged += new EventHandler(Style_ValueChanged);
+                Style.ValueChanged += Style_ValueChanged;
             }
 
             if (StyleChanged != null)

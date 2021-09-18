@@ -33,9 +33,9 @@ namespace Blumind.Controls.MapViews
             InnerTreeView.ShowRootLines = false;
             InnerTreeView.BorderStyle = BorderStyle.None;
             InnerTreeView.BackColor = ContentBackColor;
-            InnerTreeView.MouseUp += new MouseEventHandler(InnerTreeView_MouseUp);
-            InnerTreeView.AfterSelect += new TreeViewEventHandler(InnerTreeView_AfterSelect);
-            InnerTreeView.BeforeCollapse += new TreeViewCancelEventHandler(InnerTreeView_BeforeCollapse);
+            InnerTreeView.MouseUp += InnerTreeView_MouseUp;
+            InnerTreeView.AfterSelect += InnerTreeView_AfterSelect;
+            InnerTreeView.BeforeCollapse += InnerTreeView_BeforeCollapse;
 
             LabCaption = new CaptionBar();
             LabCaption.Dock = DockStyle.Top;
@@ -97,14 +97,14 @@ namespace Blumind.Controls.MapViews
         {
             if (old != null)
             {
-                old.TopicAdded -= new TopicEventHandler(Map_TopicAdded);
+                old.TopicAdded -= Map_TopicAdded;
             }
 
             BuildTree();
 
             if (Map != null)
             {
-                Map.TopicAdded += new TopicEventHandler(Map_TopicAdded);
+                Map.TopicAdded += Map_TopicAdded;
             }
         }
 

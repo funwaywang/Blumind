@@ -92,7 +92,7 @@ namespace Blumind.Controls
         protected override void OnSubscribeControlEvents(Control control)
         {
             NumericUpDown ctl = (NumericUpDown)control;
-            ctl.ValueChanged += new EventHandler(Control_ValueChanged);
+            ctl.ValueChanged += Control_ValueChanged;
 
             base.OnSubscribeControlEvents(control);
         }

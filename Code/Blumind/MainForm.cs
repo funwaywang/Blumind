@@ -42,7 +42,7 @@ namespace Blumind
             MinimumSize = new Size(600, 400);
             UITheme.Default.Listeners.Add(this);
 
-            RecentFilesManage.Default.FilesChanged += new EventHandler(Options_RecentFilesChanged);
+            RecentFilesManage.Default.FilesChanged += Options_RecentFilesChanged;
 
             InitializeTaskBar();
             InitializeShortcutKeys();
@@ -78,22 +78,26 @@ namespace Blumind
                 Text = "Menu",
                 CustomSize = 50
             };
-            BtnStart.Click += new EventHandler(BtnStart_Click);
+            BtnStart.Click += BtnStart_Click;
 
             //BtnNew = new TabBarButton();
             //BtnNew.Icon = Properties.Resources._new;
             //BtnNew.ToolTipText = "Create New Document";
-            //BtnNew.Click += new EventHandler(MenuNew_Click);
+            //BtnNew.Click += MenuNew_Click;
 
-            BtnOpen = new TabBarButton();
-            BtnOpen.Icon = Properties.Resources.open;
-            BtnOpen.ToolTipText = "Open Document...";
-            BtnOpen.Click += new EventHandler(MenuOpen_Click);
+            BtnOpen = new TabBarButton
+            {
+                Icon = Properties.Resources.open,
+                ToolTipText = "Open Document..."
+            };
+            BtnOpen.Click += MenuOpen_Click;
 
-            BtnHelp = new TabBarButton();
-            BtnHelp.Icon = Properties.Resources.help;
-            BtnHelp.Text = "Help";
-            BtnHelp.Click += new EventHandler(BtnHelp_Click);
+            BtnHelp = new TabBarButton
+            {
+                Icon = Properties.Resources.help,
+                Text = "Help"
+            };
+            BtnHelp.Click += BtnHelp_Click;
 
             TaskBar.LeftButtons.Add(BtnStart);
             //TaskBar.LeftButtons.Add(BtnNew);
@@ -127,7 +131,7 @@ namespace Blumind
 
         void InitializeShortcutKeys()
         {
-            KeyMap.Default.KeyManChanged += new EventHandler(Default_KeyManChanged);
+            KeyMap.Default.KeyManChanged += Default_KeyManChanged;
             Default_KeyManChanged(null, EventArgs.Empty);
 
             ShortcutKeys = new ShortcutKeysTable();
@@ -202,7 +206,7 @@ namespace Blumind
                     RecentFilesManage.Default.Push(filename);
                     Cursor.Current = Cursors.Default;
                 }
-                catch (System.Exception ex)
+                catch (Exception ex)
                 {
                     Cursor.Current = Cursors.Default;
                     Helper.WriteLog(ex);
@@ -342,7 +346,7 @@ namespace Blumind
 
         public void ShowOptionsDialog()
         {
-            var dialog = new Blumind.Configuration.Dialog.SettingDialog();
+            var dialog = new Configuration.Dialog.SettingDialog();
             dialog.ShowDialog(this);
         }
 
@@ -648,7 +652,7 @@ namespace Blumind
                     DocumentType type = DocumentType.FindDocumentType(Path.GetExtension(filename));
                     if (type != null && type.Icon != null)
                         mi.Image = type.Icon;
-                    mi.Click += new EventHandler(MenuRecentFile_Click);
+                    mi.Click += MenuRecentFile_Click;
                     MenuRecentFiles.DropDownItems.Add(mi);
 
                     count++;
@@ -661,7 +665,7 @@ namespace Blumind
                 if (MenuClearRecentFiles == null)
                 {
                     MenuClearRecentFiles = new ToolStripMenuItem();
-                    MenuClearRecentFiles.Click += new EventHandler(MenuClearRecentFiles_Click);
+                    MenuClearRecentFiles.Click += MenuClearRecentFiles_Click;
                 }
                 MenuClearRecentFiles.Text = Lang.GetTextWithEllipsis("Clear Recent Files");
                 MenuRecentFiles.DropDownItems.Add(MenuClearRecentFiles);
@@ -810,7 +814,7 @@ namespace Blumind
                 miImport.Tag = engine;
                 if (engine.DocumentType.Icon != null)
                     miImport.Image = engine.DocumentType.Icon;
-                miImport.Click += new EventHandler(MenuImport_Click);
+                miImport.Click += MenuImport_Click;
 
                 MenuImport.DropDownItems.Add(miImport);
             }

@@ -26,7 +26,7 @@ namespace Blumind.Controls.MapViews
             Render = new GeneralRender();
             ShowToolTips = true;
             NavigationBoxSize = new Size(300, 300);
-            //_Options.Current.ChartSettingChanged += new EventHandler(Default_ChartSettingChanged);
+            //_Options.Current.ChartSettingChanged += Default_ChartSettingChanged;
             Options.Current.OpitonsChanged += Current_OpitonsChanged;
 
             ExtentChartInputKey = Keys.Left | Keys.Up | Keys.Right | Keys.Down;
@@ -111,57 +111,57 @@ namespace Blumind.Controls.MapViews
         {
             if (old != null)
             {
-                old.PropertyChanged -= new Blumind.Core.PropertyChangedEventHandler(Map_StyleChanged);
-                old.LayoutTypeChanged -= new EventHandler(Map_LayoutTypeChanged);
-                old.ChartObjectPropertyChanged -= new Blumind.Core.PropertyChangedEventHandler(Map_ChartObjectPropertyChanged);
+                old.PropertyChanged -= Map_StyleChanged;
+                old.LayoutTypeChanged -= Map_LayoutTypeChanged;
+                old.ChartObjectPropertyChanged -= Map_ChartObjectPropertyChanged;
 
-                old.TopicAdded -= new TopicEventHandler(Map_TopicAdded);
-                old.TopicRemoved -= new TopicEventHandler(Map_TopicRemoved);
-                old.TopicAfterSort -= new EventHandler(Map_TopicAfterSort);
-                old.ObjectStyleChanged -= new ChartObjectPropertyEventHandler(Chart_ChartObjectStyleChanged);
-                //old.TopicTextChanged -= new TopicEventHandler(Map_TopicTextChanged);
-                old.TopicWidgetChanged -= new Blumind.Core.PropertyChangedEventHandler(Map_TopicWidgetChanged);
-                old.TopicDescriptionChanged -= new TopicEventHandler(Map_TopicDescriptionChanged);
-                old.TopicFoldedChanged -= new TopicEventHandler(Map_TopicFoldedChanged);
-                old.TopicWidthChanged -= new TopicEventHandler(Map_TopicWidthChanged);
-                old.TopicHeightChanged -= new TopicEventHandler(Map_TopicHeightChanged);
-                old.TopicIconChanged -= new TopicEventHandler(Map_TopicIconChanged);
-                old.TopicBeforeCollapse -= new TopicCancelEventHandler(Map_TopicBeforeCollapse);
-                old.LinkAdded -= new LinkEventHandler(Map_LinkAdded);
-                old.LinkRemoved -= new LinkEventHandler(Map_LinkRemoved);
-                old.WidgetRemoved -= new WidgetEventHandler(Map_WidgetRemoved);
+                old.TopicAdded -= Map_TopicAdded;
+                old.TopicRemoved -= Map_TopicRemoved;
+                old.TopicAfterSort -= Map_TopicAfterSort;
+                old.ObjectStyleChanged -= Chart_ChartObjectStyleChanged;
+                //old.TopicTextChanged -= Map_TopicTextChanged;
+                old.TopicWidgetChanged -= Map_TopicWidgetChanged;
+                old.TopicDescriptionChanged -= Map_TopicDescriptionChanged;
+                old.TopicFoldedChanged -= Map_TopicFoldedChanged;
+                old.TopicWidthChanged -= Map_TopicWidthChanged;
+                old.TopicHeightChanged -= Map_TopicHeightChanged;
+                old.TopicIconChanged -= Map_TopicIconChanged;
+                old.TopicBeforeCollapse -= Map_TopicBeforeCollapse;
+                old.LinkAdded -= Map_LinkAdded;
+                old.LinkRemoved -= Map_LinkRemoved;
+                old.WidgetRemoved -= Map_WidgetRemoved;
 
-                old.LinkPropertyChanged -= new Blumind.Core.PropertyChangedEventHandler(Map_LinkChanged);
-                old.LinkVisibleChanged -= new LinkEventHandler(Map_LinkVisibleChanged);
+                old.LinkPropertyChanged -= Map_LinkChanged;
+                old.LinkVisibleChanged -= Map_LinkVisibleChanged;
             }
 
             if (Map != null)
             {
                 ChartLayouter = LayoutManage.GetLayouter(Map.LayoutType);
 
-                Map.PropertyChanged += new Blumind.Core.PropertyChangedEventHandler(Map_StyleChanged);
-                Map.LayoutTypeChanged += new EventHandler(Map_LayoutTypeChanged);
-                Map.ModifiedChanged += new EventHandler(Map_ModifiedChanged);
-                Map.ChartObjectPropertyChanged += new Blumind.Core.PropertyChangedEventHandler(Map_ChartObjectPropertyChanged);
+                Map.PropertyChanged += Map_StyleChanged;
+                Map.LayoutTypeChanged += Map_LayoutTypeChanged;
+                Map.ModifiedChanged += Map_ModifiedChanged;
+                Map.ChartObjectPropertyChanged += Map_ChartObjectPropertyChanged;
 
-                Map.TopicAdded += new TopicEventHandler(Map_TopicAdded);
-                Map.TopicRemoved += new TopicEventHandler(Map_TopicRemoved);
-                Map.TopicAfterSort += new EventHandler(Map_TopicAfterSort);
-                Map.ObjectStyleChanged += new ChartObjectPropertyEventHandler(Chart_ChartObjectStyleChanged);
-                //Map.TopicTextChanged += new TopicEventHandler(Map_TopicTextChanged);
-                Map.TopicWidgetChanged += new Blumind.Core.PropertyChangedEventHandler(Map_TopicWidgetChanged);
-                Map.TopicDescriptionChanged += new TopicEventHandler(Map_TopicDescriptionChanged);
-                Map.TopicFoldedChanged += new TopicEventHandler(Map_TopicFoldedChanged);
-                Map.TopicWidthChanged += new TopicEventHandler(Map_TopicWidthChanged);
-                Map.TopicHeightChanged += new TopicEventHandler(Map_TopicHeightChanged);
-                Map.TopicIconChanged += new TopicEventHandler(Map_TopicIconChanged);
-                Map.TopicBeforeCollapse += new TopicCancelEventHandler(Map_TopicBeforeCollapse);
-                Map.LinkAdded += new LinkEventHandler(Map_LinkAdded);
-                Map.LinkRemoved += new LinkEventHandler(Map_LinkRemoved);
-                Map.WidgetRemoved += new WidgetEventHandler(Map_WidgetRemoved);
+                Map.TopicAdded += Map_TopicAdded;
+                Map.TopicRemoved += Map_TopicRemoved;
+                Map.TopicAfterSort += Map_TopicAfterSort;
+                Map.ObjectStyleChanged += Chart_ChartObjectStyleChanged;
+                //Map.TopicTextChanged += Map_TopicTextChanged;
+                Map.TopicWidgetChanged += Map_TopicWidgetChanged;
+                Map.TopicDescriptionChanged += Map_TopicDescriptionChanged;
+                Map.TopicFoldedChanged += Map_TopicFoldedChanged;
+                Map.TopicWidthChanged += Map_TopicWidthChanged;
+                Map.TopicHeightChanged += Map_TopicHeightChanged;
+                Map.TopicIconChanged += Map_TopicIconChanged;
+                Map.TopicBeforeCollapse += Map_TopicBeforeCollapse;
+                Map.LinkAdded += Map_LinkAdded;
+                Map.LinkRemoved += Map_LinkRemoved;
+                Map.WidgetRemoved += Map_WidgetRemoved;
 
-                Map.LinkPropertyChanged += new Blumind.Core.PropertyChangedEventHandler(Map_LinkChanged);
-                Map.LinkVisibleChanged += new LinkEventHandler(Map_LinkVisibleChanged);
+                Map.LinkPropertyChanged += Map_LinkChanged;
+                Map.LinkVisibleChanged += Map_LinkVisibleChanged;
             }
             else
             {

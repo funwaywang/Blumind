@@ -77,14 +77,14 @@ namespace Blumind.Controls.MapViews
         {
             if (old != null)
             {
-                old.ChartObjectAdded -= new ChartObjectEventHandler(Map_ChartObjectAdded);
+                old.ChartObjectAdded -= Map_ChartObjectAdded;
             }
 
             BuildTree();
 
             if (ChartPage != null)
             {
-                ChartPage.ChartObjectAdded += new ChartObjectEventHandler(Map_ChartObjectAdded);
+                ChartPage.ChartObjectAdded += Map_ChartObjectAdded;
             }
         }
 

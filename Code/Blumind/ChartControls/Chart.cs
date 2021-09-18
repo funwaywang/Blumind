@@ -21,17 +21,17 @@ namespace Blumind.Controls
         {
             ChartBox = CreateChartBox();
             ChartBox.Bounds = DisplayRectangle;
-            ChartBox.Paint += new PaintEventHandler(ChartBox_Paint);
-            ChartBox.MouseDown += new MouseEventHandler(ChartBox_MouseDown);
-            ChartBox.MouseUp += new MouseEventHandler(ChartBox_MouseUp);
-            ChartBox.MouseMove += new MouseEventHandler(ChartBox_MouseMove);
-            ChartBox.MouseLeave += new EventHandler(ChartBox_MouseLeave);
-            ChartBox.MouseWheel += new MouseEventHandler(ChartBox_MouseWheel);
-            ChartBox.DoubleClick += new EventHandler(ChartBox_DoubleClick);
-            ChartBox.KeyDown += new KeyEventHandler(ChartBox_KeyDown);
-            ChartBox.KeyUp += new KeyEventHandler(ChartBox_KeyUp);
-            ChartBox.KeyPress += new KeyPressEventHandler(ChartBox_KeyPress);
-            ChartBox.Resize += new EventHandler(ChartBox_Resize);
+            ChartBox.Paint += ChartBox_Paint;
+            ChartBox.MouseDown += ChartBox_MouseDown;
+            ChartBox.MouseUp += ChartBox_MouseUp;
+            ChartBox.MouseMove += ChartBox_MouseMove;
+            ChartBox.MouseLeave += ChartBox_MouseLeave;
+            ChartBox.MouseWheel += ChartBox_MouseWheel;
+            ChartBox.DoubleClick += ChartBox_DoubleClick;
+            ChartBox.KeyDown += ChartBox_KeyDown;
+            ChartBox.KeyUp += ChartBox_KeyUp;
+            ChartBox.KeyPress += ChartBox_KeyPress;
+            ChartBox.Resize += ChartBox_Resize;
             Controls.Add(ChartBox);
 
             SetPaintStyles();
@@ -738,7 +738,7 @@ namespace Blumind.Controls
         private void Labels_ItemChanged(object sender, XListValueEventArgs<ChartLabel> e)
         {
             if(e.OldValue != null)
-                e.OldValue.NeedPaint -= new EventHandler(Label_NeedPaint);
+                e.OldValue.NeedPaint -= Label_NeedPaint;
 
             if(e.NewValue != null)
                 e.NewValue.NeedPaint +=new EventHandler(Label_NeedPaint);
@@ -749,7 +749,7 @@ namespace Blumind.Controls
         private void Labels_ItemRemoved(object sender, XListEventArgs<ChartLabel> e)
         {
             if (e.Item != null)
-                e.Item.NeedPaint -= new EventHandler(Label_NeedPaint);
+                e.Item.NeedPaint -= Label_NeedPaint;
 
             TryUpdate(ChangeTypes.All);
         }
@@ -757,7 +757,7 @@ namespace Blumind.Controls
         private void Labels_ItemAdded(object sender, XListEventArgs<ChartLabel> e)
         {
             if (e.Item != null)
-                e.Item.NeedPaint += new EventHandler(Label_NeedPaint);
+                e.Item.NeedPaint += Label_NeedPaint;
 
             TryUpdate(ChangeTypes.All);
         }

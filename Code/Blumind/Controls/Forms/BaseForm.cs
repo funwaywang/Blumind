@@ -22,9 +22,9 @@ namespace Blumind.Controls
                 RightToLeft = RightToLeft.Yes;
 #endif
 
-            LanguageManage.CurrentChanged += new EventHandler(LanguageManage_CurrentChanged);
-            Options.Current.OpitonsChanged += new EventHandler(Options_OpitonsChanged);
-            //Options.Default.UISettingChanged += new EventHandler(Options_UISettingChanged);
+            LanguageManage.CurrentChanged += LanguageManage_CurrentChanged;
+            Options.Current.OpitonsChanged += Options_OpitonsChanged;
+            //Options.Default.UISettingChanged += Options_UISettingChanged;
         }
 
         [DefaultValue(null)]

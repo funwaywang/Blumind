@@ -80,8 +80,8 @@ namespace Blumind.Controls
             form.MinimizeBox = false;
             form.ControlBox = false;
             form.Dock = DockStyle.None;
-            form.Activated += new EventHandler(MdiForm_Activated);
-            form.FormClosed += new FormClosedEventHandler(MdiForm_FormClosed);
+            form.Activated += MdiForm_Activated;
+            form.FormClosed += MdiForm_FormClosed;
 
             Controls.Add(form);
             ActiveMdiForm(form);

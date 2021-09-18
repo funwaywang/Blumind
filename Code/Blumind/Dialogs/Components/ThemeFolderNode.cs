@@ -33,7 +33,7 @@ namespace Blumind.Dialogs.Components
             if (ThemeFolder != null)
             {
                 Text = Lang._(ThemeFolder.Name);
-                ThemeFolder.NameChanged += new EventHandler(Theme_NameChanged);
+                ThemeFolder.NameChanged += Theme_NameChanged;
             }
         }
 

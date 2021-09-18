@@ -61,10 +61,10 @@ namespace Blumind.Controls
             {
                 DropDownContainer = new ToolStripDropDown();
                 //DropDownContainer.Stretch = resizable;
-                DropDownContainer.Opened += new EventHandler(DropDownContainer_Opened);
-                DropDownContainer.Opening += new CancelEventHandler(DropDownContainer_Opening);
-                DropDownContainer.Closed += new ToolStripDropDownClosedEventHandler(DropDownContainer_Closed);
-                DropDownContainer.Closing += new ToolStripDropDownClosingEventHandler(DropDownContainer_Closing);
+                DropDownContainer.Opened += DropDownContainer_Opened;
+                DropDownContainer.Opening += DropDownContainer_Opening;
+                DropDownContainer.Closed += DropDownContainer_Closed;
+                DropDownContainer.Closing += DropDownContainer_Closing;
 
                 ToolStripControlHost tsch = new ToolStripControlHost(Control);
                 DropDownContainer = new ToolStripDropDown();

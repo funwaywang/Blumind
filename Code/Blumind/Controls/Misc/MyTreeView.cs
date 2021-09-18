@@ -22,8 +22,8 @@ namespace Blumind.Controls
             InternalTreeView = new MultiSelectTreeView();
             InternalTreeView.Dock = DockStyle.Fill;
             InternalTreeView.BorderStyle = BorderStyle.None;
-            InternalTreeView.AfterSelect += new TreeViewEventHandler(InternalTreeView_AfterSelect);
-            InternalTreeView.BeforeCollapse += new TreeViewCancelEventHandler(InternalTreeView_BeforeCollapse);
+            InternalTreeView.AfterSelect += InternalTreeView_AfterSelect;
+            InternalTreeView.BeforeCollapse += InternalTreeView_BeforeCollapse;
             Controls.Add(InternalTreeView);
 
             SetPaintStyles();

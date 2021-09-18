@@ -76,8 +76,8 @@ namespace Blumind.ChartPageView
             {
                 MindMap chart = (MindMap)Chart;
                 mindMapView1.Map = chart;
-                chart.NameChanged += new EventHandler(chart_NameChanged);
-                chart.LayoutTypeChanged += new EventHandler(chart_LayoutTypeChanged);
+                chart.NameChanged += chart_NameChanged;
+                chart.LayoutTypeChanged += chart_LayoutTypeChanged;
             }
             else
             {
@@ -314,7 +314,7 @@ namespace Blumind.ChartPageView
             MenuOpenHyperlink.Image = Blumind.Properties.Resources.hyperlink;
             MenuOpenHyperlink.Name = "MenuOpenHyperlink";
             MenuOpenHyperlink.Text = "&Open Hyperlink";
-            MenuOpenHyperlink.Click += new System.EventHandler(MenuOpenHyperlink_Click);
+            MenuOpenHyperlink.Click += MenuOpenHyperlink_Click;
 
             // toolStripSeparator15
             toolStripSeparator15.Name = "toolStripSeparator15";
@@ -324,14 +324,14 @@ namespace Blumind.ChartPageView
             MenuAddTopic.Name = "MenuAddTopic";
             MenuAddTopic.ShortcutKeyDisplayString = "Enter";
             MenuAddTopic.Text = "Add Topic";
-            MenuAddTopic.Click += new System.EventHandler(MenuAddTopic_Click);
+            MenuAddTopic.Click += MenuAddTopic_Click;
 
             // MenuAddSubTopic
             MenuAddSubTopic.Image = Blumind.Properties.Resources.add_sub_topic;
             MenuAddSubTopic.Name = "MenuAddSubTopic";
             MenuAddSubTopic.ShortcutKeyDisplayString = "Tab/Insert";
             MenuAddSubTopic.Text = "Add Sub Topic";
-            MenuAddSubTopic.Click += new System.EventHandler(MenuAddSubTopic_Click);
+            MenuAddSubTopic.Click += MenuAddSubTopic_Click;
 
             // MenuAdd
             MenuAdd.DropDownItems.AddRange(new ToolStripItem[] {
@@ -345,19 +345,19 @@ namespace Blumind.ChartPageView
             MenuAddIcon.Image = Blumind.Properties.Resources.image;
             MenuAddIcon.Name = "MenuAddIcon";
             MenuAddIcon.Text = "&Icon";
-            MenuAddIcon.Click += new System.EventHandler(MenuAddIcon_Click);
+            MenuAddIcon.Click += MenuAddIcon_Click;
 
             // MenuAddProgressBar
             MenuAddProgressBar.Image = Blumind.Properties.Resources.progress_bar;
             MenuAddProgressBar.Name = "MenuAddProgressBar";
             MenuAddProgressBar.Text = "&Progress Bar";
-            MenuAddProgressBar.Click += new System.EventHandler(MenuAddProgressBar_Click);
+            MenuAddProgressBar.Click += MenuAddProgressBar_Click;
 
             // MenuAddRemark
             MenuAddRemark.Image = Blumind.Properties.Resources.notes;
             MenuAddRemark.Name = "MenuAddRemark";
             MenuAddRemark.Text = "&Notes";
-            MenuAddRemark.Click += new System.EventHandler(MenuAddRemark_Click);
+            MenuAddRemark.Click += MenuAddRemark_Click;
 
             // toolStripSeparator5
             toolStripSeparator5.Name = "toolStripSeparator5";
@@ -372,12 +372,12 @@ namespace Blumind.ChartPageView
             // MenuStraightening
             MenuStraightening.Name = "MenuStraightening";
             MenuStraightening.Text = "Straightening";
-            MenuStraightening.Click += new System.EventHandler(MenuStraightening_Click);
+            MenuStraightening.Click += MenuStraightening_Click;
 
             // MenuInvert
             MenuInvert.Name = "MenuInvert";
             MenuInvert.Text = "Invert";
-            MenuInvert.Click += new System.EventHandler(MenuInvert_Click);
+            MenuInvert.Click += MenuInvert_Click;
 
             // MenuFolding
             MenuFolding.DropDownItems.AddRange(new ToolStripItem[] {
@@ -394,19 +394,19 @@ namespace Blumind.ChartPageView
             MenuCollapseFolding.Name = "MenuCollapseFolding";
             MenuCollapseFolding.ShortcutKeyDisplayString = "Shift+-";
             MenuCollapseFolding.Text = "Collapse";
-            MenuCollapseFolding.Click += new System.EventHandler(MenuCollapseFolding_Click);
+            MenuCollapseFolding.Click += MenuCollapseFolding_Click;
 
             // MenuExpandFolding
             MenuExpandFolding.Name = "MenuExpandFolding";
             MenuExpandFolding.ShortcutKeyDisplayString = "Shift++";
             MenuExpandFolding.Text = "Expand";
-            MenuExpandFolding.Click += new System.EventHandler(MenuExpandFolding_Click);
+            MenuExpandFolding.Click += MenuExpandFolding_Click;
 
             // MenuToggleFolding
             MenuToggleFolding.Name = "MenuToggleFolding";
             MenuToggleFolding.ShortcutKeyDisplayString = "Shift+*";
             MenuToggleFolding.Text = "Toggle Folding";
-            MenuToggleFolding.Click += new System.EventHandler(MenuToggleFolding_Click);
+            MenuToggleFolding.Click += MenuToggleFolding_Click;
 
             // toolStripSeparator9
             toolStripSeparator9.Name = "toolStripSeparator9";
@@ -416,13 +416,13 @@ namespace Blumind.ChartPageView
             MenuCollapseAll.Name = "MenuCollapseAll";
             MenuCollapseAll.ShortcutKeyDisplayString = "Ctrl+Shift+-";
             MenuCollapseAll.Text = "Collapse All";
-            MenuCollapseAll.Click += new System.EventHandler(MenuCollapseAll_Click);
+            MenuCollapseAll.Click += MenuCollapseAll_Click;
 
             // MenuExpandAll
             MenuExpandAll.Name = "MenuExpandAll";
             MenuExpandAll.ShortcutKeyDisplayString = "Ctrl+Shift++";
             MenuExpandAll.Text = "Expand All";
-            MenuExpandAll.Click += new System.EventHandler(MenuExpandAll_Click);
+            MenuExpandAll.Click += MenuExpandAll_Click;
 
             // toolStripMenuItem2
             toolStripMenuItem2.Name = "toolStripMenuItem2";
@@ -432,28 +432,28 @@ namespace Blumind.ChartPageView
             MenuCut.Name = "MenuCut";
             MenuCut.ShortcutKeyDisplayString = "Ctrl+X";
             MenuCut.Text = "Cu&t";
-            MenuCut.Click += new System.EventHandler(MenuCut_Click);
+            MenuCut.Click += MenuCut_Click;
 
             // MenuCopy
             MenuCopy.Image = Blumind.Properties.Resources.copy;
             MenuCopy.Name = "MenuCopy";
             MenuCopy.ShortcutKeyDisplayString = "Ctrl+C";
             MenuCopy.Text = "&Copy";
-            MenuCopy.Click += new System.EventHandler(MenuCopy_Click);
+            MenuCopy.Click += MenuCopy_Click;
 
             // MenuPaste
             MenuPaste.Image = Blumind.Properties.Resources.paste;
             MenuPaste.Name = "MenuPaste";
             MenuPaste.ShortcutKeyDisplayString = "Ctrl+V";
             MenuPaste.Text = "&Paste";
-            MenuPaste.Click += new System.EventHandler(MenuPaste_Click);
+            MenuPaste.Click += MenuPaste_Click;
 
             // MenuDelete
             MenuDelete.Image = Blumind.Properties.Resources.delete;
             MenuDelete.Name = "MenuDelete";
             MenuDelete.ShortcutKeyDisplayString = "Del";
             MenuDelete.Text = "&Delete";
-            MenuDelete.Click += new System.EventHandler(MenuDelete_Click);
+            MenuDelete.Click += MenuDelete_Click;
 
             // toolStripSeparator10
             toolStripSeparator10.Name = "toolStripSeparator10";
@@ -473,13 +473,13 @@ namespace Blumind.ChartPageView
             MenuEdit.Name = "MenuEdit";
             MenuEdit.ShortcutKeyDisplayString = "F2";
             MenuEdit.Text = "&Edit";
-            MenuEdit.Click += new System.EventHandler(MenuEdit_Click);
+            MenuEdit.Click += MenuEdit_Click;
 
             // MenuProperty
             MenuProperty.Image = Blumind.Properties.Resources.property;
             MenuProperty.Name = "MenuProperty";
             MenuProperty.Text = "&Property";
-            MenuProperty.Click += new System.EventHandler(MenuProperty_Click);
+            MenuProperty.Click += MenuProperty_Click;
 
             //
             contextMenu.ResumeLayout();
@@ -809,7 +809,7 @@ namespace Blumind.ChartPageView
                     menuLayout.Text = ST.EnumToString(layout);
                     menuLayout.Tag = layout;
                     menuLayout.Image = MindMapLayoutTypeEditor.GetIcon(layout);
-                    menuLayout.Click += new EventHandler(MenuLayout_Click);
+                    menuLayout.Click += MenuLayout_Click;
                     MenuLayout.DropDownItems.Add(menuLayout);
                 }
             }

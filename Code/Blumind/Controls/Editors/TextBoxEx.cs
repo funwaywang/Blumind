@@ -256,11 +256,11 @@ namespace Blumind.Controls
 
             InnerTextBox = new TextBox();
             InnerTextBox.BorderStyle = BorderStyle.None;
-            InnerTextBox.TextChanged += new EventHandler(InnerTextBox_TextChanged);
-            InnerTextBox.MultilineChanged += new EventHandler(InnerTextBox_MultilineChanged);
-            InnerTextBox.KeyDown += new KeyEventHandler(InnerTextBox_KeyDown);
-            InnerTextBox.KeyPress += new KeyPressEventHandler(InnerTextBox_KeyPress);
-            InnerTextBox.KeyUp += new KeyEventHandler(InnerTextBox_KeyUp);
+            InnerTextBox.TextChanged += InnerTextBox_TextChanged;
+            InnerTextBox.MultilineChanged += InnerTextBox_MultilineChanged;
+            InnerTextBox.KeyDown += InnerTextBox_KeyDown;
+            InnerTextBox.KeyPress += InnerTextBox_KeyPress;
+            InnerTextBox.KeyUp += InnerTextBox_KeyUp;
             this.Controls.Add(InnerTextBox);
         }
 
@@ -759,12 +759,12 @@ namespace Blumind.Controls
                 if (e.Item.Owner != this)
                     e.Item.Owner = this;
 
-                e.Item.BackColorChanged += new EventHandler(Item_BackColorChanged);
-                e.Item.ImageChanged += new EventHandler(Item_ImageChanged);
-                e.Item.EnabledChanged += new EventHandler(Item_EnabledChanged);
-                e.Item.VisibleChanged += new EventHandler(Item_VisibleChanged);
-                e.Item.AlignmentChanged += new EventHandler(Item_AlignmentChanged);
-                e.Item.CustomSizeChanged += new EventHandler(Item_CustomSizeChanged);
+                e.Item.BackColorChanged += Item_BackColorChanged;
+                e.Item.ImageChanged += Item_ImageChanged;
+                e.Item.EnabledChanged += Item_EnabledChanged;
+                e.Item.VisibleChanged += Item_VisibleChanged;
+                e.Item.AlignmentChanged += Item_AlignmentChanged;
+                e.Item.CustomSizeChanged += Item_CustomSizeChanged;
             }
         }
 
@@ -775,11 +775,11 @@ namespace Blumind.Controls
                 if (e.Item.Owner == this)
                     e.Item.Owner = null;
 
-                e.Item.ImageChanged -= new EventHandler(Item_ImageChanged);
-                e.Item.EnabledChanged -= new EventHandler(Item_EnabledChanged);
-                e.Item.VisibleChanged -= new EventHandler(Item_VisibleChanged);
-                e.Item.AlignmentChanged -= new EventHandler(Item_AlignmentChanged);
-                e.Item.CustomSizeChanged -= new EventHandler(Item_CustomSizeChanged);
+                e.Item.ImageChanged -= Item_ImageChanged;
+                e.Item.EnabledChanged -= Item_EnabledChanged;
+                e.Item.VisibleChanged -= Item_VisibleChanged;
+                e.Item.AlignmentChanged -= Item_AlignmentChanged;
+                e.Item.CustomSizeChanged -= Item_CustomSizeChanged;
             }
         }
 
@@ -787,20 +787,20 @@ namespace Blumind.Controls
         {
             if (e.OldValue != null)
             {
-                e.OldValue.ImageChanged -= new EventHandler(Item_ImageChanged);
-                e.OldValue.EnabledChanged -= new EventHandler(Item_EnabledChanged);
-                e.OldValue.VisibleChanged -= new EventHandler(Item_VisibleChanged);
-                e.OldValue.AlignmentChanged -= new EventHandler(Item_AlignmentChanged);
-                e.OldValue.CustomSizeChanged -= new EventHandler(Item_CustomSizeChanged);
+                e.OldValue.ImageChanged -= Item_ImageChanged;
+                e.OldValue.EnabledChanged -= Item_EnabledChanged;
+                e.OldValue.VisibleChanged -= Item_VisibleChanged;
+                e.OldValue.AlignmentChanged -= Item_AlignmentChanged;
+                e.OldValue.CustomSizeChanged -= Item_CustomSizeChanged;
             }
 
             if (e.NewValue != null)
             {
-                e.NewValue.ImageChanged += new EventHandler(Item_ImageChanged);
-                e.NewValue.EnabledChanged += new EventHandler(Item_EnabledChanged);
-                e.NewValue.VisibleChanged += new EventHandler(Item_VisibleChanged);
-                e.NewValue.AlignmentChanged += new EventHandler(Item_AlignmentChanged);
-                e.NewValue.CustomSizeChanged += new EventHandler(Item_CustomSizeChanged);
+                e.NewValue.ImageChanged += Item_ImageChanged;
+                e.NewValue.EnabledChanged += Item_EnabledChanged;
+                e.NewValue.VisibleChanged += Item_VisibleChanged;
+                e.NewValue.AlignmentChanged += Item_AlignmentChanged;
+                e.NewValue.CustomSizeChanged += Item_CustomSizeChanged;
             }
         }
 

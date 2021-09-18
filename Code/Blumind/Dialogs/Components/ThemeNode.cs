@@ -31,7 +31,7 @@ namespace Blumind.Dialogs.Components
             if (Theme != null)
             {
                 Text = Theme.Name;
-                Theme.NameChanged += new EventHandler(Theme_NameChanged);
+                Theme.NameChanged += Theme_NameChanged;
             }
         }
 

@@ -35,7 +35,7 @@ namespace Blumind.Controls
                 Opacity = 0.8;
 
                 MyTimer = new Timer();
-                MyTimer.Tick += new EventHandler(MyTimer_Tick);
+                MyTimer.Tick += MyTimer_Tick;
             }
 
             public int InitialDelay
