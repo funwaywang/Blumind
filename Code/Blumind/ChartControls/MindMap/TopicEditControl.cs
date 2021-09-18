@@ -25,7 +25,8 @@ namespace Blumind.Controls.MapViews
             InternalTextBox.BorderStyle = BorderStyle.None;
             InternalTextBox.TextAlign = HorizontalAlignment.Center;
             //InternalTextBox.ImeMode = ImeMode.On;
-            InternalTextBox.KeyDown += new KeyEventHandler(InternalTextBox_KeyDown);
+            InternalTextBox.KeyDown += InternalTextBox_KeyDown;
+            InternalTextBox.TextChanged += InternalTextBox_TextChanged;
 
             //
             Gripper = new SizeGripper();
@@ -146,6 +147,29 @@ namespace Blumind.Controls.MapViews
                     }
                     break;
             }
+        }
+
+        private void InternalTextBox_TextChanged(object sender, EventArgs e)
+        {
+            Point pos = Location;
+            Size client = ClientSize;
+            Size sz = TextRenderer.MeasureText(InternalTextBox.Text, InternalTextBox.Font);
+            if (sz.Width > InternalTextBox.Width)
+            {
+                int diff = sz.Width - InternalTextBox.Width;
+                InternalTextBox.Width = sz.Width;
+                client.Width += diff;
+                pos.X -= diff / 2;
+            }
+            if (sz.Height > InternalTextBox.Height)
+            {
+                int diff = sz.Height - InternalTextBox.Height;
+                InternalTextBox.Height = sz.Height;
+                client.Height += diff;
+                pos.Y -= diff / 2;
+            }
+            Location = pos;
+            ClientSize = client;
         }
 
         public void EndEdit(bool acceptChange, bool invokeEvent)
@@ -275,13 +299,11 @@ namespace Blumind.Controls.MapViews
             {
                 base.OnMouseMove(e);
 
-                if (MouseDownButton == System.Windows.Forms.MouseButtons.Left)
+                if (Parent != null && MouseDownButton == MouseButtons.Left)
                 {
                     Point pt = PointToScreen(new Point(e.X, e.Y));
-                    Size size = new Size(ParentSize.Width + (pt.X - MouseDownPos.X)
-                    , ParentSize.Height + (pt.Y - MouseDownPos.Y));
-                    if (Parent != null)
-                        Parent.Size = size;
+                    Parent.Size = new Size(ParentSize.Width + (pt.X - MouseDownPos.X)
+                        , ParentSize.Height + (pt.Y - MouseDownPos.Y));
                 }
             }
         }
