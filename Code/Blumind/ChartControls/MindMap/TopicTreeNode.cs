@@ -39,24 +39,24 @@ namespace Blumind.Controls.MapViews
         {
             if (old != null)
             {
-                old.TextChanged -= new EventHandler(Topic_TextChanged);
+                old.TextChanged -= Topic_TextChanged;
                 old.Children.ItemAdded -= new XListEventHandler<Topic>(Topic_Children_ItemAdded);
                 old.Children.ItemRemoved -= new XListEventHandler<Topic>(Topic_Children_ItemRemoved);
                 old.Children.ItemChanged -= new XListValueEventHandler<Topic>(Topic_Children_ItemChanged);
-                old.Children.AfterClear -= new EventHandler(Topic_Children_ItemsClear);
-                old.Children.AfterSort -= new EventHandler(Topic_Children_AfterSort);
+                old.Children.AfterClear -= Topic_Children_ItemsClear;
+                old.Children.AfterSort -= Topic_Children_AfterSort;
             }
 
             if (Topic != null)
             {
                 Text = Topic.ToString();
                 Tag = Topic;
-                Topic.TextChanged += new EventHandler(Topic_TextChanged);
+                Topic.TextChanged += Topic_TextChanged;
                 Topic.Children.ItemAdded += new XListEventHandler<Topic>(Topic_Children_ItemAdded);
                 Topic.Children.ItemRemoved += new XListEventHandler<Topic>(Topic_Children_ItemRemoved);
                 Topic.Children.ItemChanged += new XListValueEventHandler<Topic>(Topic_Children_ItemChanged);
-                Topic.Children.AfterClear += new EventHandler(Topic_Children_ItemsClear);
-                Topic.Children.AfterSort += new EventHandler(Topic_Children_AfterSort);
+                Topic.Children.AfterClear += Topic_Children_ItemsClear;
+                Topic.Children.AfterSort += Topic_Children_AfterSort;
             }
         }
 

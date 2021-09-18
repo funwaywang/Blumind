@@ -359,7 +359,7 @@ namespace Blumind.Model.MindMaps
         {
             if (Style != null)
             {
-                Style.ValueChanged += new EventHandler(Style_ValueChanged);
+                Style.ValueChanged += Style_ValueChanged;
             }
 
             Style_ValueChanged(this, EventArgs.Empty);
@@ -724,14 +724,14 @@ namespace Blumind.Model.MindMaps
             {
                 old.ItemAdded -= new XListEventHandler<Topic>(Children_ItemAdded);
                 old.ItemRemoved -= new XListEventHandler<Topic>(Children_ItemRemoved);
-                old.AfterSort -= new EventHandler(Children_AfterSort);
+                old.AfterSort -= Children_AfterSort;
             }
 
             if (Children != null)
             {
                 Children.ItemAdded += new XListEventHandler<Topic>(Children_ItemAdded);
                 Children.ItemRemoved += new XListEventHandler<Topic>(Children_ItemRemoved);
-                Children.AfterSort += new EventHandler(Children_AfterSort);
+                Children.AfterSort += Children_AfterSort;
             }
         }
 
@@ -756,14 +756,14 @@ namespace Blumind.Model.MindMaps
             {
                 old.ItemAdded -= new XListEventHandler<Link>(Links_ItemAdded);
                 old.ItemRemoved -= new XListEventHandler<Link>(Links_ItemRemoved);
-                old.BeforeClear -= new EventHandler(Links_BeforeClear);
+                old.BeforeClear -= Links_BeforeClear;
             }
 
             if (Links != null)
             {
                 Links.ItemAdded += new XListEventHandler<Link>(Links_ItemAdded);
                 Links.ItemRemoved += new XListEventHandler<Link>(Links_ItemRemoved);
-                Links.BeforeClear += new EventHandler(Links_BeforeClear);
+                Links.BeforeClear += Links_BeforeClear;
             }
         }
 
@@ -1210,7 +1210,7 @@ namespace Blumind.Model.MindMaps
             {
                 e.Item.WidgetContainer = this;
                 e.Item.Chart = this.Chart;
-                e.Item.PropertyChanged += new Blumind.Core.PropertyChangedEventHandler(Widget_Changed);
+                e.Item.PropertyChanged += Widget_Changed;
             }
 
             Blumind.Core.PropertyChangedEventArgs arg = new Blumind.Core.PropertyChangedEventArgs("Items", null, null, ChangeTypes.All, false);
@@ -1224,7 +1224,7 @@ namespace Blumind.Model.MindMaps
             {
                 if (e.Item.WidgetContainer == this)
                     e.Item.WidgetContainer = null;
-                e.Item.PropertyChanged -= new Blumind.Core.PropertyChangedEventHandler(Widget_Changed);
+                e.Item.PropertyChanged -= Widget_Changed;
             }
 
             if (MindMap != null)

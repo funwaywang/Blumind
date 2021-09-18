@@ -114,7 +114,7 @@ namespace Blumind.Dialogs
                 mi.Tag = link[1];
                 mi.ToolTipText = link[1];
                 mi.Image = Properties.Resources.internet;
-                mi.Click += new System.EventHandler(MenuREcommendedResources_Click);
+                mi.Click += MenuREcommendedResources_Click;
                 contextMenuStrip1.Items.Add(mi);
             }
 

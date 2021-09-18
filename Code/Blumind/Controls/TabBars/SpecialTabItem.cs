@@ -24,7 +24,7 @@ namespace Blumind.Controls
             : this()
         {
             Icon = icon;
-            Click += new EventHandler(clickProc);
+            Click += clickProc;
         }
     }
 }

@@ -25,20 +25,20 @@ namespace Blumind.Controls
             BtnOK.Text = "&OK";
             BtnOK.TabIndex = 10000;
             BtnOK.UseVisualStyleBackColor = true;
-            BtnOK.Click += new EventHandler(BtnOK_Click);
+            BtnOK.Click += BtnOK_Click;
 
             BtnCancel = new Button();
             BtnCancel.Text = "&Cancel";
             BtnCancel.TabIndex = 10001;
             BtnCancel.UseVisualStyleBackColor = true;
-            BtnCancel.Click += new EventHandler(BtnCancel_Click);
+            BtnCancel.Click += BtnCancel_Click;
 
             BtnApply = new Button();
             BtnApply.Text = "&Apply";
             BtnApply.TabIndex = 10002;
             BtnApply.Visible = ShowApplyButton;
             BtnApply.UseVisualStyleBackColor = true;
-            BtnApply.Click += new EventHandler(BtnApply_Click);
+            BtnApply.Click += BtnApply_Click;
 
             Controls.Add(BtnOK);
             Controls.Add(BtnCancel);

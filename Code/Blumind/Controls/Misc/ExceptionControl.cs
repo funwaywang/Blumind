@@ -53,14 +53,14 @@ namespace Blumind.Controls
             linkSave.Enabled = false;
             linkSave.Text = "Save...";
             linkSave.AutoSize = true;
-            linkSave.LinkClicked += new LinkLabelLinkClickedEventHandler(linkSave_LinkClicked);
+            linkSave.LinkClicked += linkSave_LinkClicked;
 
             // BtnCopy
             // 
             linkCopy.Enabled = false;
             linkCopy.Text = "Copy";
             linkCopy.AutoSize = true;
-            linkCopy.LinkClicked += new LinkLabelLinkClickedEventHandler(linkCopy_LinkClicked);
+            linkCopy.LinkClicked += linkCopy_LinkClicked;
 
             //
             Controls.AddRange(new Control[] {

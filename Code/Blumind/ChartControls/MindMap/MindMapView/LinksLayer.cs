@@ -121,7 +121,7 @@ namespace Blumind.Controls.MapViews
         {
             if (!old.IsEmpty)
             {
-                old.Link.PropertyChanged -= new Blumind.Core.PropertyChangedEventHandler(Line_Changed);
+                old.Link.PropertyChanged -= Line_Changed;
                 InvalidateLink(old.Link, true);
             }
 
@@ -130,7 +130,7 @@ namespace Blumind.Controls.MapViews
                 TempLayout = SelectedObject.Link.LayoutData.Clone();
                 View.Select(SelectedObject.Link);
 
-                SelectedObject.Link.PropertyChanged += new Blumind.Core.PropertyChangedEventHandler(Line_Changed);
+                SelectedObject.Link.PropertyChanged += Line_Changed;
                 InvalidateLink(SelectedObject.Link, true);
             }
             else

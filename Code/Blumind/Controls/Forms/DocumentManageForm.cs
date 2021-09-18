@@ -89,8 +89,8 @@ namespace Blumind.Controls
         {
             if (TaskBar != null)
             {
-                TaskBar.SelectedItemChanged += new EventHandler(TaskBar_SelectedItemChanged);
-                TaskBar.ItemClose += new TabItemEventHandler(TaskBar_ItemClose);
+                TaskBar.SelectedItemChanged += TaskBar_SelectedItemChanged;
+                TaskBar.ItemClose += TaskBar_ItemClose;
             }
         }
 
@@ -100,8 +100,8 @@ namespace Blumind.Controls
             {
                 IsMdiContainer = false;
 
-                MdiClient.MdiFormActived += new EventHandler(MdiClient_MdiFormActived);
-                MdiClient.MdiFormClosed += new EventHandler(MdiClient_MdiFormClosed);
+                MdiClient.MdiFormActived += MdiClient_MdiFormActived;
+                MdiClient.MdiFormClosed += MdiClient_MdiFormClosed;
             }
             else
             {
@@ -140,9 +140,9 @@ namespace Blumind.Controls
                 form.Show();
             }
 
-            form.TextChanged += new EventHandler(Form_TextChanged);
-            form.Activated += new EventHandler(Form_Activated);
-            form.FormClosed += new FormClosedEventHandler(Form_FormClosed);
+            form.TextChanged += Form_TextChanged;
+            form.Activated += Form_Activated;
+            form.FormClosed += Form_FormClosed;
 
             if (showTab && TaskBar != null)
             {

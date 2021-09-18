@@ -22,7 +22,7 @@ namespace Blumind.Controls
 
             BorderColor = SystemColors.ControlDark;
             ContentBackColor = SystemColors.Window;
-            LanguageManage.CurrentChanged += new EventHandler(OnCurrentLanguageChanged);
+            LanguageManage.CurrentChanged += OnCurrentLanguageChanged;
         }
 
         [DefaultValue(0)]

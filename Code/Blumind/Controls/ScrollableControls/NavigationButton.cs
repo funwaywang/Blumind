@@ -295,7 +295,7 @@ namespace Blumind.Controls
             NavigationBox = new _NavigationBox(this);
             NavigationBox.MaximumSize = NavigationBoxSize;
             NavigationBox.SetRanges(FullSize, ViewRectangle);
-            NavigationBox.Navigated += new EventHandler(NavigationBox_Navigated);
+            NavigationBox.Navigated += NavigationBox_Navigated;
         }
 
         public void ShowMap()

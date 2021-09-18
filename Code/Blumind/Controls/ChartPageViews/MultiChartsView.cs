@@ -50,8 +50,8 @@ namespace Blumind.ChartPageView
         BaseChartPage CreateNewPage(ChartPage chart)
         {
             var cp = BaseChartPage.CreateChartPage(chart);
-            cp.BackColorChanged += new EventHandler(cp_BackColorChanged);
-            cp.NeedShowProperty += new NeedShowPropertyEventHandler(cp_NeedShowProperty);
+            cp.BackColorChanged += cp_BackColorChanged;
+            cp.NeedShowProperty += cp_NeedShowProperty;
             cp.Owner = this;
             return cp;
         }
@@ -61,7 +61,7 @@ namespace Blumind.ChartPageView
             Alignment = System.Windows.Forms.TabAlignment.Bottom;
 
             BtnNewChart = new SpecialTabItem(Properties.Resources._new);
-            BtnNewChart.Click += new EventHandler(BtnNewChart_Click);
+            BtnNewChart.Click += BtnNewChart_Click;
             TabBar.RightSpecialTabs.Add(BtnNewChart);
 
             var navBtnFirst = new TabBarNavButton(Lang._("First"), Properties.Resources.nav_small_first);
@@ -81,7 +81,7 @@ namespace Blumind.ChartPageView
             TabBar.AllowScrollPage = true;
             TabBar.Renderer = new MultiChartsTabRenderer(TabBar);
             TabBar.Padding = new System.Windows.Forms.Padding(TabBar.Padding.Left + 2, TabBar.Padding.Top, TabBar.Padding.Right, TabBar.Padding.Bottom);
-            TabBar.MouseDown += new MouseEventHandler(TabBar_MouseDown);
+            TabBar.MouseDown += TabBar_MouseDown;
         }
 
         public override void ApplyTheme(UITheme theme)
@@ -155,7 +155,7 @@ namespace Blumind.ChartPageView
                 foreach (var chart in Document.Charts)
                 {
                     var page = CreateNewPage(chart);
-                    page.IconChanged += new EventHandler(Page_IconChanged);
+                    page.IconChanged += Page_IconChanged;
                     TabPages.Add(page);
                 }
 
@@ -166,7 +166,7 @@ namespace Blumind.ChartPageView
 
                 Document.Charts.ItemAdded += new XListEventHandler<ChartPage>(Charts_ItemAdded);
                 Document.Charts.ItemRemoved += new XListEventHandler<ChartPage>(Charts_ItemRemoved);
-                Document.ModifiedChanged += new EventHandler(Document_ModifiedChanged);
+                Document.ModifiedChanged += Document_ModifiedChanged;
             }
         }
 
@@ -182,7 +182,7 @@ namespace Blumind.ChartPageView
         void Charts_ItemAdded(object sender, XListEventArgs<ChartPage> e)
         {
             var page = CreateNewPage(e.Item);
-            page.IconChanged += new EventHandler(Page_IconChanged);
+            page.IconChanged += Page_IconChanged;
             TabPages.Add(page);
         }
 

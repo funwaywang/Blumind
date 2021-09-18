@@ -38,14 +38,14 @@ namespace Blumind.Controls.MapViews
         {
             if (old != null)
             {
-                old.NameChanged -= new EventHandler(MindMap_NameChanged);
+                old.NameChanged -= MindMap_NameChanged;
             }
 
             if (ChartPage != null)
             {
                 Text = ChartPage.ToString();
                 Tag = ChartPage;
-                ChartPage.NameChanged += new EventHandler(MindMap_NameChanged);
+                ChartPage.NameChanged += MindMap_NameChanged;
             }
         }
 

@@ -99,7 +99,7 @@ namespace Blumind
                 ToolStripMenuItem miZoom = new ToolStripMenuItem();
                 miZoom.Text = string.Format("{0}%", (int)(zoom * 100));
                 miZoom.Tag = zoom;
-                miZoom.Click += new EventHandler(MenuZoom_Click);
+                miZoom.Click += MenuZoom_Click;
                 TsbZooms.DropDownItems.Add(miZoom);
             }
 

@@ -134,7 +134,7 @@ namespace Blumind.Controls
             ColorIcon.RespondMouse = false;
 
             DropDownButton = new TextBoxExDropDownButton();
-            DropDownButton.Click += new EventHandler(DropDownButton_Click);
+            DropDownButton.Click += DropDownButton_Click;
 
             Items.Add(ColorIcon);
             Items.Add(DropDownButton);
@@ -278,8 +278,8 @@ namespace Blumind.Controls
                 if (Picker == null)
                 {
                     Picker = new ColorPicker();
-                    Picker.ColorSelected += new EventHandler(Picker_ColorSelected);
-                    Picker.NeedColorDialog += new EventHandler(Picker_NeedColorDialog);
+                    Picker.ColorSelected += Picker_ColorSelected;
+                    Picker.NeedColorDialog += Picker_NeedColorDialog;
                 }
 
                 Picker.Colors = this.UseCustomColors ? this.CustomColors : CommonColors;

@@ -32,13 +32,13 @@ namespace Blumind.Controls
             BtnOpenFile.Text = Lang.GetTextWithEllipsis("Open");
             BtnOpenFile.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             //BtnOpenFile.FlatStyle = FlatStyle.Popup;
-            BtnOpenFile.Click += new EventHandler(BtnOpenFile_Click);
+            BtnOpenFile.Click += BtnOpenFile_Click;
 
             BtnUrl = new Button();
             BtnUrl.Text = Lang.GetTextWithEllipsis("From Internet");
             BtnUrl.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             //BtnUrl.FlatStyle = FlatStyle.Popup;
-            BtnUrl.Click += new EventHandler(BtnUrl_Click);
+            BtnUrl.Click += BtnUrl_Click;
 
             //LsbDocLibrary = new ImageLibraryListBox();
             //LsbDocLibrary.Height = LsbDocLibrary.CellSize.Height + 2 + SystemInformation.HorizontalScrollBarHeight;
@@ -51,19 +51,19 @@ namespace Blumind.Controls
 
             LsbShareLibrary = new ImageLibraryListBox();
             LsbShareLibrary.Dock = DockStyle.Fill;
-            LsbShareLibrary.Click += new EventHandler(LsbShareLibrary_Click);
+            LsbShareLibrary.Click += LsbShareLibrary_Click;
 
             LnkManageLib = new LinkLabel();
             LnkManageLib.Anchor = AnchorStyles.Left;
             LnkManageLib.AutoSize = true;
             LnkManageLib.Text = Lang.GetTextWithEllipsis("Manage My Icon Library");
-            LnkManageLib.LinkClicked += new LinkLabelLinkClickedEventHandler(BtnManageLib_LinkClicked);
+            LnkManageLib.LinkClicked += BtnManageLib_LinkClicked;
 
             LnkRefreshLib = new LinkLabel();
             LnkRefreshLib.Anchor = AnchorStyles.Right;
             LnkRefreshLib.AutoSize = true;
             LnkRefreshLib.Text = Lang.GetText("Refresh");
-            LnkRefreshLib.LinkClicked += new LinkLabelLinkClickedEventHandler(LnkRefreshLib_LinkClicked);
+            LnkRefreshLib.LinkClicked += LnkRefreshLib_LinkClicked;
 
             // links
             TableLayoutPanel plinks = new TableLayoutPanel();

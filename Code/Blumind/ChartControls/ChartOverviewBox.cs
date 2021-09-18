@@ -120,18 +120,18 @@ namespace Blumind.Controls
         {
             if (old != null)
             {
-                old.ContentSizeChanged -= new EventHandler(Chart_ContentSizeChanged);
-                old.HScrollValueChanged -= new EventHandler(Chart_HScrollValueChanged);
-                old.VScrollValueChanged -= new EventHandler(Chart_VScrollValueChanged);
-                old.ViewUpdated -= new EventHandler(Chart_ViewUpdated);
+                old.ContentSizeChanged -= Chart_ContentSizeChanged;
+                old.HScrollValueChanged -= Chart_HScrollValueChanged;
+                old.VScrollValueChanged -= Chart_VScrollValueChanged;
+                old.ViewUpdated -= Chart_ViewUpdated;
             }
 
             if (Chart != null)
             {
-                Chart.ContentSizeChanged += new EventHandler(Chart_ContentSizeChanged);
-                Chart.HScrollValueChanged += new EventHandler(Chart_HScrollValueChanged);
-                Chart.VScrollValueChanged += new EventHandler(Chart_VScrollValueChanged);
-                Chart.ViewUpdated += new EventHandler(Chart_ViewUpdated);
+                Chart.ContentSizeChanged += Chart_ContentSizeChanged;
+                Chart.HScrollValueChanged += Chart_HScrollValueChanged;
+                Chart.VScrollValueChanged += Chart_VScrollValueChanged;
+                Chart.ViewUpdated += Chart_ViewUpdated;
             }
 
             InvalidateRanges();

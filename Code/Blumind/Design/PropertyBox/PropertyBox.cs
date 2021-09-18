@@ -28,7 +28,7 @@ namespace Blumind.Design
             //Caption.BackColor = ContentBackColor;
             //Controls.Add(Caption);
 
-            LanguageManage.CurrentChanged += new EventHandler(LanguageManage_CurrentChanged);
+            LanguageManage.CurrentChanged += LanguageManage_CurrentChanged;
 
             Text = Lang._("Property");
         }

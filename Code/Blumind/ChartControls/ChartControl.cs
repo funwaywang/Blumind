@@ -21,8 +21,8 @@ namespace Blumind.Controls
         public ChartControl()
         {
             Selection = new ChartSelection();
-            Selection.BeforeClear += new EventHandler(Selection_BeforeClear);
-            Selection.AfterClear += new EventHandler(Selection_AfterClear);
+            Selection.BeforeClear += Selection_BeforeClear;
+            Selection.AfterClear += Selection_AfterClear;
 
             MultiSelect = true;
         }

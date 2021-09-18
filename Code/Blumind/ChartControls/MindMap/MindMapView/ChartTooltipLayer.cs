@@ -19,7 +19,7 @@ namespace Blumind.Controls.MapViews
 
             TheTimer = new Timer();
             TheTimer.Interval = 100;
-            TheTimer.Tick += new EventHandler(TheTimer_Tick);
+            TheTimer.Tick += TheTimer_Tick;
         }
 
         public XList<ChartToolTip> ToolTips
@@ -57,7 +57,7 @@ namespace Blumind.Controls.MapViews
         private void ToolTips_ItemAdded(object sender, XListEventArgs<ChartToolTip> e)
         {
             Invalidate(e.Item.Bounds);
-            e.Item.VisibleChanged += new EventHandler(Item_VisibleChanged);
+            e.Item.VisibleChanged += Item_VisibleChanged;
 
             TheTimer.Enabled = HasAnyVisibleToolTips(); ;
         }

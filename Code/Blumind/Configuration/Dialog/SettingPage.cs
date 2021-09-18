@@ -25,7 +25,7 @@ namespace Blumind.Configuration.Dialog
             Options = new MemoryOptions(Options.Current);
             Options.ModifiedChanged += Options_ModifiedChanged;
 
-            LanguageManage.CurrentChanged += new EventHandler(LanguageManage_CurrentChanged);
+            LanguageManage.CurrentChanged += LanguageManage_CurrentChanged;
             UITheme.Default.Listeners.Add(this);
         }
 

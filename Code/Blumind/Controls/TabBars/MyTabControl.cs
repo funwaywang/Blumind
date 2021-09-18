@@ -26,7 +26,7 @@ namespace Blumind.Controls
         public MyTabControl()
         {
             TabBar = new TabBar();
-            TabBar.SelectedItemChanged += new EventHandler(TabBar_SelectedItemChanged);
+            TabBar.SelectedItemChanged += TabBar_SelectedItemChanged;
             TabBar.Font = SystemFonts.MessageBoxFont;
             Controls.Add(TabBar);
 
@@ -523,7 +523,7 @@ namespace Blumind.Controls
                     TabBar.Items.Add(ti);
 
                 //page.Dock = DockStyle.Fill;
-                e.Item.TextChanged += new EventHandler(TabPage_TextChanged);
+                e.Item.TextChanged += TabPage_TextChanged;
 
                 //ControlContainer.Controls.Add(page);
                 if (TabBar.Items.Count == 1 || SelectedIndex < 0)

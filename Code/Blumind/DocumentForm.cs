@@ -50,7 +50,7 @@ namespace Blumind
 
             Icon = Properties.Resources.document_icon;
             FormatPainter_DataChanged(null, EventArgs.Empty);
-            FormatPainter.Default.DataChanged += new EventHandler(FormatPainter_DataChanged);
+            FormatPainter.Default.DataChanged += FormatPainter_DataChanged;
 
             if (System.Globalization.CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft && RightToLeft != RightToLeft.No)
                 ChangeSideBarSide();
@@ -162,19 +162,19 @@ namespace Blumind
 
             if (old != null)
             {
-                old.CommandHistoryChanged -= new EventHandler(ActivedChartBox_CommandHistoryChanged);
-                old.ZoomChanged -= new EventHandler(ActivedChartBox_ZoomChanged);
-                old.ModifiedChanged -= new EventHandler(ActivedChartBox_ModifiedChanged);
-                old.MouseMethodChanged -= new EventHandler(ActivedChartBox_MouseMethodChanged);
+                old.CommandHistoryChanged -= ActivedChartBox_CommandHistoryChanged;
+                old.ZoomChanged -= ActivedChartBox_ZoomChanged;
+                old.ModifiedChanged -= ActivedChartBox_ModifiedChanged;
+                old.MouseMethodChanged -= ActivedChartBox_MouseMethodChanged;
             }
 
             if (ActiveChartBox != null)
             {
                 objectTree1.ChartPage = ActiveChartBox.ChartPage;
-                ActiveChartBox.CommandHistoryChanged += new EventHandler(ActivedChartBox_CommandHistoryChanged);
-                ActiveChartBox.ZoomChanged += new EventHandler(ActivedChartBox_ZoomChanged);
-                ActiveChartBox.ModifiedChanged += new EventHandler(ActivedChartBox_ModifiedChanged);
-                ActiveChartBox.MouseMethodChanged += new EventHandler(ActivedChartBox_MouseMethodChanged);
+                ActiveChartBox.CommandHistoryChanged += ActivedChartBox_CommandHistoryChanged;
+                ActiveChartBox.ZoomChanged += ActivedChartBox_ZoomChanged;
+                ActiveChartBox.ModifiedChanged += ActivedChartBox_ModifiedChanged;
+                ActiveChartBox.MouseMethodChanged += ActivedChartBox_MouseMethodChanged;
             }
             else
             {
@@ -188,7 +188,7 @@ namespace Blumind
         {
             if (old != null)
             {
-                old.SelectedObjectsChanged -= new EventHandler(ActivedChartPage_SelectedObjectsChanged);
+                old.SelectedObjectsChanged -= ActivedChartPage_SelectedObjectsChanged;
             }
 
             if (ActivedChartPage != null)
@@ -198,7 +198,7 @@ namespace Blumind
                     Document.ActiveChart = ActivedChartPage.Chart;
 
                 SelectedObjects = ActivedChartPage.SelectedObjects;
-                ActivedChartPage.SelectedObjectsChanged += new EventHandler(ActivedChartPage_SelectedObjectsChanged);
+                ActivedChartPage.SelectedObjectsChanged += ActivedChartPage_SelectedObjectsChanged;
             }
             else
             {
@@ -253,7 +253,7 @@ namespace Blumind
                 miZoom.Text = string.Format("{0}%", (int)(zoom * 100));
                 miZoom.Tag = zoom;
                 miZoom.Checked = ActiveChartBox != null && zoom == ActiveChartBox.Zoom;
-                miZoom.Click += new EventHandler(MenuZoom_Click);
+                miZoom.Click += MenuZoom_Click;
                 TsbZoom.DropDownItems.Add(miZoom);
             }
         }
@@ -269,7 +269,7 @@ namespace Blumind
                 mi.Text = tsi.Name;
                 mi.ToolTipText = tsi.Description;
                 mi.Tag = tsi;
-                mi.Click += new EventHandler(MenuTimer_Click);
+                mi.Click += MenuTimer_Click;
 
                 TsbTimer.DropDownItems.Add(mi);
             }
@@ -320,7 +320,7 @@ namespace Blumind
 
         void InitializeShortcutKeys()
         {
-            KeyMap.Default.KeyManChanged += new EventHandler(Default_KeyManChanged);
+            KeyMap.Default.KeyManChanged += Default_KeyManChanged;
             Default_KeyManChanged(null, EventArgs.Empty);
 
             ShortcutKeys = new ShortcutKeysTable();
@@ -364,7 +364,7 @@ namespace Blumind
                     miTheme.Text = Lang._(theme.Name);
                 miTheme.Tag = theme;
                 miTheme.Image = theme.Icon;
-                miTheme.Click += new EventHandler(MenuTheme_Click);
+                miTheme.Click += MenuTheme_Click;
 
                 menus.Add(miTheme);
             }
@@ -377,7 +377,7 @@ namespace Blumind
 
 #if DEBUG
             ToolStripMenuItem miAddFreeDiagram = new ToolStripMenuItem("Add Free Diagram");
-            miAddFreeDiagram.Click += new EventHandler(miAddFreeDiagram_Click);
+            miAddFreeDiagram.Click += miAddFreeDiagram_Click;
             MenuStripChartTab.Items.Add(miAddFreeDiagram);
 #endif
         }
@@ -487,8 +487,8 @@ namespace Blumind
         {
             if (old != null)
             {
-                old.NameChanged -= new EventHandler(Document_NameChanged);
-                old.ModifiedChanged -= new EventHandler(Document_ModifiedChanged);
+                old.NameChanged -= Document_NameChanged;
+                old.ModifiedChanged -= Document_ModifiedChanged;
             }
 
             if (Document != null)
@@ -498,8 +498,8 @@ namespace Blumind
                 if (Document.Attributes.ContainsKey(ShowSidebarOptionName))
                     ShowSidebar = ST.GetBool(Document.Attributes[ShowSidebarOptionName], true);
 
-                Document.NameChanged += new EventHandler(Document_NameChanged);
-                Document.ModifiedChanged += new EventHandler(Document_ModifiedChanged);
+                Document.NameChanged += Document_NameChanged;
+                Document.ModifiedChanged += Document_ModifiedChanged;
             }
 
             multiChartsView1.Document = Document;
@@ -1249,7 +1249,7 @@ namespace Blumind
         void MenuThemes_Click(object sender, EventArgs e)
         {
             ThemesDialog dlg = new ThemesDialog();
-            dlg.ThemeApply += new EventHandler(ThemesDialog_ApplyTheme);
+            dlg.ThemeApply += ThemesDialog_ApplyTheme;
             dlg.ShowDialog(this);
         }
 

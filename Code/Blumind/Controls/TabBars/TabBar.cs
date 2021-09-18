@@ -335,8 +335,7 @@ namespace Blumind.Controls
             EnsureItemVisible(SelectedItem);
             Invalidate();
 
-            if (SelectedItemChanged != null)
-                SelectedItemChanged(this, EventArgs.Empty);
+            SelectedItemChanged?.Invoke(this, EventArgs.Empty);
 
             //EnsureItemVisible(SelectedItem);
         }
@@ -404,10 +403,7 @@ namespace Blumind.Controls
 
         protected virtual void OnIsActiveChanged()
         {
-            if (IsActiveChanged != null)
-            {
-                IsActiveChanged(this, EventArgs.Empty);
-            }
+            IsActiveChanged?.Invoke(this, EventArgs.Empty);
 
             Invalidate();
         }
@@ -648,18 +644,18 @@ namespace Blumind.Controls
         {
             if (newVlaue != null)
             {
-                newVlaue.TextChanged += new EventHandler(Item_TextChanged);
-                newVlaue.IconChanged += new EventHandler(Item_IconChanged);
-                newVlaue.VisibleChanged += new EventHandler(Item_VisibleChanged);
-                newVlaue.CanCloseChanged += new EventHandler(Item_CanCloseChanged);
+                newVlaue.TextChanged += Item_TextChanged;
+                newVlaue.IconChanged += Item_IconChanged;
+                newVlaue.VisibleChanged += Item_VisibleChanged;
+                newVlaue.CanCloseChanged += Item_CanCloseChanged;
             }
 
             if (oldValue != null)
             {
-                oldValue.TextChanged -= new EventHandler(Item_TextChanged);
-                oldValue.IconChanged -= new EventHandler(Item_IconChanged);
-                oldValue.VisibleChanged -= new EventHandler(Item_VisibleChanged);
-                oldValue.CanCloseChanged -= new EventHandler(Item_CanCloseChanged);
+                oldValue.TextChanged -= Item_TextChanged;
+                oldValue.IconChanged -= Item_IconChanged;
+                oldValue.VisibleChanged -= Item_VisibleChanged;
+                oldValue.CanCloseChanged -= Item_CanCloseChanged;
             }
 
             this.RefreshDisplayItems();
@@ -2171,7 +2167,7 @@ namespace Blumind.Controls
                 mi.Image = ti.Icon;
                 mi.Tag = ti;
                 mi.Checked = ti == SelectedItem;
-                mi.Click += new EventHandler(MenuItemDropDown_Click);
+                mi.Click += MenuItemDropDown_Click;
                 menu.Items.Add(mi);
             }
 

@@ -235,11 +235,9 @@ namespace Blumind.Controls.MapViews
             EditControl.Text = tobj.Text;
             ResetEditControlBounds(tobj);
 
-            Font font;
-            if(tobj.Font != null)
-                font = tobj.Font;
-            else
-                font = ChartBox.Font;
+            Font font = tobj.Font;
+            if (font == null)
+                font = ChartBox.DefaultChartFont;
             if (Zoom != 1.0f)
                 font = new Font(font.FontFamily, font.Size * Zoom, font.Style);
             EditControl.Font = font;
@@ -266,7 +264,7 @@ namespace Blumind.Controls.MapViews
             rect.X += ChartBox.Left;
             rect.Y += ChartBox.Top;
 
-            int minH = tobj.Font != null ? tobj.Font.Height : ChartBox.Font.Height;
+            int minH = tobj.Font != null ? tobj.Font.Height : ChartBox.DefaultChartFont.Height;
             if (rect.Height < minH)
                 rect.Height = minH;
 

@@ -24,7 +24,7 @@ namespace Blumind.Core
                 this.cmbKey.Items.Add(ST.ToString(keys));
             }
 
-            LanguageManage.CurrentChanged += new EventHandler(LanguageManage_CurrentChanged);
+            LanguageManage.CurrentChanged += LanguageManage_CurrentChanged;
             OnCurrentLanguageChanged();
         }
 

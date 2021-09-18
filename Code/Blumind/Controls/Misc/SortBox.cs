@@ -18,19 +18,19 @@ namespace Blumind.Controls
         {
             listBox = new ListBox2();
             listBox.SelectionMode = SelectionMode.MultiExtended;
-            listBox.SelectedIndexChanged += new EventHandler(listBox_SelectedIndexChanged);
+            listBox.SelectedIndexChanged += listBox_SelectedIndexChanged;
 
             btnMoveUp = new PushButton();
             btnMoveUp.Enabled = false;
             btnMoveUp.Image = Properties.Resources.up;
             btnMoveUp.Size = new Size(50, 30);
-            btnMoveUp.Click += new EventHandler(BtnMoveUp_Click);
+            btnMoveUp.Click += BtnMoveUp_Click;
 
             btnMoveDown = new PushButton();
             btnMoveDown.Enabled = false;
             btnMoveDown.Image = Properties.Resources.down;
             btnMoveDown.Size = btnMoveUp.Size;
-            btnMoveDown.Click += new EventHandler(BtnMoveDown_Click);
+            btnMoveDown.Click += BtnMoveDown_Click;
 
             Controls.AddRange(new Control[] { btnMoveUp, btnMoveDown, listBox });
         }

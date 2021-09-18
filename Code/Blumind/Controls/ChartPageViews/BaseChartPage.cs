@@ -245,7 +245,7 @@ namespace Blumind.ChartPageView
 
         void InitializeShortcutKeys()
         {
-            KeyMap.Default.KeyManChanged += new EventHandler(Default_KeyManChanged);
+            KeyMap.Default.KeyManChanged += Default_KeyManChanged;
             Default_KeyManChanged(null, EventArgs.Empty);
         }
 
@@ -289,7 +289,7 @@ namespace Blumind.ChartPageView
                 }
 
                 InitializeShortcutKeys();
-                LanguageManage.CurrentChanged += new EventHandler(LanguageManage_CurrentChanged);
+                LanguageManage.CurrentChanged += LanguageManage_CurrentChanged;
             }
         }
 
