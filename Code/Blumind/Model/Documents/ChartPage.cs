@@ -259,7 +259,7 @@ namespace Blumind.Model.Documents
             }
         }
 
-        [DefaultValue(typeof(Color), "DarkGray")]
+        [DefaultValue(typeof(Color), "LightSlateGray")]
         [LocalDisplayName("Border Color"), LocalCategory("Color")]
         public Color BorderColor
         {

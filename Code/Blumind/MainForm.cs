@@ -73,8 +73,11 @@ namespace Blumind
             TaskBar.MaxItemSize = 300;
             //TaskBar.Padding = new Padding(2, 0, 2, 0);
 
-            BtnStart = new StartMenuButton();
-            BtnStart.Text = "Menu";
+            BtnStart = new StartMenuButton
+            {
+                Text = "Menu",
+                CustomSize = 50
+            };
             BtnStart.Click += new EventHandler(BtnStart_Click);
 
             //BtnNew = new TabBarButton();
